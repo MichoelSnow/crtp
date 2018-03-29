@@ -1,0 +1,188 @@
+\documentclass[10pt]{beamer}
+
+\setbeamertemplate{note page}[default]
+%\setbeameroption{hide notes}
+\setbeameroption{show notes}
+
+
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+\usepackage{multicol}
+\setlength{\columnsep}{1.5cm}
+
+\usepackage{animate}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{mathtools}
+\usepackage{graphicx}
+
+\definecolor{set1}{RGB}{228, 26, 28}
+\definecolor{set2}{RGB}{77, 175, 74}
+\definecolor{set3}{RGB}{255, 127, 0}
+\definecolor{set4}{RGB}{166, 86, 40}
+\definecolor{set5}{RGB}{153, 153, 153}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+\newcommand\Fontvi{\fontsize{8}{9}\selectfont}
+\newcommand\Fontvr{\fontsize{6}{7}\selectfont}
+
+\setbeamerfont{parent A}{size=\small}
+
+
+\title{Study Design}
+\subtitle{Digital Transformation of Healthcare}
+% \date{\today}
+\date{}
+\author{Michoel Snow}
+\institute{Center for Health Data Innovations}
+% \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
+
+\begin{document}
+
+\maketitle
+
+
+
+
+\begin{frame}{Digital Transformation of Healthcare}
+%	\begin{itemize}
+%		
+%	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Bioinformatics Pipeline}
+	\includegraphics[width=1\textwidth]{images/informatics_pipeline.pdf}
+\end{frame}
+
+
+\begin{frame}{Study Design}
+	\includegraphics[width=1\textwidth]{images/informatics_pipeline_studydesign.pdf}
+\end{frame}
+
+\begin{frame}{Medication Reconciliation}
+	\begin{itemize}
+		\item Medication reconciliation (Med Rec) is the process of comparing a patient's medication orders to all of the medications he/she has been taking
+		\item According to The Institute of Safe Medication Practice, Med Rec has the potential to eliminate
+		\begin{itemize}
+			\item 50\% of medication errors
+			\item 20\% of adverse medical events
+		\end{itemize}
+		\item Care providers in Montefiore write 
+		\begin{itemize}
+			\item About 4 million prescriptions a year (averages out to more than 10,000 a day)
+			\item Prescriptions to over 400,000 different patients
+			\item Prescriptions for more than 11,000 different medications
+		\end{itemize}		   
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Case Study 1 - Data Collection}
+	Roses hospital wants to develop a pilot Med Rec system in their Pediatrics department.  You are working with a team of institutional stakeholders tasked with studying the effects of this soon to be implemented system.  You meet with the bioinformatics core to discuss the data collection for the study, as the domain knowledge expert, they ask you following questions 
+	\begin{itemize}
+		\item \textcolor<2->{gray}{What is the difference between a medication error and an adverse drug event (ADE)?}
+		\item \textcolor<2->{gray}{What qualifies as a medication error?}
+		\item \textcolor<2->{gray}{Are all medication errors equal?}
+		\item<2-> At what points along the pathway from prescription to ingestion can medication errors occur?
+		\item<2-> How do you identify and retrace a medication error?
+	\end{itemize}	 
+	\note[item]<1>{ADE --> intercepted, preventable, non-preventable}
+	\note[item]<1>{preventable ADE --> non-injurious, injurious}
+	\note[item]<1>{potential ADE = intercepted or non-injurious}
+	\note[item]<2>{Prescription writing (autocomplete, autofill, patient charts, dosing, allergies), filling prescription (wrong medication, medication interactions, allergies), prescription handoff, administration (route, dosing, delay), patient ingestion (misinterpret instructions, ignore instructions) }
+	\note[item]<2>{self reported, cross-reference medication interactions, deviations in dosing, e.g., 5mg jumps to 5g}
+\end{frame}
+
+
+
+\begin{frame}{Case Study - Error Metrics}
+	Roses hospital wants to develop a pilot Med Rec system in their Pediatrics department.  You are working with a team of institutional stakeholders tasked with studying the effects of this soon to be implemented system.  The bioinformatics core has assembled all the data as per your earlier discussions.  Before the statisticians can analyze the results they would like you to help narrow down the scope of their analyses.
+	\begin{itemize}
+		\item \textcolor<2->{gray}{Which type(s) of ADEs do you want to report?}
+		\item \textcolor<2->{gray}{How do you want to break down the errors, e.g., per hour, per provider, ...?}
+		\item<2-> How do you want to quantify the cost/benefit of implementing a Med Rec system?
+	\end{itemize}	 
+	\note[item]<1>{medication class, hour of day, per day of week, age of patient, number of concurrent medications, inpatient vs outpatient}
+\end{frame}
+
+
+\begin{frame}{Article}
+	\Large{Effect of Computerized Physician Order Entry and a Team Intervention on Prevention of Serious Medication Errors}
+	
+	
+	\scriptsize{Bates, D. W., Leape, L. L., Cullen, D. J., Laird, N., Petersen, L. A., Teich, J. M., ... \& Vander Vliet, M. (1998). Effect of computerized physician order entry and a team intervention on prevention of serious medication errors. Jama, 280(15), 1311-1316.}
+\end{frame}
+
+\begin{frame}{Study Paraneters}
+	\begin{itemize}
+		\item Objective
+		\begin{itemize}
+			\item To evaluate the efficacy of 2 interventions for preventing nonintercepted serious medication errors
+		\end{itemize}
+		\item Setting
+		\begin{itemize}
+			\item Large tertiary care hospital
+		\end{itemize}
+		\item Participants
+		\begin{itemize}
+			\item Phase 1 
+			\begin{itemize}
+				\item All patients admitted to a stratified random sample of 6 medical and surgical units over a 6-month period
+			\end{itemize}
+			\item Phase 2  
+			\begin{itemize}
+				\item All patients admitted to the same units and 2 randomly selected additional units over a subsequent 9-month period
+			\end{itemize}
+		\end{itemize}
+		\item Outcome Measures
+		\begin{itemize}
+			\item Nonintercepted serious medication errors.
+		\end{itemize}
+		
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Overall Reductions}
+	\includegraphics[width=1\textwidth]{images/jama2.png}
+\end{frame}
+
+\begin{frame}{Reductions by Severity}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{images/jama4.png}
+	\end{center}	
+\end{frame}
+
+\begin{frame}{Reductions by Error Type}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{images/jama5.png}
+	
+		\includegraphics[width=0.8\textwidth]{images/jama6.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Reductions by Drug Type}
+	\includegraphics[width=1\textwidth]{images/jama7.png}
+\end{frame}
+
+\begin{frame}{Economic Savings}
+	\begin{itemize}
+		\item Estimated annual costs of preventable ADEs of \$2.8 million. 
+		\item If the observed 17\% decrease in the preventable ADE were the hospital-wide decrease, the annual savings would be \$0.48 million. 
+		\begin{itemize}
+			\item This does not include the costs of injuries borne by patients, of admissions due to drug errors, of malpractice suits, or of the extra work generated by the nonserious medication errors. 
+		\end{itemize}
+		\item The costs of developing and implementing POE have been estimated to be \$1.9 million, with maintenance costs of \$0.5 million per year
+		\item The net savings have been estimated to be between \$5 to \$10 million per year.
+	\end{itemize}
+\end{frame}
+
+\end{document}
