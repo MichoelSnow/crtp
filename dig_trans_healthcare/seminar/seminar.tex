@@ -53,9 +53,10 @@
 
 
 \begin{frame}{Digital Transformation of Healthcare}
-%	\begin{itemize}
-%		
-%	\end{itemize}
+	\begin{itemize}
+		\item How can I answer questions using automatically collected data?
+		\item What do I need to consider when designing a study using patient data? 
+	\end{itemize}
 \end{frame}
 
 
@@ -70,7 +71,7 @@
 
 \begin{frame}{Medication Reconciliation}
 	\begin{itemize}
-		\item Medication reconciliation (Med Rec) is the process of comparing a patient's medication orders to all of the medications he/she has been taking
+		\item Medication reconciliation (Med Rec) is the process of comparing a patient's medication orders to all of the medications they have been taking, understanding why they're taking each medication and comparing that list against new orders, with the goal of providing correct medications to the patient at all transition points within the hospital.
 		\item According to The Institute of Safe Medication Practice, Med Rec has the potential to eliminate
 		\begin{itemize}
 			\item 50\% of medication errors
@@ -85,20 +86,23 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Case Study 1 - Data Collection}
+\begin{frame}{Case Study 1 - Definitions}
 	Roses hospital wants to develop a pilot Med Rec system in their Pediatrics department.  You are working with a team of institutional stakeholders tasked with studying the effects of this soon to be implemented system.  You meet with the bioinformatics core to discuss the data collection for the study, as the domain knowledge expert, they ask you following questions 
 	\begin{itemize}
-		\item \textcolor<2->{gray}{What is the difference between a medication error and an adverse drug event (ADE)?}
+		\item \textcolor<2->{gray}{What qualifies as an adverse drug event (ADE)?}
 		\item \textcolor<2->{gray}{What qualifies as a medication error?}
-		\item \textcolor<2->{gray}{Are all medication errors equal?}
-		\item<2-> At what points along the pathway from prescription to ingestion can medication errors occur?
-		\item<2-> How do you identify and retrace a medication error?
-	\end{itemize}	 
-	\note[item]<1>{ADE --> intercepted, preventable, non-preventable}
-	\note[item]<1>{preventable ADE --> non-injurious, injurious}
-	\note[item]<1>{potential ADE = intercepted or non-injurious}
+		\item \textcolor<2->{gray}{How would you sub-classify each and where do they overlap?}
+		\item<2-> \textcolor<3->{gray}{At what points along the pathway from prescription to ingestion can medication errors occur?}
+		\item<2-> \textcolor<3->{gray}{How do you identify and retrace a medication error, an ADE?}
+		\item<3-> What is the goal of Med Rec with respect to medication errors and ADEs?
+	\end{itemize}	
+	\note[item]<1>{\footnotesize{an ADE is an injury due to a medication, e.g., cough due to ACE-I in pt w/o hx of cough, nausea after tamiflu, anaphylaxis due to allergy}}
+	\note[item]<1>{A medication error is any mistake along the path of ordering, transcribing, dispensing, administrating, and monitoring, e.g., docusate given 2 hours late (harmless), critical abx never given (harmful), wrong medication given(anywhere from harmless to fatal), ...} 	
+	\note[item]<1>{Medication errors range from minor, which have little or no harm potential (late docusate) and are not ADEs, to possible, which could have caused injury but did not, either because they were caught in time or the pt did not have a negative rxn (even if they should have) and these are termed potential ADEs, to fatal which are ADEs}
+	\note[item]<1>{ADEs are split into potential ADEs, which are always medication errors but were either intercepted or non-injurious, preventable ADEs which are the result of medication errors and non-preventable ADEs, which are not the result of medication errors, such as allergic rxn in a heretofore non-allergic pt}
 	\note[item]<2>{Prescription writing (autocomplete, autofill, patient charts, dosing, allergies), filling prescription (wrong medication, medication interactions, allergies), prescription handoff, administration (route, dosing, delay), patient ingestion (misinterpret instructions, ignore instructions) }
-	\note[item]<2>{self reported, cross-reference medication interactions, deviations in dosing, e.g., 5mg jumps to 5g}
+	\note[item]<2>{self reported, pt surveys, cross-reference medication interactions, lab results, deviations in dosing, e.g., 5mg jumps to 5g, ICD codes, e.g., urticaria (ppv of only about 2\%)}
+	\note[item]<2>{look for any irregularity in the patient's condition such as change in mental status, sudden drop in blood pressure, sudden drop in oxygen saturation, new rash, or new diarrhea, and then to consider whether it might be related to a medication}
 \end{frame}
 
 
@@ -106,10 +110,12 @@
 \begin{frame}{Case Study - Error Metrics}
 	Roses hospital wants to develop a pilot Med Rec system in their Pediatrics department.  You are working with a team of institutional stakeholders tasked with studying the effects of this soon to be implemented system.  The bioinformatics core has assembled all the data as per your earlier discussions.  Before the statisticians can analyze the results they would like you to help narrow down the scope of their analyses.
 	\begin{itemize}
-		\item \textcolor<2->{gray}{Which type(s) of ADEs do you want to report?}
+		\item \textcolor<2->{gray}{Which type(s) of ADEs and/or medication errors do you want to report?}
+		\item \textcolor<2->{gray}{How do you want to quantify the different aspects of incidents?}
 		\item \textcolor<2->{gray}{How do you want to break down the errors, e.g., per hour, per provider, ...?}
 		\item<2-> How do you want to quantify the cost/benefit of implementing a Med Rec system?
 	\end{itemize}	 
+	\note[item]<1>{severity, preventability, the level of disability, the stage in the medication use process at which the error occurred, and the category of healthcare personnel responsible for the error can be classified}
 	\note[item]<1>{medication class, hour of day, per day of week, age of patient, number of concurrent medications, inpatient vs outpatient}
 \end{frame}
 
