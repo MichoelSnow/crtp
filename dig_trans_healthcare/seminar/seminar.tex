@@ -69,9 +69,21 @@
 	\includegraphics[width=1\textwidth]{images/informatics_pipeline_studydesign.pdf}
 \end{frame}
 
+
 \begin{frame}{Medication Reconciliation}
 	\begin{itemize}
-		\item Medication reconciliation (Med Rec) is the process of comparing a patient's medication orders to all of the medications they have been taking, understanding why they're taking each medication and comparing that list against new orders, with the goal of providing correct medications to the patient at all transition points within the hospital.
+		\item Medication reconciliation (Med Rec) is the process of
+		\begin{itemize}
+			\item comparing a patient's medication orders to all of the medications they have been taking
+			\item understanding why they're taking each medication
+			\item comparing that list against new orders
+		\end{itemize} 
+		\item The goal of Med Rec is to provide correct medications to the patient at all transition points within the hospital.		   
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Medication Reconciliation}
+	\begin{itemize}
 		\item According to The Institute of Safe Medication Practice, Med Rec has the potential to eliminate
 		\begin{itemize}
 			\item 50\% of medication errors
@@ -86,7 +98,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Case Study 1 - Definitions}
+\begin{frame}{Med Rec Case Study - Definitions}
 	Roses hospital wants to develop a pilot Med Rec system in their Pediatrics department.  You are working with a team of institutional stakeholders tasked with studying the effects of this soon to be implemented system.  You meet with the bioinformatics core to discuss the data collection for the study, as the domain knowledge expert, they ask you following questions 
 	\begin{itemize}
 		\item \textcolor<2->{gray}{What qualifies as an adverse drug event (ADE)?}
@@ -107,7 +119,7 @@
 
 
 
-\begin{frame}{Case Study - Error Metrics}
+\begin{frame}{Med Rec Case Study - Error Metrics}
 	Roses hospital wants to develop a pilot Med Rec system in their Pediatrics department.  You are working with a team of institutional stakeholders tasked with studying the effects of this soon to be implemented system.  The bioinformatics core has assembled all the data as per your earlier discussions.  Before the statisticians can analyze the results they would like you to help narrow down the scope of their analyses.
 	\begin{itemize}
 		\item \textcolor<2->{gray}{Which type(s) of ADEs and/or medication errors do you want to report?}
@@ -158,7 +170,14 @@
 
 
 \begin{frame}{Overall Reductions}
-	\includegraphics[width=1\textwidth]{images/jama2.png}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{im%ages/jama2.png}
+	\end{center}
+	
+	\begin{itemize}
+		\item Does these differences seem reasonable?
+		\item Are there any other broad categories which they should have included?
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{Reductions by Severity}
