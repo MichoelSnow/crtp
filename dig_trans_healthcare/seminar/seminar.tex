@@ -21,6 +21,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{mathtools}
 \usepackage{graphicx}
+\usepackage{caption}
 
 \definecolor{set1}{RGB}{228, 26, 28}
 \definecolor{set2}{RGB}{77, 175, 74}
@@ -99,7 +100,7 @@
 \end{frame}
 
 \begin{frame}{Med Rec Case Study - Definitions}
-	Roses hospital wants to develop a pilot Med Rec system in their Pediatrics department.  You are working with a team of institutional stakeholders tasked with studying the effects of this soon to be implemented system.  You meet with the bioinformatics core to discuss the data collection for the study, as the domain knowledge expert, they ask you following questions 
+	Roses hospital wants to develop a pilot Med Rec system in their Pediatrics department.  You are working with a team of institutional stakeholders tasked with comparing the pre- and post-implementation effects of this system.  You meet with the bioinformatics core to discuss the data collection for the study, as the domain knowledge expert, they ask you following questions 
 	\begin{itemize}
 		\item \textcolor<2->{gray}{What qualifies as an adverse drug event (ADE)?}
 		\item \textcolor<2->{gray}{What qualifies as a medication error?}
@@ -120,7 +121,7 @@
 
 
 \begin{frame}{Med Rec Case Study - Error Metrics}
-	Roses hospital wants to develop a pilot Med Rec system in their Pediatrics department.  You are working with a team of institutional stakeholders tasked with studying the effects of this soon to be implemented system.  The bioinformatics core has assembled all the data as per your earlier discussions.  Before the statisticians can analyze the results they would like you to help narrow down the scope of their analyses.
+	Roses hospital wants to develop a pilot Med Rec system in their Pediatrics department.  You are working with a team of institutional stakeholders tasked with comparing the pre- and post-implementation effects of this system.  The bioinformatics core has assembled all the data as per your earlier discussions.  Before the statisticians can analyze the results they would like you to help narrow down the scope of their analyses.
 	\begin{itemize}
 		\item \textcolor<2->{gray}{Which type(s) of ADEs and/or medication errors do you want to report?}
 		\item \textcolor<2->{gray}{How do you want to quantify the different aspects of incidents?}
@@ -132,6 +133,16 @@
 \end{frame}
 
 
+\begin{frame}{Study Parameters}
+	\begin{itemize}
+		\item Objective
+		\item Setting
+		\item Phases and Participants
+		\item Outcome Measures
+	\end{itemize}
+\end{frame}
+
+
 \begin{frame}{Article}
 	\Large{Effect of Computerized Physician Order Entry and a Team Intervention on Prevention of Serious Medication Errors}
 	
@@ -139,7 +150,7 @@
 	\scriptsize{Bates, D. W., Leape, L. L., Cullen, D. J., Laird, N., Petersen, L. A., Teich, J. M., ... \& Vander Vliet, M. (1998). Effect of computerized physician order entry and a team intervention on prevention of serious medication errors. Jama, 280(15), 1311-1316.}
 \end{frame}
 
-\begin{frame}{Study Paraneters}
+\begin{frame}{Study Parameters}
 	\begin{itemize}
 		\item Objective
 		\begin{itemize}
@@ -149,13 +160,13 @@
 		\begin{itemize}
 			\item Large tertiary care hospital
 		\end{itemize}
-		\item Participants
+		\item Phases and Participants
 		\begin{itemize}
-			\item Phase 1 
+			\item Phase 1 - conducted prior to the implementation of POE
 			\begin{itemize}
 				\item All patients admitted to a stratified random sample of 6 medical and surgical units over a 6-month period
 			\end{itemize}
-			\item Phase 2  
+			\item Phase 2 - conducted after the implementation of POE
 			\begin{itemize}
 				\item All patients admitted to the same units and 2 randomly selected additional units over a subsequent 9-month period
 			\end{itemize}
@@ -164,39 +175,112 @@
 		\begin{itemize}
 			\item Nonintercepted serious medication errors.
 		\end{itemize}
-		
 	\end{itemize}
 \end{frame}
 
 
 \begin{frame}{Overall Reductions}
-	\begin{center}
-		\includegraphics[width=0.8\textwidth]{im%ages/jama2.png}
-	\end{center}
-	
-	\begin{itemize}
-		\item Does these differences seem reasonable?
-		\item Are there any other broad categories which they should have included?
-	\end{itemize}
+\begin{table}
+	\scriptsize
+	\begin{tabular}{l c c c c}
+	& Phase 1 & Phase 2 & \% Difference & $P$  \\ \hline \hline
+	Nonintercepted serious medication errors & 10.7 & 4.86 & -55 & 0.01 \\
+	\quad Preventable ADEs & 4.69 & 3.88 & -17 & 0.37 \\
+	\qquad Life Threatening & 0.65 & 0.65 \\ 
+	\qquad Serious & 0.98 & 1.96 \\
+	\qquad Significant & 2.86 & 1.55 \\	
+	\quad Nonintercepted potential ADEs & 5.99 & 0.98 & -84 & 0.002 \\ 
+	\qquad Life Threatening & 0.82 & 0.04 \\ 
+	\qquad Serious & 2.37 & 0.69 \\
+	\qquad Significant & 2.70 & 0.6 \\ \hline
+	All ADEs & 16.0 & 15.2 & -5 & 0.77 \\
+	\quad Nonpreventable ADEs & 11.3 & 11.3 & 0 & 0.99 \\ 
+	\qquad Life Threatening & 1.07 & 0.69 \\ 
+	\qquad Serious & 2.37 & 2.89 \\
+	\qquad Significant & 7.78 & 9.37 \\ \hline
+	All potential ADEs & 11.7 & 3.38 & -71 & 0.02 \\
+	\quad Intercepted potential ADEs & 5.67 & 2.40 & -58 & 0.15 \\
+	\end{tabular}
+	\caption*{Mean rates (events per 1000 patient days) of incidents in Phase 1 and Phase 2. Paired comparisons were made using $t$-tests}
+\end{table}
 \end{frame}
 
-\begin{frame}{Reductions by Severity}
-	\begin{center}
-		\includegraphics[width=0.8\textwidth]{images/jama4.png}
-	\end{center}	
-\end{frame}
 
 \begin{frame}{Reductions by Error Type}
-	\begin{center}
-		\includegraphics[width=0.8\textwidth]{images/jama5.png}
-	
-		\includegraphics[width=0.8\textwidth]{images/jama6.png}
-	\end{center}
+	\begin{table}
+		\scriptsize
+		\begin{tabular}{l c c c c}
+			& Phase 1 & Phase 2 & \% Difference & $P$  \\ \hline \hline
+			Mistake in Ordering & 4.1 & 3.3 & -19 & 0.03 \\
+			Mistake in Transcription & 1.3 & 0.20 & -84 & < 0.001 \\
+			Mistake in Dispensing & 0.90 & 0.29 & -66 & 0.001 \\
+			Mistake in Administration & 4.1 & 1.7 & -59 & < 0.001 \\ \hline
+			Wrong Doses & 0.96 & 1.51 & -23 & 0.02 \\
+			Wrong Choices & 1.39 & 0.77 & -44 & 0.07 \\
+			Wrong Techniques & 0.98 & 0.24 & -75 & < 0.001 \\
+			Delays & 0.90 & 0.20 & -77 & 0.01 \\
+			Known Allergies & 0.65 & 0.29 & -56 & 0.009 \\
+			Missed Doses & 0.57 & 0.12 & -79 & 0.07 \\			
+			Wrong Drugs & 0.49 & 0.04 & -92 & 0.05 \\
+			Drug-Drug Interactions & 0.41 & 0.24 & -40 & 0.89 \\
+			Wrong Frequencies & 0.33 & 0.33 & 0 & 0.93 \\
+			Wrong Routes & 0.16 & 0.04 & -75 & 0.21 \\
+			Failures to Act on Monitoring & 0.16 & 0.29 & 74 & 0.21 \\
+			Others & 2.37 & 1.38 & -43 & 0.05 \\
+		\end{tabular}
+		\caption*{Unpaired comparison of mean rates (events per 1000 patient days), controlling for level of care and service, using generalized estimating approaches to control for correlation between phases}
+	\end{table}
 \end{frame}
 
+%\begin{frame}{Overall Reductions}
+%	\begin{center}
+%		\includegraphics[width=0.8\textwidth]{images/jama2.png}
+%	\end{center}
+%	
+%	\begin{itemize}
+%		\item Does these differences seem reasonable?
+%		\item Are there any other broad categories which they should have included?
+%	\end{itemize}
+%\end{frame}
+
+%\begin{frame}{Reductions by Severity}
+%	\begin{center}
+%		\includegraphics[width=0.8\textwidth]{images/jama4.png}
+%	\end{center}	
+%\end{frame}
+
+%\begin{frame}{Reductions by Error Type}
+%	\begin{center}
+%		\includegraphics[width=0.8\textwidth]{images/jama5.png}
+%	
+%		\includegraphics[width=0.8\textwidth]{images/jama6.png}
+%	\end{center}
+%\end{frame}
+
 \begin{frame}{Reductions by Drug Type}
-	\includegraphics[width=1\textwidth]{images/jama7.png}
+	\begin{table}
+		\scriptsize
+		\begin{tabular}{l c c c c}
+			& Phase 1 & Phase 2 & \% Difference & $P$  \\ \hline \hline
+			Analgesics & 2.05 & 1.14 & -44 & 0.01 \\
+			Antibiotics & 1.72 & 0.86 & -50 & 0.04 \\
+			Sedatives & 0.49 & 0.98 & +99 & 0.38 \\
+			Antineoplastics & 0.49 & 0.24 & -50 & 0.34 \\ 
+			Cardiovascular Drugs & 0.25 & 0.08 & -67 & 0.08 \\
+			Anticoagulants & 0.98 & 0.24 & -75 & 0.01 \\
+			Antipsychotics & 0.41 & 0.16 & -60 & 0.15 \\
+			Diabetic Drugs & 0.49 & 0.24 & -50 & 0.49 \\
+			Electrolytes & 0.90 & 0.20 & -77 & < 0.001 \\
+			Others & 2.62 & 1.59 & -39 & 0.007 \\			
+		\end{tabular}
+		\caption*{Unpaired comparison of mean rates (events per 1000 patient days), controlling for level of care and service, using generalized estimating approaches to control for correlation between phases}
+	\end{table}
 \end{frame}
+
+
+%\begin{frame}{Reductions by Drug Type}
+%	\includegraphics[width=1\textwidth]{images/jama7.png}
+%\end{frame}
 
 \begin{frame}{Economic Savings}
 	\begin{itemize}
