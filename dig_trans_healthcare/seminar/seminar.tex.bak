@@ -42,7 +42,7 @@
 \subtitle{Digital Transformation of Healthcare}
 % \date{\today}
 \date{}
-\author{Michoel Snow}
+\author{Michoel Snow, MD PhD}
 \institute{Center for Health Data Innovations}
 % \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
 
@@ -68,15 +68,41 @@
 			\includegraphics[width=1\columnwidth]{images/data_science_progression.pdf}	
 		\end{column}
 	\end{columns}
-
 \end{frame}
 
-
+\begin{frame}{What do we do?}
+	\begin{itemize}
+		\item PROOFcheck
+			\begin{itemize}
+					\item Department - Critical Care
+					\item Respiratory failure prediction
+					\item EMR based alerts
+			\end{itemize}
+		\item Metastatic Epidural Spinal Cord Compression
+			\begin{itemize}
+				\item Department - Radiation Oncology
+				\item Early identification and remediation of spinal met progression
+			\end{itemize}
+		\item Outpatient Appointment Attendance 
+			\begin{itemize}
+				\item Department - Medicine
+				\item Determine the probability of a patient not showing up to their appointment
+				\item Optimize patient appointments
+			\end{itemize}
+	\end{itemize}
+	
+\end{frame}
 
 \begin{frame}{Digital Transformation of Healthcare}
+	\small
 	\begin{itemize}
-		\item How can I answer questions using automatically collected data?
+		\item What kind of questions can I answer using automatically collected data?
+		\item What kind of data is collected by the hospital and how can I access the data?
+		\item How much will it cost/save the hospital to implement the study as well as act on its results?
 		\item What do I need to consider when designing a study using patient data? 
+		\item How can I integrate automatic systems with collaborators to collect the desired data?
+		\item How do I transform the data from its collected format to a format useful for analysis?
+		\item How can I integrate the results of my study within the hospital system?
 	\end{itemize}
 \end{frame}
 
@@ -102,9 +128,9 @@
 	\begin{itemize}
 		\item Medication reconciliation (Med Rec) is the process of
 		\begin{itemize}
-			\item comparing a patient's medication orders to all of the medications they have been taking
-			\item understanding why they're taking each medication
-			\item comparing that list against new orders
+			\item Comparing a patient's medication orders to all of the medications they have been taking
+			\item Understanding why they're taking each medication
+			\item Comparing that list against new orders
 		\end{itemize} 
 		\item The goal of Med Rec is to provide correct medications to the patient at all transition points within the hospital.		   
 	\end{itemize}
@@ -127,14 +153,14 @@
 \end{frame}
 
 \begin{frame}{Med Rec Case Study - Definitions}
-	Roses hospital wants to develop a pilot Med Rec system in their Pediatrics department.  You are working with a team of institutional stakeholders tasked with comparing the pre- and post-implementation effects of this system.  You meet with the bioinformatics core to discuss the data collection for the study, as the domain knowledge expert, they ask you following questions 
+	Roses hospital wants to develop a pilot Med Rec system in their Pediatrics department.  You are working with a team of institutional stakeholders tasked with comparing the pre- and post-implementation effects of this system.  You meet with the bioinformatics core to discuss the data collection for the study. As the domain knowledge expert, they ask you following questions: 
 	\begin{itemize}
 		\item \textcolor<2->{gray}{What qualifies as an adverse drug event (ADE)?}
 		\item \textcolor<2->{gray}{What qualifies as a medication error?}
 		\item \textcolor<2->{gray}{How would you sub-classify each and where do they overlap?}
 		\item<2-> \textcolor<3->{gray}{At what points along the pathway from prescription to ingestion can medication errors occur?}
-		\item<2-> \textcolor<3->{gray}{How do you identify and retrace a medication error, an ADE?}
-		\item<3-> What is the goal of Med Rec with respect to medication errors and ADEs?
+		\item<2-> \textcolor<3->{gray}{How do you identify and retrace a medication error? An ADE?}
+		\item<3-> What is the goal of Med Rec with respect to medication errors? ADEs?
 	\end{itemize}	
 	\note[item]<1>{\footnotesize{an ADE is an injury due to a medication, e.g., cough due to ACE-I in pt w/o hx of cough, nausea after tamiflu, anaphylaxis due to allergy}}
 	\note[item]<1>{A medication error is any mistake along the path of ordering, transcribing, dispensing, administrating, and monitoring, e.g., docusate given 2 hours late (harmless), critical abx never given (harmful), wrong medication given(anywhere from harmless to fatal), ...} 	
@@ -354,6 +380,21 @@
 		\item The costs of developing and implementing POE have been estimated to be \$1.9 million, with maintenance costs of \$0.5 million per year
 		\item The net savings have been estimated to be between \$5 to \$10 million per year.
 	\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+	\begin{center}
+ 		{\Huge Thank You}
+ 		
+ 		\vspace{2cm}
+ 		This was a pilot lecture for a course to be given in the fall so any feedback is very much appreciated.
+ 		
+ 		\vspace{1.5cm}
+ 		
+ 		msnow1@montefiore.org
+	\end{center}
+
 \end{frame}
 
 \end{document}
