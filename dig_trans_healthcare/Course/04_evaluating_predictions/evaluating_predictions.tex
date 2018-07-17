@@ -25,6 +25,7 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{tikz}
+\usepackage{stackengine}
 \usetikzlibrary{positioning}
 
 
@@ -42,8 +43,15 @@
 
 \setbeamerfont{parent A}{size=\small}
 
-%\usepackage[table]{xcolor} 
-
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}%
+\makeatletter
+\let\oldabs\abs
+\def\abs{\@ifstar{\oldabs}{\oldabs*}}
+\let\oldnorm\norm
+\def\norm{\@ifstar{\oldnorm}{\oldnorm*}}
+\makeatother
+\newcommand*{\Value}{\frac{1}{2}x^2}%
 
 \title{Digital Transformation of Healthcare}
 \subtitle{Evaluating Predictions}
@@ -67,12 +75,8 @@
 	\end{itemize}%
 \end{frame}
 
+\section{Metrics for Evaluation of Classification Models}
 
-\begin{frame}
-	\begin{center}
-		\Large{Metrics for Evaluation of Classification Models}
-	\end{center}
-\end{frame}	
 
 
 \begin{frame}{Confusion Matrix}
@@ -150,6 +154,69 @@ box2/.style={draw,rectangle,minimum size=1cm,text width=3.25cm,align=center}]
 
 
 
+%\begin{frame}{Confusion Matrix}
+%\vspace{4em}
+%\begin{center}
+%\begin{tikzpicture}[transform canvas={scale=0.75}, ampersand replacement=\&,
+%box/.style={draw,rectangle,minimum size=1cm,text width=2.75cm,align=center},
+%box2/.style={draw,rectangle,minimum size=1cm,text width=3.25cm,align=center}]
+%\matrix (conmat) [row sep=.1cm,column sep=.1cm] {
+%\node (tpos) [box,
+%    label=left:\( \mathbf{p'} \),
+%    label=above:\( \mathbf{p} \),
+%    ] {TP};
+%\&
+%\node (fpos) [box,
+%    label=above:\textbf{n}] {FP};
+%\&
+%\node (ppv) [box2] {PPV = {$p\left(\texttt{\textbf{p}}\mid \texttt{\textbf{p}}'\right)$}};
+%\\
+%\node (fneg) [box,
+%    label=left:\( \mathbf{n'} \)] {FN};
+%\&
+%\node (tneg) [box] {TN};
+%\&
+%\node (npv) [box2] {NPV = {$p\left(\texttt{\textbf{n}}\mid \texttt{\textbf{n}}'\right)$}};
+%\\
+%\node (sens) [box] {Sens = {$p\left(\texttt{\textbf{p}}'\mid \texttt{\textbf{p}}\right)$}};
+%\&
+%\node (spec) [box] {Spec = {$p\left(\texttt{\textbf{n}}'\mid \texttt{\textbf{n}}\right)$}};
+%\&
+%\node (acc) [box2] {Acc = {$p\left(TP + TN\right)$}};
+%%\node (f1) [box2] {F1 = \scriptsize{$\dfrac{2 \times Sens \times PPV}{PPV + Sens}$}};
+%\\
+%};
+%\node [rotate=90, anchor=center,xshift=.35cm, left=1cm of tpos, text width=1.5cm,align=center ] {\textbf{predicted \\ outcome}};
+%\node [above=0.5cm of fpos,xshift=-1.5cm,align=left] {\textbf{actual outcome}};
+%\end{tikzpicture}
+%\end{center}
+%\vspace{3em}
+%
+%\begin{table}
+%	\scriptsize
+%	\begin{tabular}{c c c}
+%		Parameter & Interpretation & Inappropriate for \\ \hline \hline
+%		Accuracy & Overall proximity of test to reality & Imbalanced sample sizes \\	
+%		Sensitivity  &  & \\ 
+%		Specificity  &  & \\
+%		PPV  &  &  \\
+%		NPV &  &  \\
+%	\end{tabular}
+%\end{table}
+%\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
 \begin{frame}{Confusion Matrix}
 \vspace{4em}
 \begin{center}
@@ -192,74 +259,11 @@ box2/.style={draw,rectangle,minimum size=1cm,text width=3.25cm,align=center}]
 	\scriptsize
 	\begin{tabular}{c c c}
 		Parameter & Interpretation & Inappropriate for \\ \hline \hline
-		Accuracy & Overall proximity of test to reality & Imbalanced sample sizes \\	
-		Sensitivity  &  & \\ 
-		Specificity  &  & \\
-		PPV  &  &  \\
-		NPV &  &  \\
-	\end{tabular}
-\end{table}
-\end{frame}
-
-
-
-
-
-
-
-
-
-
-
-
-
-\begin{frame}{Confusion Matrix}
-\vspace{4em}
-\begin{center}
-\begin{tikzpicture}[transform canvas={scale=0.75}, ampersand replacement=\&,
-box/.style={draw,rectangle,minimum size=1cm,text width=2.75cm,align=center},
-box2/.style={draw,rectangle,minimum size=1cm,text width=3.25cm,align=center}]
-\matrix (conmat) [row sep=.1cm,column sep=.1cm] {
-\node (tpos) [box,
-    label=left:\( \mathbf{p'} \),
-    label=above:\( \mathbf{p} \),
-    ] {TP};
-\&
-\node (fpos) [box,
-    label=above:\textbf{n}] {FP};
-\&
-\node (ppv) [box2] {PPV = {$p\left(\texttt{\textbf{p}}\mid \texttt{\textbf{p}}'\right)$}};
-\\
-\node (fneg) [box,
-    label=left:\( \mathbf{n'} \)] {FN};
-\&
-\node (tneg) [box] {TN};
-\&
-\node (npv) [box2] {NPV = {$p\left(\texttt{\textbf{n}}\mid \texttt{\textbf{n}}'\right)$}};
-\\
-\node (sens) [box] {Sens = {$p\left(\texttt{\textbf{p}}'\mid \texttt{\textbf{p}}\right)$}};
-\&
-\node (spec) [box] {Spec = {$p\left(\texttt{\textbf{n}}'\mid \texttt{\textbf{n}}\right)$}};
-\&
-\node (acc) [box2] {Acc = {$p\left(TP + TN\right)$}};
-%\node (f1) [box2] {F1 = \scriptsize{$\dfrac{2 \times Sens \times PPV}{PPV + Sens}$}};
-\\
-};
-\node [rotate=90, anchor=center,xshift=.35cm, left=1cm of tpos, text width=1.5cm,align=center ] {\textbf{predicted \\ outcome}};
-\node [above=0.5cm of fpos,xshift=-1.5cm,align=left] {\textbf{actual outcome}};
-\end{tikzpicture}
-\end{center}
-\vspace{3em}
-
-\begin{table}
-	\scriptsize
-	\begin{tabular}{c c c}
-		Parameter & Interpretation & Inappropriate for \\ \hline \hline
-		Accuracy & Overall proximity of test to reality & Imbalanced sample sizes \\	
-		Sensitivity  & Chance of a false negative &  Expensive testing/Mild disease\\ 
-		Specificity  & Chance of a false positive &  Cheap testing/Severe disease\\
-		PPV  & Sensitivity diagnostic utility & Very high prevalence \\
-		NPV & Specificity diagnostic utility & Very low prevalence \\
+		Accuracy &  Overall proximity of test to reality & Imbalanced sample sizes \\
+		Sensitivity  & \onslide<2>{Chance of a false negative} &  \onslide<2>{Expensive testing/Mild disease}\\ 
+		Specificity  &  \onslide<2>{Chance of a false positive} &  \onslide<2>{Cheap testing/Severe disease}\\
+		PPV  & \onslide<2>{Sensitivity diagnostic utility} & \onslide<2>{Very high prevalence} \\
+		NPV & \onslide<2>{Specificity diagnostic utility} & \onslide<2>{Very low prevalence} \\
 	\end{tabular}
 \end{table}
 \end{frame}
@@ -377,18 +381,81 @@ APA
 \end{frame}
 
 
-\begin{frame}{Hypothesis Testing}
+\begin{frame}{Discrimination Thresholds}
 	\begin{center}
-		\includegraphics[height=0.45\textheight]{images/overlap_distr_tlow.pdf}\\
-		\includegraphics[height=0.45\textheight]{images/overlap_distr_thi.pdf}
+		\includegraphics[height=0.45\textheight]{images/overlap_distr_thi.pdf}\\
+		\includegraphics[height=0.45\textheight]{images/overlap_distr_tlow.pdf}
 	\end{center}
 \end{frame}
 
+%\begin{frame}{Receiver Operating Characteristic}
+%	\begin{center}
+%		 \includegraphics[height=0.8\textheight]{images/ROC.pdf}\\
+%	\end{center}
+%\end{frame}
+
 \begin{frame}{Receiver Operating Characteristic}
 	\begin{center}
-		How can I evaluate a binary classifier over its range of possible discrimination thresholds?
+		 \stackinset{r}{1em}{b}{3em}{\includegraphics[width=1in]{images/overlap_distr_no_thresh.pdf}}
+  {\includegraphics[width=0.9\textwidth]{images/ROC.pdf}}\\
+  \onslide<2>{What does the Area Under the Curve (AUC) correspond to?} \\
+  \onslide<2>{What does the diagonal correspond to?}
 	\end{center}
+
+	\note[item]<2>{Given a positive test result what are the chances that the subject is truly positive irrespective of prevalence?}	
+	\note[item]<2>{PPV is threshold dependent, while AUC is threshold independent but variable dependent}	
 \end{frame}
+
+\begin{frame}{F1 Score}
+\vspace{3em}
+\begin{center}
+\begin{tikzpicture}[transform canvas={scale=0.75}, ampersand replacement=\&,
+box/.style={draw,rectangle,minimum size=1cm,text width=2.75cm,align=center},
+box2/.style={draw,rectangle,minimum size=1cm,text width=3.25cm,align=center}]
+\matrix (conmat) [row sep=.1cm,column sep=.1cm] {
+\node (tpos) [box,
+    label=left:\( \mathbf{p'} \),
+    label=above:\( \mathbf{p} \),
+    ] {TP};
+\&
+\node (fpos) [box,
+    label=above:\textbf{n}] {FP};
+\&
+\node (ppv) [box2] {PPV = {$p\left(\texttt{\textbf{p}}\mid \texttt{\textbf{p}}'\right)$}};
+\\
+\node (fneg) [box,
+    label=left:\( \mathbf{n'} \)] {FN};
+\&
+\node (tneg) [box] {TN};
+\&
+\node (npv) [box2] {NPV = {$p\left(\texttt{\textbf{n}}\mid \texttt{\textbf{n}}'\right)$}};
+\\
+\node (sens) [box] {Sens = {$p\left(\texttt{\textbf{p}}'\mid \texttt{\textbf{p}}\right)$}};
+\&
+\node (spec) [box] {Spec = {$p\left(\texttt{\textbf{n}}'\mid \texttt{\textbf{n}}\right)$}};
+\&
+\node (acc) [box2] {Acc = {$p\left(TP + TN\right)$}};
+%\node (f1) [box2] {F1 = \scriptsize{$\dfrac{2 \times Sens \times PPV}{PPV + Sens}$}};
+\\
+};
+\node [rotate=90, anchor=center,xshift=.35cm, left=1cm of tpos, text width=1.5cm,align=center ] {\textbf{predicted \\ outcome}};
+\node [above=0.5cm of fpos,xshift=-1.5cm,align=left] {\textbf{actual outcome}};
+\end{tikzpicture}
+\end{center}
+\vspace{1em}
+	\begin{center}
+		\begin{align*}
+			F1 &= \dfrac{2}{\dfrac{1}{sensitivity} + \dfrac{1}{PPV} } = 2 \times \dfrac{PPV \cdot sensitivity}{PPV + sensitivity}
+		\end{align*}\\[1em]
+		How does F1 differ from AUC?
+	\end{center}
+
+\note[item]{F1 is sensitivity modified by prevalence.  So a low prevalence will hurt your F1 score but might not affect your AUC.  F1 is threshold specific and corresponds to a point on the ROC curve}	
+	\note[item]{}	
+	
+\end{frame}
+
+
 
 %\begin{frame}
 %	\begin{itemize}
@@ -406,8 +473,39 @@ APA
 
 
 
+\section{Metrics for Evaluation of Regression Models}
+
+\begin{frame}{Regression Metrics}
+	\begin{itemize}
+		\item What aspects of a model's predictions should I care about?
+		\item What aspects of the model's predictions can I evaluate? 
+	\end{itemize}
+
+	\note[item]{
+		\begin{itemize}
+			\item Accuracy (bias), precision (variance)
+			\item Average distance of errors
+			\item Worst case error
+			\item Do large errors matter more than small errors
+			\item Maximal distance of errors 
+			\item Difference between my model and some standard model
+		\end{itemize}
+		}
+	\note[item]{difference, squared difference, min/max, variance of predictions, relative difference (percentage error)}
+\end{frame}
 
 
+\begin{frame}{Regression Metrics}
+	\begingroup
+	\addtolength{\jot}{1em}
+	\begin{align*}
+		Mean\; Absolute\; Error &= \dfrac{1}{n}\sum\limits_{i=0}^{n-1}\abs{y_i-\hat{y}_i}\\
+		Mean\; Squared\; Error &= \dfrac{1}{n}\sum\limits_{i=0}^{n-1}\left(y_i-\hat{y}_i\right)^2\\
+		R^2 &= 1 - \dfrac{\sum\limits_{i=0}^{n-1}\left(y_i-\hat{y}_i\right)^2}{\sum\limits_{i=0}^{n-1}\left(y_i-\bar{y}_i\right)^2}\\
+		Explained\; Variance &= 1-\dfrac{Var\left(y-\hat{y}\right)}{Var\left(y\right)}
+	\end{align*}
+	\endgroup
 
+\end{frame}
 
 \end{document}
