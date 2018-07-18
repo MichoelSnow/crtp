@@ -15,7 +15,7 @@
 \usepgfplotslibrary{dateplot}
 \usepackage{multicol}
 \setlength{\columnsep}{1.5cm}
-
+\usepackage{multirow}
 
 
 \usepackage{animate}
@@ -26,7 +26,12 @@
 \usepackage{caption}
 \usepackage{tikz}
 \usepackage{stackengine}
+\usepackage{array}
 \usetikzlibrary{positioning}
+
+\usepackage[math]{cellspace}
+\cellspacetoplimit 2pt
+\cellspacebottomlimit 2pt
 
 
 \definecolor{set1}{RGB}{228, 26, 28}
@@ -54,7 +59,7 @@
 \newcommand*{\Value}{\frac{1}{2}x^2}%
 
 \title{Digital Transformation of Healthcare}
-\subtitle{Evaluating Predictions}
+\subtitle{Evaluating Predictions \& Data Quality}
 % \date{\today}
 \date{}
 \author{Michoel Snow, MD PhD, Glen Ferguson, PhD}
@@ -70,7 +75,10 @@
 	After this lecture students will be able to 
 	\begin{itemize}
 		\item Distinguish between classification and regression metrics
-		\item Compare and contrast the use of different metrics to evaluate predictions
+		\item Describe classification metrics as equations and probabilities
+		\item Interpret classification metrics and evaluate if they are being used appropriately
+		\item Summarize the principles underlying different compound classification metrics
+		\item Classify regression metrics and choose one based on their desired goal
 		\item 
 	\end{itemize}%
 \end{frame}
@@ -495,17 +503,45 @@ box2/.style={draw,rectangle,minimum size=1cm,text width=3.25cm,align=center}]
 \end{frame}
 
 
-\begin{frame}{Regression Metrics}
-	\begingroup
-	\addtolength{\jot}{1em}
-	\begin{align*}
-		Mean\; Absolute\; Error &= \dfrac{1}{n}\sum\limits_{i=0}^{n-1}\abs{y_i-\hat{y}_i}\\
-		Mean\; Squared\; Error &= \dfrac{1}{n}\sum\limits_{i=0}^{n-1}\left(y_i-\hat{y}_i\right)^2\\
-		R^2 &= 1 - \dfrac{\sum\limits_{i=0}^{n-1}\left(y_i-\hat{y}_i\right)^2}{\sum\limits_{i=0}^{n-1}\left(y_i-\bar{y}_i\right)^2}\\
-		Explained\; Variance &= 1-\dfrac{Var\left(y-\hat{y}\right)}{Var\left(y\right)}
-	\end{align*}
-	\endgroup
 
+
+
+\begin{frame}{Regression Metrics}
+	\begin{table}
+		%\def\arraystretch{2}
+		\begin{tabular}{| l | c | >{\tiny}Sl |}
+		\hline
+		\multirow{2}{2cm}{Equal weighting of errors} & MAE & $\dfrac{1}{n}\sum\limits_{i=0}^{n-1}\abs{y_i-\hat{y}_i}$ \\ \cline{2-3}
+		& MAPE & $ \dfrac{100}{n}\sum\limits_{i=0}^{n-1}\dfrac{\abs{y_i-\hat{y}_i}}{y_i}$ \\ \hline
+		\multirow{3}{2cm}{Unequal weighting of errors} & MSE & $\dfrac{1}{n}\sum\limits_{i=0}^{n-1}\left(y_i-\hat{y}_i\right)^2$ \\ \cline{2-3}
+		& RMSE & $\sqrt{\dfrac{1}{n}\sum\limits_{i=0}^{n-1}\left(y_i-\hat{y}_i\right)^2}$ \\\cline{2-3}
+		& MSLE & $\dfrac{1}{n}\sum\limits_{i=0}^{n-1}\left(\ln \left(1=y_i\right)-\ln\left(1+\hat{y}_i\right)\right)^2$ \\ \hline
+		\multirow{2}{2cm}{Data Variance} & $R^2$ & $1 - \frac{\sum\limits_{i=0}^{n-1}\left(y_i-\hat{y}_i\right)^2}{\sum\limits_{i=0}^{n-1}\left(y_i-\bar{y}_i\right)^2}$ \\ \cline{2-3}
+		& Explained Var & $1-\dfrac{Var\left(y-\hat{y}\right)}{Var\left(y\right)}$\\ \hline
+		\end{tabular}
+	\end{table}
+
+\end{frame}
+
+\section{Data Quality}
+
+\begin{frame}{Factors Which Affect Data Quality}
+	\begin{center}
+		Analysis is only ever as good as the data its built upon.
+	\end{center}
+	\begin{itemize}
+		\item<2-> Data Definition
+		\item<2-> Data Collection
+		\item<2-> Data Processing
+		\item<2-> Data Representation
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Processes to Assure Data Quality}
+	\begin{itemize}
+		\item Data Provenance
+		\item Exploratory Data Analysis
+	\end{itemize}
 \end{frame}
 
 \end{document}
