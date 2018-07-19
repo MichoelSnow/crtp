@@ -28,6 +28,7 @@
 \usepackage{stackengine}
 \usepackage{array}
 \usetikzlibrary{positioning}
+\usepackage{tabulary}
 
 \usepackage[math]{cellspace}
 \cellspacetoplimit 2pt
@@ -74,17 +75,50 @@
 \begin{frame}{Objectives}
 	After this lecture students will be able to 
 	\begin{itemize}
-		\item Distinguish between classification and regression metrics
-		\item Describe classification metrics as equations and probabilities
-		\item Interpret classification metrics and evaluate if they are being used appropriately
-		\item Summarize the principles underlying different compound classification metrics
-		\item Classify regression metrics and choose one based on their desired goal
-		\item 
+		\item Calculate common classification and regression metrics
+		\item Describe the role of simple classification metrics
+		\item Evaluate the implementation of metrics for a study 
+		\item Articulate the information underlying common compound classification metrics 
+		\item Classify regression metrics 
+		\item Connect regression metric outcomes to facets of the associated models
+		\item Identify transition points which can affect data quality
+		\item Discuss methods for measuring and evaluating data quality 
 	\end{itemize}%
+\end{frame}
+
+
+\begin{frame}
+	\includegraphics[height=\textheight]{../../informatics_pipeline.pdf}
 \end{frame}
 
 \section{Metrics for Evaluation of Classification Models}
 
+\begin{frame}{Clinical Cases}
+	\begin{table}
+		\begin{tabular}{| p{2cm} | c | p{2cm} | c | c | c | c |}
+			\hline
+			Case & Prevalence & Criteria & TP & FP & TN & FN  \\ \hline
+			LDCT for lung cancer & UN & non-calcified nodule $\geq 4mm$ & 649 & 17497 & 55324 & UN \\ \hline
+		\end{tabular}
+	\end{table}
+\end{frame}
+
+\begin{frame}{Clinical Cases}
+	\begin{table}
+		\begin{tabulary}{1\textwidth}{| L | C | C | L | L | C | C |}
+			\hline
+			Case & Prevalence & Criteria & TP & FP & TN & FN  \\ \hline
+			LDCT for lung cancer & UN & non-calcified nodule $\geq 4mm$ & 649 & 17497 & 55324 & UN \\ \hline
+		\end{tabulary}
+	\end{table}
+\end{frame}
+
+
+% National Lung Screening Trial Research Team, Aberle DR, Adams AM, Berg CD,
+%Black WC, Clapp JD, Fagerstrom RM, Gareen IF, Gatsonis C, Marcus PM, Sicks JD.
+%Reduced lung-cancer mortality with low-dose computed tomographic screening. N
+%Engl J Med. 2011 Aug 4;365(5):395-409. doi: 10.1056/NEJMoa1102873. Epub 2011 Jun 
+%29. PubMed PMID: 21714641; PubMed Central PMCID: PMC4356534.
 
 
 \begin{frame}{Confusion Matrix}
@@ -537,10 +571,20 @@ box2/.style={draw,rectangle,minimum size=1cm,text width=3.25cm,align=center}]
 	\end{itemize}
 \end{frame}
 
+
+\begin{frame}{How Can Data Be Wrong}
+	\begin{itemize}
+		\item Incomplete
+		\item Inconsistent
+		\item Inaccurate
+	\end{itemize}
+\end{frame}
+
 \begin{frame}{Processes to Assure Data Quality}
 	\begin{itemize}
 		\item Data Provenance
-		\item Exploratory Data Analysis
+		\item Sanity Checks
+		\item Exploratory Data Analysis		
 	\end{itemize}
 \end{frame}
 
