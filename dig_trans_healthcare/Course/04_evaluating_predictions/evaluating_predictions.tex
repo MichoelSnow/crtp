@@ -28,6 +28,7 @@
 \usepackage{stackengine}
 \usepackage{array}
 \usetikzlibrary{positioning}
+\usepackage{tabularx}
 \usepackage{tabulary}
 
 \usepackage[math]{cellspace}
@@ -58,6 +59,11 @@
 \def\norm{\@ifstar{\oldnorm}{\oldnorm*}}
 \makeatother
 \newcommand*{\Value}{\frac{1}{2}x^2}%
+
+\newcommand{\floatfootnote}[1]{\ifx\[$\else\footnote{#1}\fi}
+\newcommand{\floatfootnotes}[1]{\ifx\[$\else\footnote{#1}\fi}
+
+
 
 \title{Digital Transformation of Healthcare}
 \subtitle{Evaluating Predictions \& Data Quality}
@@ -95,30 +101,46 @@
 
 \begin{frame}{Clinical Cases}
 	\begin{table}
-		\begin{tabular}{| p{2cm} | c | p{2cm} | c | c | c | c |}
+		\begin{tabular}{| c | c | c | c | c | c | c | c | c |}
 			\hline
-			Case & Prevalence & Criteria & TP & FP & TN & FN  \\ \hline
-			LDCT for lung cancer & UN & non-calcified nodule $\geq 4mm$ & 649 & 17497 & 55324 & UN \\ \hline
+			\textbf{Case} & \textbf{TP} & \textbf{FP} & \textbf{TN} & \textbf{FN} \\ \hline
+			LDCT\footnote{National Lung Screening Trial Research Team. (2011). Reduced lung-cancer mortality with low-dose computed tomographic screening. New England Journal of Medicine, 365(5), 395-409.} & 649 & 17,497 & 49,792 & 5,532  \\ \hline
+			AAA \floatfootnote{Thompson, S. G., Ashton, H. A., Gao, L., Buxton, M. J., Scott, R. A. P., \& Multicentre Aneurysm Screening Study (MASS) Group. (2012). Final follow‐up of the Multicentre Aneurysm Screening Study (MASS) randomized trial of abdominal aortic aneurysm screening. British Journal of Surgery, 99(12), 1649-1656.} & 600 & 734 & 25,480 & 61  \\ \hline
+			HTN\footnote{Stergiou, G. S., Nasothimiou, E., Giovas, P., Kapoyiannis, A., \& Vazeou, A. (2008). Diagnosis of hypertension in children and adolescents based on home versus ambulatory blood pressure monitoring. Journal of hypertension, 26(8), 1556-1562.} & 17 & 6 & 65 & 14 \\ \hline
 		\end{tabular}
 	\end{table}
-\end{frame}
-
-\begin{frame}{Clinical Cases}
-	\begin{table}
-		\begin{tabulary}{1\textwidth}{| L | C | C | L | L | C | C |}
-			\hline
-			Case & Prevalence & Criteria & TP & FP & TN & FN  \\ \hline
-			LDCT for lung cancer & UN & non-calcified nodule $\geq 4mm$ & 649 & 17497 & 55324 & UN \\ \hline
-		\end{tabulary}
-	\end{table}
+	\begin{itemize}
+		\item<2-> Are these \textit{good} tests?
+		\item<2-> In what contexts are they useful?
+		\item<2-> For which metrics are they misleading?
+	\end{itemize}
 \end{frame}
 
 
-% National Lung Screening Trial Research Team, Aberle DR, Adams AM, Berg CD,
-%Black WC, Clapp JD, Fagerstrom RM, Gareen IF, Gatsonis C, Marcus PM, Sicks JD.
-%Reduced lung-cancer mortality with low-dose computed tomographic screening. N
-%Engl J Med. 2011 Aug 4;365(5):395-409. doi: 10.1056/NEJMoa1102873. Epub 2011 Jun 
-%29. PubMed PMID: 21714641; PubMed Central PMCID: PMC4356534.
+%\begin{frame}{Clinical Cases}
+%	\begin{table}
+%		\begin{tabular}{| c | c | c | c | c | c | c | c | c |}
+%			\hline
+%			\textbf{Case} & \textbf{TP} & \textbf{FP} & \textbf{TN} & \textbf{FN} & \textbf{Sens} & \textbf{Spec} & \textbf{PPV} & \textbf{NPV}  \\ \hline
+%			LDCT& 649 & 17,497 & 49,792 & 5,532 & 10 & 74 & 4 & 90  \\ \hline
+%			AAA & 600 & 734 & 25,480 & 61 & 91 & 97 & 45 & 100 \\ \hline
+%			HTN & 17 & 6 & 65 & 14 & 55 & 92 & 74 & 82 \\ \hline
+%		\end{tabular}
+%	\end{table}
+%\end{frame}
+
+%\begin{frame}{Clinical Cases}
+%	\begin{table}
+%		\begin{tabulary}{1.05\textwidth}{| L | C | C | L | L | C | C |}
+%			\hline
+%			\textbf{Case} & \textbf{TP} & \textbf{FP} & \textbf{TN} & \textbf{FN}  \\ \hline
+%			LDCT for lung cancer  \floatfootnote{National Lung Screening Trial Research Team. (2011). Reduced lung-cancer mortality with low-dose computed tomographic screening. New England Journal of Medicine, 365(5), 395-409.} & 649 & 17,497 & 49,792 & 5,532 \\ \hline
+%			AAA \floatfootnote{This is the first footnote.} & 600 & 734 & 25,480 & 61 \\ \hline
+%		\end{tabulary}
+%	\end{table}
+%	test \footnote{}
+%\end{frame}
+
 
 
 \begin{frame}{Confusion Matrix}
@@ -154,6 +176,36 @@ box2/.style={draw,rectangle,minimum size=1cm,text width=3cm,align=center}]
 \node [rotate=90, anchor=center,xshift=.35cm, left=1cm of tpos, text width=1.5cm,align=center ] {\textbf{predicted \\ outcome}};
 \node [above=0.5cm of fpos,xshift=-1.5cm,align=left] {\textbf{actual outcome}};
 \end{tikzpicture}
+\only<2>{
+	\begin{table}
+		\scalebox{0.9}{
+		\begin{tabular}{| c | c | c | c | c | c | c | c | c | c |}
+			\hline
+			\textbf{Case} & \textbf{TP} & \textbf{FP} & \textbf{TN} & \textbf{FN} & \textbf{Sens} & \textbf{Spec} & \textbf{PPV} & \textbf{NPV} & \textbf{Acc}   \\ \hline
+			LDCT& 649 & 17,497 & 49,792 & 5,532 & &&& &  \\ \hline
+			AAA & 600 & 734 & 25,480 & 61 & &&&& \\ \hline
+			HTN & 17 & 6 & 65 & 14 & &&&& \\ \hline
+		\end{tabular}
+		}
+	\end{table}
+	\begin{center}
+		Estimate if you think the value will be low, medium or high
+	\end{center}
+	
+}
+\only<3>{
+	\begin{table}
+	\scalebox{0.9}{
+		\begin{tabular}{| c | c | c | c | c | c | c | c | c | c |}
+			\hline
+			\textbf{Case} & \textbf{TP} & \textbf{FP} & \textbf{TN} & \textbf{FN} & \textbf{Sens} & \textbf{Spec} & \textbf{PPV} & \textbf{NPV} & \textbf{Acc} \\ \hline
+			LDCT& 649 & 17,497 & 49,792 & 5,532 & 10 & 74 & 4 & 90  & 69 \\ \hline
+			AAA & 600 & 734 & 25,480 & 61 & 91 & 97 & 45 & 100  & 97\\ \hline
+			HTN & 17 & 6 & 65 & 14 & 55 & 92 & 74 & 82  & 80\\ \hline
+		\end{tabular}
+		}
+	\end{table}
+}
 \end{frame}
 
 %F1 &= \frac{2 \times Sens \times PPV}{Sens + PPV} \\
@@ -262,7 +314,7 @@ box2/.style={draw,rectangle,minimum size=1cm,text width=3.25cm,align=center}]
 \begin{frame}{Confusion Matrix}
 \vspace{4em}
 \begin{center}
-\begin{tikzpicture}[transform canvas={scale=0.75}, ampersand replacement=\&,
+\begin{tikzpicture}[transform canvas={scale=0.65}, ampersand replacement=\&,
 box/.style={draw,rectangle,minimum size=1cm,text width=2.75cm,align=center},
 box2/.style={draw,rectangle,minimum size=1cm,text width=3.25cm,align=center}]
 \matrix (conmat) [row sep=.1cm,column sep=.1cm] {
@@ -296,16 +348,29 @@ box2/.style={draw,rectangle,minimum size=1cm,text width=3.25cm,align=center}]
 \end{tikzpicture}
 \end{center}
 \vspace{3em}
+	\begin{table}
+	\scalebox{0.6}{
+		\begin{tabular}{| c | c | c | c | c | c | c | c | c | c |}
+			\hline
+			\textbf{Case} & \textbf{TP} & \textbf{FP} & \textbf{TN} & \textbf{FN} & \textbf{Sens} & \textbf{Spec} & \textbf{PPV} & \textbf{NPV} & \textbf{Acc} \\ \hline
+			LDCT& 649 & 17,497 & 49,792 & 5,532 & 10 & 74 & 4 & 90  & 69 \\ \hline
+			AAA & 600 & 734 & 25,480 & 61 & 91 & 97 & 45 & 100  & 97\\ \hline
+			HTN & 17 & 6 & 65 & 14 & 55 & 92 & 74 & 82  & 80\\ \hline
+		\end{tabular}
+		}
+	\end{table}
+
+
 
 \begin{table}
 	\scriptsize
 	\begin{tabular}{c c c}
-		Parameter & Interpretation & Inappropriate for \\ \hline \hline
-		Accuracy &  Overall proximity of test to reality & Imbalanced sample sizes \\
-		Sensitivity  & \onslide<2>{Chance of a false negative} &  \onslide<2>{Expensive testing/Mild disease}\\ 
-		Specificity  &  \onslide<2>{Chance of a false positive} &  \onslide<2>{Cheap testing/Severe disease}\\
-		PPV  & \onslide<2>{Sensitivity diagnostic utility} & \onslide<2>{Very high prevalence} \\
-		NPV & \onslide<2>{Specificity diagnostic utility} & \onslide<2>{Very low prevalence} \\
+		Parameter & Interpretation & Appropriate for \\ \hline \hline
+		Accuracy &  Overall proximity of test to reality & Balanced sample sizes \\
+		Sensitivity  & \onslide<2>{Chance of a false negative} &  \onslide<2>{Cheap testing/Severe disease}\\ 
+		Specificity  &  \onslide<2>{Chance of a false positive} &  \onslide<2>{Expensive testing/Mild disease}\\
+		PPV  & \onslide<2>{Sensitivity diagnostic utility} & \onslide<2>{Balanced prevalence} \\
+		NPV & \onslide<2>{Specificity diagnostic utility} & \onslide<2>{Balanced prevalence} \\
 	\end{tabular}
 \end{table}
 \end{frame}
@@ -375,26 +440,41 @@ box2/.style={draw,rectangle,minimum size=1cm,text width=3.25cm,align=center}]
 	\scriptsize
 	\begin{tabular}{c c c}
 		Function of & Metric & Formula\\ \hline \hline \\ 
-		Sensitivity, Specificity  & Positive Likelihood Ratio/ROC & $\dfrac{sensitivity}{1-specificity}$ \\ [1.5em]
-		Sensitivity, Specificity  & Negative Likelihood Ratio & $\dfrac{1-sensitivity}{specificity}$ \\ [1.5em]
-		Sensitivity, PPV & F1 score & $\dfrac{2}{\dfrac{1}{sensitivity} + \dfrac{1}{PPV} }$  \\ [4em]
+		Sensitivity, Specificity  & \textbf<2>{Positive Likelihood Ratio/ROC} & $\dfrac{sensitivity}{1-specificity}$ \\ [1.5em]
+		Sensitivity, Specificity  & \textbf<2>{Negative Likelihood Ratio} & $\dfrac{1-sensitivity}{specificity}$ \\ [1.5em]
+		Sensitivity, PPV & \textbf<2>{F1 score} & $\dfrac{2}{\dfrac{1}{sensitivity} + \dfrac{1}{PPV} }$  \\ [4em]
 		TP, TN, FP, FN & Matthews correlation coefficient & \tiny{$\dfrac{TP\times TN-FP\times FN}{\sqrt{\left(TP + FP\right)\left(TP+FN\right)\left(TN+FP\right)\left(TN+FN\right)}}$} \\
 	\end{tabular}
 \end{table}
 \end{frame}
 
 
+%\begin{frame}{Combined Statistics}
+%	\begin{table}
+%		\scalebox{0.6}{
+%		\begin{tabular}{| c | c | c |}
+%		
+%		Function of & Metric & Formula\\ \hline  
+%%		\multirow{2}{2cm}{Sensitivity, Specificity} & Positive Likelihood Ratio/ROC & $\dfrac{sensitivity}{1-specificity}$ \\[2em] \cline{2-3}
+%%		& Negative Likelihood Ratio & $\dfrac{1-sensitivity}{specificity}$ \\[2em] \hline
+%		Sensitivity, PPV & F1 score & $\dfrac{2}{\dfrac{1}{sensitivity} + \dfrac{1}{PPV} }$ \\[4em] \hline		
+%		TP, TN, FP, FN & Matthews correlation coefficient & \tiny{$\dfrac{TP\times TN-FP\times FN}{\sqrt{\left(TP + FP\right)\left(TP+FN\right)\left(TN+FP\right)\left(TN+FN\right)}}$} \\ \hline
+%		\end{tabular}
+%		}
+%	\end{table}
+%
+%\end{frame}
+
+
 \begin{frame}{Likelihood Ratios}
-	\begin{center}
-		Does a test result change the probability that a person has a certain condition?
-	\end{center}
 	\begin{align*}
 		LR+ &= \dfrac{sensitivity}{1 - specificity} = \dfrac{P\left(T+ \mid D+\right)}{P\left(T+ \mid D-\right)} \\[1.5em]
 		LR- &= \dfrac{1 - sensitivity}{specificity} = \dfrac{P\left(T- \mid D+\right)}{P\left(T- \mid D-\right)}
 	\end{align*}
-%	\begin{center}
-%		
-%	\end{center}
+	
+	\begin{center}
+		\only<2>{Does a test result change the probability that a person has a certain condition?
+	\end{center}}
 \end{frame}
 
 \begin{frame}{Likelihood Ratios}
