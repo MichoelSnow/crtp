@@ -1,0 +1,2 @@
+\beamer@sectionintoc {1}{Metrics for Evaluation of Classification Models}{4}{0}{1}
+\beamer@sectionintoc {2}{Metrics for Evaluation of Regression Models}{28}{0}{2}

@@ -23,7 +23,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{mathtools}
 \usepackage{graphicx}
-\usepackage{caption}
+\usepackage[font=scriptsize]{caption}
 \usepackage{tikz}
 \usepackage{stackengine}
 \usepackage{array}
@@ -198,8 +198,8 @@
 	\begin{tabular}{c c c}
 		Parameter & Interpretation & Appropriate for \\ \hline \hline
 		Accuracy &  Overall proximity of test to reality & Balanced sample sizes \\
-		Sensitivity  & Chance of a false negative &  Cheap testing/Severe disease\\ 
-		Specificity  &  Chance of a false positive &  Expensive testing/Mild disease\\
+		Sensitivity  & Chance of a false negative &  Cheap further testing/Severe disease\\ 
+		Specificity  &  Chance of a false positive &  Expensive further testing/Mild disease\\
 		PPV  & Sensitivity diagnostic utility & Balanced prevalence \\
 		NPV & Specificity diagnostic utility & Balanced prevalence \\
 	\end{tabular}
@@ -396,7 +396,6 @@ APA
 	\end{center}
 	\note[item]{What does the Area Under the Curve (AUC) correspond to? - Given a positive test result what are the chances that the subject is truly positive irrespective of prevalence?} 
   \note[item]{What does the diagonal correspond to? - equal probabilities}
-	\note[item]{}	
 	\note[item]{PPV is threshold dependent, while AUC is threshold independent but variable dependent}	
 \end{frame}
 
@@ -412,19 +411,82 @@ APA
 
 
 
+\note{
+%	\footnotesize
+%	\begin{itemize}
+%		\item Sensitivity \& 
+%		\begin{itemize}
+%			\item Chance of a false negative
+%			\item Cheap further testing, severe disease
+%		\end{itemize}
+%		\item Specificity
+%		\begin{itemize}
+%			\item Chance of false positive
+%			\item Expensive further testing, mild disease 
+%		\end{itemize}
+%		\item PPV \& NPV
+%		\begin{itemize}
+%			\item how good is test at pulling out true cases
+%			\item prevalence dependent (useful for balanced prevalence)
+%		\end{itemize}
+%		\item Likelihood Ratio
+%		\begin{itemize}
+%			\item dfd
+%		\end{itemize}
+%		\item ROC-AUC
+%		\item F1
+%	\end{itemize}
+	\begin{table}
+		\scalebox{0.6}{
+		\begin{tabular}{| c | c | c | c |}
+			\hline
+			\textbf{Test} & \textbf{Information} & \textbf{Situation} & \textbf{Prev dep} \\ \hline
+			Sensitivity & Chance of a false negative & Cheap further testing, severe disease & No\\ \hline
+			Specificity & Chance of false positive & Expensive further testing, mild disease & No\\ \hline
+			PPV, NPV & how good is test at pulling out true cases & balanced prevalence & Yes\\ \hline
+			Likelihood & odds of true result over false result & medium to low suspicion & No \\ \hline
+			ROC-AUC & how likely is a random test going to be from a true case &  & No\\ \hline
+			F1 & How good are you at spotting TP & maximizing TP matter the most & Yes\\ \hline
+		\end{tabular}
+		}
+	\end{table}
+}
+
 
 
 
 
 \section{Metrics for Evaluation of Regression Models}
 
+\begin{frame}{Growth Curves}
+	\begin{figure}
+		\includegraphics[height=0.77\textheight]{images/growth_curves.pdf}
+		\caption*{Centers for Disease Control and Prevention, National Center for Health Statistics. CDC growth charts: United States. }
+	\end{figure}
+	
+\end{frame}
+
+\begin{frame}{Growth Curves}
+	\begin{figure}
+		\includegraphics[height=0.77\textheight]{images/growth_curves_measured.pdf}
+		\caption*{Centers for Disease Control and Prevention, National Center for Health Statistics. CDC growth charts: United States. }
+	\end{figure}
+\end{frame}
+
+
+
+
 \begin{frame}{Regression Metrics}
+	\begin{center}
+		\includegraphics[height=0.7\textheight]{images/growth_curves_measured_p50.pdf}
+	\end{center}	
 	\begin{itemize}
 		\item What aspects of a model's predictions should I care about?
 		\item What aspects of the model's predictions can I evaluate? 
 	\end{itemize}
+\end{frame}
 
-	\note[item]{
+\note{
 		\begin{itemize}
 			\item Accuracy (bias), precision (variance)
 			\item Average distance of errors
@@ -433,17 +495,14 @@ APA
 			\item Maximal distance of errors 
 			\item Difference between my model and some standard model
 		\end{itemize}
-		}
-	\note[item]{difference, squared difference, min/max, variance of predictions, relative difference (percentage error)}
-\end{frame}
+		difference, squared difference, min/max, variance of predictions, relative difference (percentage error)
+}
 
 
 
-
-
-\begin{frame}{Regression Metrics}
+\note{
 	\begin{table}
-		%\def\arraystretch{2}
+		\scalebox{0.8}{
 		\begin{tabular}{| l | c | >{\tiny}Sl |}
 		\hline
 		\multirow{2}{2cm}{Equal weighting of errors} & MAE & $\dfrac{1}{n}\sum\limits_{i=0}^{n-1}\abs{y_i-\hat{y}_i}$ \\ \cline{2-3}
@@ -454,315 +513,375 @@ APA
 		\multirow{2}{2cm}{Data Variance} & $R^2$ & $1 - \frac{\sum\limits_{i=0}^{n-1}\left(y_i-\hat{y}_i\right)^2}{\sum\limits_{i=0}^{n-1}\left(y_i-\bar{y}_i\right)^2}$ \\ \cline{2-3}
 		& Explained Var & $1-\dfrac{Var\left(y-\hat{y}\right)}{Var\left(y\right)}$\\ \hline
 		\end{tabular}
+		}
 	\end{table}
+}
 
-\end{frame}
-
-\section{Data Quality}
-
-\begin{frame}{Factors Which Affect Data Quality}
-	\begin{center}
-		Analysis is only ever as good as the data its built upon.
-	\end{center}
-	\begin{itemize}
-		\item<2-> Data Definition
-		\item<2-> Data Collection
-		\item<2-> Data Processing
-		\item<2-> Data Representation
-	\end{itemize}
-\end{frame}
-
-
-\begin{frame}{How Can Data Be Wrong}
-	\begin{itemize}
-		\item Incomplete
-		\item Inconsistent
-		\item Inaccurate
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{Processes to Assure Data Quality}
-	\begin{itemize}
-		\item Data Provenance
-		\item Sanity Checks
-		\item Exploratory Data Analysis		
-	\end{itemize}
-\end{frame}
-
-
-\section{Old Slides}
-
-\begin{frame}{Clinical Cases}
-	\begin{table}
-		\begin{tabular}{| c | c | c | c | c | c | c | c | c |}
-			\hline
-			\textbf{Case} & \textbf{TP} & \textbf{FP} & \textbf{TN} & \textbf{FN} \\ \hline
-			LDCT & 649 & 17,497 & 49,792 & 5,532  \\ \hline
-			AAA & 600 & 734 & 25,480 & 61  \\ \hline
-			HTN & 17 & 6 & 65 & 14 \\ \hline
-		\end{tabular}
-	\end{table}
-	\begin{itemize}
-		\item<2-> Are these \textit{good} tests?
-		\item<2-> In what contexts are they useful?
-		\item<2-> For which metrics are they misleading?
-	\end{itemize}
-\end{frame}
-
-\begin{frame}{Clinical Cases}
-	\begin{table}
-		\begin{tabular}{| c | c | c | c | c | c | c | c | c |}
-			\hline
-			\textbf{Case} & \textbf{TP} & \textbf{FP} & \textbf{TN} & \textbf{FN} & \textbf{Sens} & \textbf{Spec} & \textbf{PPV} & \textbf{NPV}  \\ \hline
-			LDCT& 649 & 17,497 & 49,792 & 5,532 & 10 & 74 & 4 & 90  \\ \hline
-			AAA & 600 & 734 & 25,480 & 61 & 91 & 97 & 45 & 100 \\ \hline
-			HTN & 17 & 6 & 65 & 14 & 55 & 92 & 74 & 82 \\ \hline
-		\end{tabular}
-	\end{table}
-\end{frame}
-
-\begin{frame}{Confusion Matrix}
-	\begin{center}
-		\begin{tikzpicture}[transform canvas={scale=0.65}, ampersand replacement=\&, box/.style={draw, rectangle, minimum size=1cm, text width=2.75cm, align=center}, box2/.style={draw, rectangle, minimum size=1cm, text width=3.25cm, align=center}]
-			\matrix (conmat) [row sep=.1cm,column sep=.1cm] {
-				\node (tpos) [box, label=left:\( \mathbf{p'} \), label=above:\( \mathbf{p} \)] {TP}; \&
-				\node (fpos) [box, label=above:\textbf{n}] {FP};\&
-				\node (ppv) [box2] {PPV = {$p\left(\texttt{\textbf{p}}\mid \texttt{\textbf{p}}'\right)$}};\\
-				\node (fneg) [box, label=left:\( \mathbf{n'} \)] {FN};\&
-				\node (tneg) [box] {TN};\&
-				\node (npv) [box2] {NPV = {$p\left(\texttt{\textbf{n}}\mid \texttt{\textbf{n}}'\right)$}};\\
-				\node (sens) [box] {Sens = {$p\left(\texttt{\textbf{p}}'\mid \texttt{\textbf{p}}\right)$}};\&
-				\node (spec) [box] {Spec = {$p\left(\texttt{\textbf{n}}'\mid \texttt{\textbf{n}}\right)$}};\&
-				\node (acc) [box2] {Acc = {$p\left(TP + TN\right)$}};\\
-			};
-			\node [rotate=90, anchor=center,xshift=.35cm, left=1cm of tpos, text width=1.5cm,align=center ] {\textbf{predicted \\ outcome}};
-			\node [above=0.5cm of fpos,xshift=-1.5cm,align=left] {\textbf{actual outcome}};
-		\end{tikzpicture}
-	\end{center}
-	\vspace{3em}
-	\only<2>{
-		\begin{table}
-			\scalebox{0.8}{
-				\begin{tabular}{| c | c | c | c | c | c | c | c | c | c |}
-					\hline
-					\textbf{Case} & \textbf{TP} & \textbf{FP} & \textbf{TN} & \textbf{FN} & \textbf{Sens} & \textbf{Spec} & \textbf{PPV} & \textbf{NPV} & \textbf{Acc}   \\ \hline
-					LDCT& 649 & 17,497 & 49,792 & 5,532 & &&& &  \\ \hline
-					AAA & 600 & 734 & 25,480 & 61 & &&&& \\ \hline
-					HTN & 17 & 6 & 65 & 14 & &&&& \\ \hline
-				\end{tabular}
-			}
-		\end{table}
-		\begin{center}
-			Estimate if you think the value will be low, medium or high
-		\end{center}	
-	}
-	\only<3>{
-		\begin{table}
-			\scalebox{0.9}{
-				\begin{tabular}{| c | c | c | c | c | c | c | c | c | c |}
-					\hline
-					\textbf{Case} & \textbf{TP} & \textbf{FP} & \textbf{TN} & \textbf{FN} & \textbf{Sens} & \textbf{Spec} & \textbf{PPV} & \textbf{NPV} & \textbf{Acc} \\ \hline
-					LDCT& 649 & 17,497 & 49,792 & 5,532 & 10 & 74 & 4 & 90  & 69 \\ \hline
-					AAA & 600 & 734 & 25,480 & 61 & 91 & 97 & 45 & 100  & 97\\ \hline
-					HTN & 17 & 6 & 65 & 14 & 55 & 92 & 74 & 82  & 80\\ \hline
-				\end{tabular}
-			}
-		\end{table}
-	}
-\end{frame}
-
-
-
-
-
-
-
-\begin{frame}{Confusion Matrix}
-	\vspace{4em}
-	\begin{center}
-		\begin{tikzpicture}[transform canvas={scale=0.65}, ampersand replacement=\&, box/.style={draw, rectangle, minimum size=1cm, text width=2.75cm, align=center}, box2/.style={draw, rectangle, minimum size=1cm, text width=3.25cm, align=center}]
-			\matrix (conmat) [row sep=.1cm,column sep=.1cm] {
-				\node (tpos) [box, label=left:\( \mathbf{p'} \), label=above:\( \mathbf{p} \)] {TP}; \&
-				\node (fpos) [box, label=above:\textbf{n}] {FP};\&
-				\node (ppv) [box2] {PPV = {$p\left(\texttt{\textbf{p}}\mid \texttt{\textbf{p}}'\right)$}};\\
-				\node (fneg) [box, label=left:\( \mathbf{n'} \)] {FN};\&
-				\node (tneg) [box] {TN};\&
-				\node (npv) [box2] {NPV = {$p\left(\texttt{\textbf{n}}\mid \texttt{\textbf{n}}'\right)$}};\\
-				\node (sens) [box] {Sens = {$p\left(\texttt{\textbf{p}}'\mid \texttt{\textbf{p}}\right)$}};\&
-				\node (spec) [box] {Spec = {$p\left(\texttt{\textbf{n}}'\mid \texttt{\textbf{n}}\right)$}};\&
-				\node (acc) [box2] {Acc = {$p\left(TP + TN\right)$}};\\
-			};
-			\node [rotate=90, anchor=center,xshift=.35cm, left=1cm of tpos, text width=1.5cm,align=center ] {\textbf{predicted \\ outcome}};
-			\node [above=0.5cm of fpos,xshift=-1.5cm,align=left] {\textbf{actual outcome}};
-		\end{tikzpicture}
-	\end{center}
-	\vspace{3em}
+\note{
 	\begin{table}
 		\scalebox{0.6}{
-			\begin{tabular}{| c | c | c | c | c | c | c | c | c | c |}
-				\hline
-				\textbf{Case} & \textbf{TP} & \textbf{FP} & \textbf{TN} & \textbf{FN} & \textbf{Sens} & \textbf{Spec} & \textbf{PPV} & \textbf{NPV} & \textbf{Acc} \\ \hline
-				LDCT& 649 & 17,497 & 49,792 & 5,532 & 10 & 74 & 4 & 90  & 69 \\ \hline
-				AAA & 600 & 734 & 25,480 & 61 & 91 & 97 & 45 & 100  & 97\\ \hline
-				HTN & 17 & 6 & 65 & 14 & 55 & 92 & 74 & 82  & 80\\ \hline
+			\begin{tabular}{l|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
+			{} &  0  &  1  &  2  &  3  &  4  &  5  &  6  &  7  &  8  &  9  &  10 &  11 &  12 &  13 &  14 &  15 &  16 &  17 &  18 \\ \hline 
+				\textbf{Age} &   2 &   3 &   4 &   5 &   6 &   7 &   8 &   9 &  10 &  11 &  12 &  13 &  14 &  15 &  16 &  17 &  18 &  19 &  20 \\ \hline 
+				\textbf{True} &  12 &  13 &  15 &  18 &  20 &  22 &  25 &  29 &  33 &  37 &  41 &  45 &  49 &  52 &  53 &  55 &  56 &  57 &  58 \\\hline 
+				\textbf{blue} & 10 &  11 &  13 &  16 &  16 &  19 &  24 &  28 &  30 &  39 &  43 &  55 &  58 &  78 &  79 &  82 &  86 &  90 &  94 \\\hline
+				\textbf{red} &  12 &  14 &  17 &  22 &  21 &  23 &  33 &  33 &  36 &  41 &  45 &  50 &  51 &  72 &  72 &  61 &  67 &  60 &  68 \\ \hline
+				\textbf{green} &  24 &  25 &  27 &  29 &  33 &  34 &  38 &  46 &  49 &  47 &  52 &  60 &  52 &  59 &  68 &  66 &  78 &  65 &  64 \\ \hline
 			\end{tabular}
 		}
 	\end{table}
-	\begin{table}
-		\scriptsize
-		\begin{tabular}{c c c}
-			Parameter & Interpretation & Appropriate for \\ \hline \hline
-			Accuracy &  Overall proximity of test to reality & Balanced sample sizes \\
-			Sensitivity  & \onslide<2>{Chance of a false negative} &  \onslide<2>{Cheap testing/Severe disease}\\ 
-			Specificity  &  \onslide<2>{Chance of a false positive} &  \onslide<2>{Expensive testing/Mild disease}\\
-			PPV  & \onslide<2>{Sensitivity diagnostic utility} & \onslide<2>{Balanced prevalence} \\
-			NPV & \onslide<2>{Specificity diagnostic utility} & \onslide<2>{Balanced prevalence} \\
-		\end{tabular}
-	\end{table}
-\end{frame}
-
-
-
-
-\begin{frame}{Confusion Matrix}
-	\vspace{4em}
-	\begin{center}
-		\begin{tikzpicture}[transform canvas={scale=0.75}, ampersand replacement=\&, box/.style={draw, rectangle, minimum size=1cm, text width=2.75cm, align=center}, box2/.style={draw, rectangle, minimum size=1cm, text width=3cm, align=center}]
-			\matrix (conmat) [row sep=.1cm,column sep=.1cm] {
-				\node (tpos) [box, label=left:\( \mathbf{p'} \), label=above:\( \mathbf{p} \)] {TP}; \&
-				\node (fpos) [box, label=above:\textbf{n}] {FP};\&
-				\node (ppv) [box2] {PPV = {$p\left(\texttt{\textbf{p}}\mid \texttt{\textbf{p}}'\right)$}};\\
-				\node (fneg) [box, label=left:\( \mathbf{n'} \)] {FN};\&
-				\node (tneg) [box] {TN};\&
-				\node (npv) [box2] {NPV = {$p\left(\texttt{\textbf{n}}\mid \texttt{\textbf{n}}'\right)$}};\\
-				\node (sens) [box] {Sens = {$p\left(\texttt{\textbf{p}}'\mid \texttt{\textbf{p}}\right)$}};\&
-				\node (spec) [box] {Spec = {$p\left(\texttt{\textbf{n}}'\mid \texttt{\textbf{n}}\right)$}};\&
-				\node (acc) [box2] {Acc = {$p\left(TP + TN\right)$}};\\
-			};
-			\node [rotate=90, anchor=center,xshift=.35cm, left=1cm of tpos, text width=1.5cm,align=center ] {\textbf{predicted \\ outcome}};
-			\node [above=0.5cm of fpos,xshift=-1.5cm,align=left] {\textbf{actual outcome}};
-		\end{tikzpicture}
-	\end{center}
-\vspace{3em}
-
-	\begin{table}
-		\scriptsize
-		\begin{tabular}{c c c}
-			Condition & Stats & Example \\ \hline \hline
-			High Sensitivity, Low Specificity & \textbf{p}$'$ $>>$ \textbf{n}$'$ & test is always  positive \\	
-			Low Sensitivity, High Specificity  & \textbf{n}$'$ $>>$ \textbf{p}$'$ & test is always negative \\
-			High PPV, Low NPV & \textbf{p} $>>$ \textbf{n} & high disease prevalence \\
-			Low PPV, High NPV & \textbf{n} $>>$ \textbf{p} & low disease prevalence \\
-			High PPV, Low Sensitivity & FN $>>$ FP & say they are negative most of the time for a high prevalence disease \\
-			High Sensitivity, Low NPV & & \\
-			High Specificity, Low NPV & & \\
-			High PPV, Low Specificity & & \\
-		\end{tabular}
-	\end{table}
-\end{frame}
-
-\begin{frame}{Combined Statistics}
-	\begin{table}
-		\scriptsize
-		\begin{tabular}{c c c}
-			Function of & Metric & Formula\\ \hline \hline \\ 
-			Sensitivity, Specificity  & \textbf<2>{Positive Likelihood Ratio/ROC} & $\dfrac{sensitivity}{1-specificity}$ \\ [1.5em]
-			Sensitivity, Specificity  & \textbf<2>{Negative Likelihood Ratio} & $\dfrac{1-sensitivity}{specificity}$ \\ [1.5em]
-			Sensitivity, PPV & \textbf<2>{F1 score} & $\dfrac{2}{\dfrac{1}{sensitivity} + \dfrac{1}{PPV} }$  \\ [4em]
-			TP, TN, FP, FN & Matthews correlation coefficient & \tiny{$\dfrac{TP\times TN-FP\times FN}{\sqrt{\left(TP + FP\right)\left(TP+FN\right)\left(TN+FP\right)\left(TN+FN\right)}}$} \\
-		\end{tabular}
-	\end{table}
-\end{frame}
-
-
-\begin{frame}{Likelihood Ratios}
-	\begin{align*}
-		LR+ &= \dfrac{sensitivity}{1 - specificity} = \dfrac{P\left(T+ \mid D+\right)}{P\left(T+ \mid D-\right)} \\[1.5em]
-		LR- &= \dfrac{1 - sensitivity}{specificity} = \dfrac{P\left(T- \mid D+\right)}{P\left(T- \mid D-\right)}
-	\end{align*}
 	
-\only<2>{
-	\begin{center}
-		Does a test result change the probability that a person has a certain condition?
-	\end{center}}
-\end{frame}
+		\begin{table}
+		\scalebox{0.8}{
+			\begin{tabular}{l|c|c|c|c|c|c|c|}
+			& MAE & MAPE & MSE & RMSE & MSLE & R2 & EV \\ \hline 
+				\textbf{blue} &  11.528 & 24.643 & 293.544 & 17.133 & 0.067 & -0.12 & 0.227  \\ \hline 
+				\textbf{red} & 5.653 & 13.793 & 61.967 & 7.872 & 0.022 & 0.764 & 0.886  \\\hline 
+				\textbf{green} & 11.962 &  42.712 & 160.046 & 12.651 & 0.136 & 0.39 & 0.935  \\\hline 
+			\end{tabular}
+		}
+	\end{table}
+}
 
 
-\begin{frame}{Likelihood Ratios}
-	\begin{center}
-		\rowcolors{2}{gray!25}{white}
-		\begin{tabular}{c c}
-			\rowcolor{gray!50}
-			Likelihood Ratio & Approximate Change in Probability(\%) \\ \hline
-			0.1 & -45 \\
-			0.2 & -30 \\
-			0.5 & -15 \\
-			1 & 0 \\
-			2 & +15 \\
-			5 & +30 \\
-			10 & +45
-		\end{tabular} \\[2em]
-		Change in post test probability $\approx 0.2 \times \ln{LR}$ \footnote{{McGee, Steven. "Simplifying likelihood ratios." Journal of general internal medicine 17.8 (2002): 647-650.
-APA	
-}}
-	\end{center}
-\end{frame}
 
-\begin{frame}{Discrimination Thresholds}
-	\begin{center}
-		\includegraphics[height=0.45\textheight]{images/overlap_distr_thi.pdf}\\
-		\includegraphics[height=0.45\textheight]{images/overlap_distr_tlow.pdf}
-	\end{center}
-\end{frame}
 
-\begin{frame}{F1 Score}
-\vspace{3em}
-\begin{center}
-\begin{tikzpicture}[transform canvas={scale=0.75}, ampersand replacement=\&,
-box/.style={draw,rectangle,minimum size=1cm,text width=2.75cm,align=center},
-box2/.style={draw,rectangle,minimum size=1cm,text width=3.25cm,align=center}]
-\matrix (conmat) [row sep=.1cm,column sep=.1cm] {
-\node (tpos) [box,
-    label=left:\( \mathbf{p'} \),
-    label=above:\( \mathbf{p} \),
-    ] {TP};
-\&
-\node (fpos) [box,
-    label=above:\textbf{n}] {FP};
-\&
-\node (ppv) [box2] {PPV = {$p\left(\texttt{\textbf{p}}\mid \texttt{\textbf{p}}'\right)$}};
-\\
-\node (fneg) [box,
-    label=left:\( \mathbf{n'} \)] {FN};
-\&
-\node (tneg) [box] {TN};
-\&
-\node (npv) [box2] {NPV = {$p\left(\texttt{\textbf{n}}\mid \texttt{\textbf{n}}'\right)$}};
-\\
-\node (sens) [box] {Sens = {$p\left(\texttt{\textbf{p}}'\mid \texttt{\textbf{p}}\right)$}};
-\&
-\node (spec) [box] {Spec = {$p\left(\texttt{\textbf{n}}'\mid \texttt{\textbf{n}}\right)$}};
-\&
-\node (acc) [box2] {Acc = {$p\left(TP + TN\right)$}};
-%\node (f1) [box2] {F1 = \scriptsize{$\dfrac{2 \times Sens \times PPV}{PPV + Sens}$}};
-\\
-};
-\node [rotate=90, anchor=center,xshift=.35cm, left=1cm of tpos, text width=1.5cm,align=center ] {\textbf{predicted \\ outcome}};
-\node [above=0.5cm of fpos,xshift=-1.5cm,align=left] {\textbf{actual outcome}};
-\end{tikzpicture}
-\end{center}
-\vspace{1em}
-	\begin{center}
-		\begin{align*}
-			F1 &= \dfrac{2}{\dfrac{1}{sensitivity} + \dfrac{1}{PPV} } = 2 \times \dfrac{PPV \cdot sensitivity}{PPV + sensitivity}
-		\end{align*}\\[1em]
-		How does F1 differ from AUC?
-	\end{center}
 
-\note[item]{F1 is sensitivity modified by prevalence.  So a low prevalence will hurt your F1 score but might not affect your AUC.  F1 is threshold specific and corresponds to a point on the ROC curve}	
-	\note[item]{}	
-	
-\end{frame}
+%\section{Old Slides}
+
+%\begin{frame}{Clinical Cases}
+%	\begin{table}
+%		\begin{tabular}{| c | c | c | c | c | c | c | c | c |}
+%			\hline
+%			\textbf{Case} & \textbf{TP} & \textbf{FP} & \textbf{TN} & \textbf{FN} \\ \hline
+%			LDCT & 649 & 17,497 & 49,792 & 5,532  \\ \hline
+%			AAA & 600 & 734 & 25,480 & 61  \\ \hline
+%			HTN & 17 & 6 & 65 & 14 \\ \hline
+%		\end{tabular}
+%	\end{table}
+%	\begin{itemize}
+%		\item<2-> Are these \textit{good} tests?
+%		\item<2-> In what contexts are they useful?
+%		\item<2-> For which metrics are they misleading?
+%	\end{itemize}
+%\end{frame}
+
+
+
+
+%\begin{frame}{Clinical Cases}
+%	\begin{table}
+%		\begin{tabular}{| c | c | c | c | c | c | c | c | c |}
+%			\hline
+%			\textbf{Case} & \textbf{TP} & \textbf{FP} & \textbf{TN} & \textbf{FN} & \textbf{Sens} & \textbf{Spec} & \textbf{PPV} & \textbf{NPV}  \\ \hline
+%			LDCT& 649 & 17,497 & 49,792 & 5,532 & 10 & 74 & 4 & 90  \\ \hline
+%			AAA & 600 & 734 & 25,480 & 61 & 91 & 97 & 45 & 100 \\ \hline
+%			HTN & 17 & 6 & 65 & 14 & 55 & 92 & 74 & 82 \\ \hline
+%		\end{tabular}
+%	\end{table}
+%\end{frame}
+
+
+
+
+%\begin{frame}{Confusion Matrix}
+%	\begin{center}
+%		\begin{tikzpicture}[transform canvas={scale=0.65}, ampersand replacement=\&, box/.style={draw, rectangle, minimum size=1cm, text width=2.75cm, align=center}, box2/.style={draw, rectangle, minimum size=1cm, text width=3.25cm, align=center}]
+%			\matrix (conmat) [row sep=.1cm,column sep=.1cm] {
+%				\node (tpos) [box, label=left:\( \mathbf{p'} \), label=above:\( \mathbf{p} \)] {TP}; \&
+%				\node (fpos) [box, label=above:\textbf{n}] {FP};\&
+%				\node (ppv) [box2] {PPV = {$p\left(\texttt{\textbf{p}}\mid \texttt{\textbf{p}}'\right)$}};\\
+%				\node (fneg) [box, label=left:\( \mathbf{n'} \)] {FN};\&
+%				\node (tneg) [box] {TN};\&
+%				\node (npv) [box2] {NPV = {$p\left(\texttt{\textbf{n}}\mid \texttt{\textbf{n}}'\right)$}};\\
+%				\node (sens) [box] {Sens = {$p\left(\texttt{\textbf{p}}'\mid \texttt{\textbf{p}}\right)$}};\&
+%				\node (spec) [box] {Spec = {$p\left(\texttt{\textbf{n}}'\mid \texttt{\textbf{n}}\right)$}};\&
+%				\node (acc) [box2] {Acc = {$p\left(TP + TN\right)$}};\\
+%			};
+%			\node [rotate=90, anchor=center,xshift=.35cm, left=1cm of tpos, text width=1.5cm,align=center ] {\textbf{predicted \\ outcome}};
+%			\node [above=0.5cm of fpos,xshift=-1.5cm,align=left] {\textbf{actual outcome}};
+%		\end{tikzpicture}
+%	\end{center}
+%	\vspace{3em}
+%	\only<2>{
+%		\begin{table}
+%			\scalebox{0.8}{
+%				\begin{tabular}{| c | c | c | c | c | c | c | c | c | c |}
+%					\hline
+%					\textbf{Case} & \textbf{TP} & \textbf{FP} & \textbf{TN} & \textbf{FN} & \textbf{Sens} & \textbf{Spec} & \textbf{PPV} & \textbf{NPV} & \textbf{Acc}   \\ \hline
+%					LDCT& 649 & 17,497 & 49,792 & 5,532 & &&& &  \\ \hline
+%					AAA & 600 & 734 & 25,480 & 61 & &&&& \\ \hline
+%					HTN & 17 & 6 & 65 & 14 & &&&& \\ \hline
+%				\end{tabular}
+%			}
+%		\end{table}
+%		\begin{center}
+%			Estimate if you think the value will be low, medium or high
+%		\end{center}	
+%	}
+%	\only<3>{
+%		\begin{table}
+%			\scalebox{0.9}{
+%				\begin{tabular}{| c | c | c | c | c | c | c | c | c | c |}
+%					\hline
+%					\textbf{Case} & \textbf{TP} & \textbf{FP} & \textbf{TN} & \textbf{FN} & \textbf{Sens} & \textbf{Spec} & \textbf{PPV} & \textbf{NPV} & \textbf{Acc} \\ \hline
+%					LDCT& 649 & 17,497 & 49,792 & 5,532 & 10 & 74 & 4 & 90  & 69 \\ \hline
+%					AAA & 600 & 734 & 25,480 & 61 & 91 & 97 & 45 & 100  & 97\\ \hline
+%					HTN & 17 & 6 & 65 & 14 & 55 & 92 & 74 & 82  & 80\\ \hline
+%				\end{tabular}
+%			}
+%		\end{table}
+%	}
+%\end{frame}
+
+
+
+
+
+
+
+%\begin{frame}{Confusion Matrix}
+%	\vspace{4em}
+%	\begin{center}
+%		\begin{tikzpicture}[transform canvas={scale=0.65}, ampersand replacement=\&, box/.style={draw, rectangle, minimum size=1cm, text width=2.75cm, align=center}, box2/.style={draw, rectangle, minimum size=1cm, text width=3.25cm, align=center}]
+%			\matrix (conmat) [row sep=.1cm,column sep=.1cm] {
+%				\node (tpos) [box, label=left:\( \mathbf{p'} \), label=above:\( \mathbf{p} \)] {TP}; \&
+%				\node (fpos) [box, label=above:\textbf{n}] {FP};\&
+%				\node (ppv) [box2] {PPV = {$p\left(\texttt{\textbf{p}}\mid \texttt{\textbf{p}}'\right)$}};\\
+%				\node (fneg) [box, label=left:\( \mathbf{n'} \)] {FN};\&
+%				\node (tneg) [box] {TN};\&
+%				\node (npv) [box2] {NPV = {$p\left(\texttt{\textbf{n}}\mid \texttt{\textbf{n}}'\right)$}};\\
+%				\node (sens) [box] {Sens = {$p\left(\texttt{\textbf{p}}'\mid \texttt{\textbf{p}}\right)$}};\&
+%				\node (spec) [box] {Spec = {$p\left(\texttt{\textbf{n}}'\mid \texttt{\textbf{n}}\right)$}};\&
+%				\node (acc) [box2] {Acc = {$p\left(TP + TN\right)$}};\\
+%			};
+%			\node [rotate=90, anchor=center,xshift=.35cm, left=1cm of tpos, text width=1.5cm,align=center ] {\textbf{predicted \\ outcome}};
+%			\node [above=0.5cm of fpos,xshift=-1.5cm,align=left] {\textbf{actual outcome}};
+%		\end{tikzpicture}
+%	\end{center}
+%	\vspace{3em}
+%	\begin{table}
+%		\scalebox{0.6}{
+%			\begin{tabular}{| c | c | c | c | c | c | c | c | c | c |}
+%				\hline
+%				\textbf{Case} & \textbf{TP} & \textbf{FP} & \textbf{TN} & \textbf{FN} & \textbf{Sens} & \textbf{Spec} & \textbf{PPV} & \textbf{NPV} & \textbf{Acc} \\ \hline
+%				LDCT& 649 & 17,497 & 49,792 & 5,532 & 10 & 74 & 4 & 90  & 69 \\ \hline
+%				AAA & 600 & 734 & 25,480 & 61 & 91 & 97 & 45 & 100  & 97\\ \hline
+%				HTN & 17 & 6 & 65 & 14 & 55 & 92 & 74 & 82  & 80\\ \hline
+%			\end{tabular}
+%		}
+%	\end{table}
+%	\begin{table}
+%		\scriptsize
+%		\begin{tabular}{c c c}
+%			Parameter & Interpretation & Appropriate for \\ \hline \hline
+%			Accuracy &  Overall proximity of test to reality & Balanced sample sizes \\
+%			Sensitivity  & \onslide<2>{Chance of a false negative} &  \onslide<2>{Cheap testing/Severe disease}\\ 
+%			Specificity  &  \onslide<2>{Chance of a false positive} &  \onslide<2>{Expensive testing/Mild disease}\\
+%			PPV  & \onslide<2>{Sensitivity diagnostic utility} & \onslide<2>{Balanced prevalence} \\
+%			NPV & \onslide<2>{Specificity diagnostic utility} & \onslide<2>{Balanced prevalence} \\
+%		\end{tabular}
+%	\end{table}
+%\end{frame}
+
+
+
+
+%\begin{frame}{Confusion Matrix}
+%	\vspace{4em}
+%	\begin{center}
+%		\begin{tikzpicture}[transform canvas={scale=0.75}, ampersand replacement=\&, box/.style={draw, rectangle, minimum size=1cm, text width=2.75cm, align=center}, box2/.style={draw, rectangle, minimum size=1cm, text width=3cm, align=center}]
+%			\matrix (conmat) [row sep=.1cm,column sep=.1cm] {
+%				\node (tpos) [box, label=left:\( \mathbf{p'} \), label=above:\( \mathbf{p} \)] {TP}; \&
+%				\node (fpos) [box, label=above:\textbf{n}] {FP};\&
+%				\node (ppv) [box2] {PPV = {$p\left(\texttt{\textbf{p}}\mid \texttt{\textbf{p}}'\right)$}};\\
+%				\node (fneg) [box, label=left:\( \mathbf{n'} \)] {FN};\&
+%				\node (tneg) [box] {TN};\&
+%				\node (npv) [box2] {NPV = {$p\left(\texttt{\textbf{n}}\mid \texttt{\textbf{n}}'\right)$}};\\
+%				\node (sens) [box] {Sens = {$p\left(\texttt{\textbf{p}}'\mid \texttt{\textbf{p}}\right)$}};\&
+%				\node (spec) [box] {Spec = {$p\left(\texttt{\textbf{n}}'\mid \texttt{\textbf{n}}\right)$}};\&
+%				\node (acc) [box2] {Acc = {$p\left(TP + TN\right)$}};\\
+%			};
+%			\node [rotate=90, anchor=center,xshift=.35cm, left=1cm of tpos, text width=1.5cm,align=center ] {\textbf{predicted \\ outcome}};
+%			\node [above=0.5cm of fpos,xshift=-1.5cm,align=left] {\textbf{actual outcome}};
+%		\end{tikzpicture}
+%	\end{center}
+%\vspace{3em}
+%
+%	\begin{table}
+%		\scriptsize
+%		\begin{tabular}{c c c}
+%			Condition & Stats & Example \\ \hline \hline
+%			High Sensitivity, Low Specificity & \textbf{p}$'$ $>>$ \textbf{n}$'$ & test is always  positive \\	
+%			Low Sensitivity, High Specificity  & \textbf{n}$'$ $>>$ \textbf{p}$'$ & test is always negative \\
+%			High PPV, Low NPV & \textbf{p} $>>$ \textbf{n} & high disease prevalence \\
+%			Low PPV, High NPV & \textbf{n} $>>$ \textbf{p} & low disease prevalence \\
+%			High PPV, Low Sensitivity & FN $>>$ FP & say they are negative most of the time for a high prevalence disease \\
+%			High Sensitivity, Low NPV & & \\
+%			High Specificity, Low NPV & & \\
+%			High PPV, Low Specificity & & \\
+%		\end{tabular}
+%	\end{table}
+%\end{frame}
+
+%\begin{frame}{Combined Statistics}
+%	\begin{table}
+%		\scriptsize
+%		\begin{tabular}{c c c}
+%			Function of & Metric & Formula\\ \hline \hline \\ 
+%			Sensitivity, Specificity  & \textbf<2>{Positive Likelihood Ratio/ROC} & $\dfrac{sensitivity}{1-specificity}$ \\ [1.5em]
+%			Sensitivity, Specificity  & \textbf<2>{Negative Likelihood Ratio} & $\dfrac{1-sensitivity}{specificity}$ \\ [1.5em]
+%			Sensitivity, PPV & \textbf<2>{F1 score} & $\dfrac{2}{\dfrac{1}{sensitivity} + \dfrac{1}{PPV} }$  \\ [4em]
+%			TP, TN, FP, FN & Matthews correlation coefficient & \tiny{$\dfrac{TP\times TN-FP\times FN}{\sqrt{\left(TP + FP\right)\left(TP+FN\right)\left(TN+FP\right)\left(TN+FN\right)}}$} \\
+%		\end{tabular}
+%	\end{table}
+%\end{frame}
+
+
+%\begin{frame}{Likelihood Ratios}
+%	\begin{align*}
+%		LR+ &= \dfrac{sensitivity}{1 - specificity} = \dfrac{P\left(T+ \mid D+\right)}{P\left(T+ \mid D-\right)} \\[1.5em]
+%		LR- &= \dfrac{1 - sensitivity}{specificity} = \dfrac{P\left(T- \mid D+\right)}{P\left(T- \mid D-\right)}
+%	\end{align*}
+%	
+%\only<2>{
+%	\begin{center}
+%		Does a test result change the probability that a person has a certain condition?
+%	\end{center}}
+%\end{frame}
+
+
+%\begin{frame}{Likelihood Ratios}
+%	\begin{center}
+%		\rowcolors{2}{gray!25}{white}
+%		\begin{tabular}{c c}
+%			\rowcolor{gray!50}
+%			Likelihood Ratio & Approximate Change in Probability(\%) \\ \hline
+%			0.1 & -45 \\
+%			0.2 & -30 \\
+%			0.5 & -15 \\
+%			1 & 0 \\
+%			2 & +15 \\
+%			5 & +30 \\
+%			10 & +45
+%		\end{tabular} \\[2em]
+%		Change in post test probability $\approx 0.2 \times \ln{LR}$ \footnote{{McGee, Steven. "Simplifying likelihood ratios." Journal of general internal medicine 17.8 (2002): 647-650.
+%APA	
+%}}
+%	\end{center}
+%\end{frame}
+
+%\begin{frame}{Discrimination Thresholds}
+%	\begin{center}
+%		\includegraphics[height=0.45\textheight]{images/overlap_distr_thi.pdf}\\
+%		\includegraphics[height=0.45\textheight]{images/overlap_distr_tlow.pdf}
+%	\end{center}
+%\end{frame}
+
+%\begin{frame}{F1 Score}
+%\vspace{3em}
+%\begin{center}
+%\begin{tikzpicture}[transform canvas={scale=0.75}, ampersand replacement=\&,
+%box/.style={draw,rectangle,minimum size=1cm,text width=2.75cm,align=center},
+%box2/.style={draw,rectangle,minimum size=1cm,text width=3.25cm,align=center}]
+%\matrix (conmat) [row sep=.1cm,column sep=.1cm] {
+%\node (tpos) [box,
+%    label=left:\( \mathbf{p'} \),
+%    label=above:\( \mathbf{p} \),
+%    ] {TP};
+%\&
+%\node (fpos) [box,
+%    label=above:\textbf{n}] {FP};
+%\&
+%\node (ppv) [box2] {PPV = {$p\left(\texttt{\textbf{p}}\mid \texttt{\textbf{p}}'\right)$}};
+%\\
+%\node (fneg) [box,
+%    label=left:\( \mathbf{n'} \)] {FN};
+%\&
+%\node (tneg) [box] {TN};
+%\&
+%\node (npv) [box2] {NPV = {$p\left(\texttt{\textbf{n}}\mid \texttt{\textbf{n}}'\right)$}};
+%\\
+%\node (sens) [box] {Sens = {$p\left(\texttt{\textbf{p}}'\mid \texttt{\textbf{p}}\right)$}};
+%\&
+%\node (spec) [box] {Spec = {$p\left(\texttt{\textbf{n}}'\mid \texttt{\textbf{n}}\right)$}};
+%\&
+%\node (acc) [box2] {Acc = {$p\left(TP + TN\right)$}};
+%%\node (f1) [box2] {F1 = \scriptsize{$\dfrac{2 \times Sens \times PPV}{PPV + Sens}$}};
+%\\
+%};
+%\node [rotate=90, anchor=center,xshift=.35cm, left=1cm of tpos, text width=1.5cm,align=center ] {\textbf{predicted \\ outcome}};
+%\node [above=0.5cm of fpos,xshift=-1.5cm,align=left] {\textbf{actual outcome}};
+%\end{tikzpicture}
+%\end{center}
+%\vspace{1em}
+%	\begin{center}
+%		\begin{align*}
+%			F1 &= \dfrac{2}{\dfrac{1}{sensitivity} + \dfrac{1}{PPV} } = 2 \times \dfrac{PPV \cdot sensitivity}{PPV + sensitivity}
+%		\end{align*}\\[1em]
+%		How does F1 differ from AUC?
+%	\end{center}
+%
+%\note[item]{F1 is sensitivity modified by prevalence.  So a low prevalence will hurt your F1 score but might not affect your AUC.  F1 is threshold specific and corresponds to a point on the ROC curve}	
+%	\note[item]{}	
+%	
+%\end{frame}
+
+
+
+
+%\begin{frame}{Regression Metrics}
+%	\begin{table}
+%		%\def\arraystretch{2}
+%		\begin{tabular}{| l | c | >{\tiny}Sl |}
+%		\hline
+%		\multirow{2}{2cm}{Equal weighting of errors} & MAE & $\dfrac{1}{n}\sum\limits_{i=0}^{n-1}\abs{y_i-\hat{y}_i}$ \\ \cline{2-3}
+%		& MAPE & $ \dfrac{100}{n}\sum\limits_{i=0}^{n-1}\dfrac{\abs{y_i-\hat{y}_i}}{y_i}$ \\ \hline
+%		\multirow{3}{2cm}{Unequal weighting of errors} & MSE & $\dfrac{1}{n}\sum\limits_{i=0}^{n-1}\left(y_i-\hat{y}_i\right)^2$ \\ \cline{2-3}
+%		& RMSE & $\sqrt{\dfrac{1}{n}\sum\limits_{i=0}^{n-1}\left(y_i-\hat{y}_i\right)^2}$ \\\cline{2-3}
+%		& MSLE & $\dfrac{1}{n}\sum\limits_{i=0}^{n-1}\left(\ln \left(1=y_i\right)-\ln\left(1+\hat{y}_i\right)\right)^2$ \\ \hline
+%		\multirow{2}{2cm}{Data Variance} & $R^2$ & $1 - \frac{\sum\limits_{i=0}^{n-1}\left(y_i-\hat{y}_i\right)^2}{\sum\limits_{i=0}^{n-1}\left(y_i-\bar{y}_i\right)^2}$ \\ \cline{2-3}
+%		& Explained Var & $1-\dfrac{Var\left(y-\hat{y}\right)}{Var\left(y\right)}$\\ \hline
+%		\end{tabular}
+%	\end{table}
+%\end{frame}
+
+
+
+
+
+
+
+%\section{Data Quality}
+
+%\begin{frame}{Factors Which Affect Data Quality}
+%	\begin{center}
+%		Analysis is only ever as good as the data its built upon.
+%	\end{center}
+%	\begin{itemize}
+%		\item<2-> Data Definition
+%		\item<2-> Data Collection
+%		\item<2-> Data Processing
+%		\item<2-> Data Representation
+%	\end{itemize}
+%\end{frame}
+
+
+%\begin{frame}{How Can Data Be Wrong}
+%	\begin{itemize}
+%		\item Incomplete
+%		\item Inconsistent
+%		\item Inaccurate
+%	\end{itemize}
+%\end{frame}
+
+%\begin{frame}{Processes to Assure Data Quality}
+%	\begin{itemize}
+%		\item Data Provenance
+%		\item Sanity Checks
+%		\item Exploratory Data Analysis		
+%	\end{itemize}
+%\end{frame}
 
 \end{document}
 
