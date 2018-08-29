@@ -36,11 +36,11 @@
 \cellspacebottomlimit 2pt
 
 
-\definecolor{set1}{RGB}{228, 26, 28}
-\definecolor{set2}{RGB}{77, 175, 74}
-\definecolor{set3}{RGB}{255, 127, 0}
-\definecolor{set4}{RGB}{166, 86, 40}
-\definecolor{set5}{RGB}{153, 153, 153}
+%\definecolor{set1}{RGB}{228, 26, 28}
+%\definecolor{set2}{RGB}{77, 175, 74}
+%\definecolor{set3}{RGB}{255, 127, 0}
+%\definecolor{set4}{RGB}{166, 86, 40}
+%\definecolor{set5}{RGB}{153, 153, 153}
 
 \usepackage{xspace}
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
@@ -66,7 +66,7 @@
 
 
 \title{Digital Transformation of Healthcare}
-\subtitle{Evaluating Predictions \& Data Quality}
+\subtitle{Evaluating Predictions}
 % \date{\today}
 \date{}
 \author{Michoel Snow, MD PhD, Glen Ferguson, PhD}

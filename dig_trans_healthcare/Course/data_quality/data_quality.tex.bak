@@ -1,0 +1,208 @@
+\documentclass[10pt, xcolor=table]{beamer}
+
+\setbeamertemplate{note page}[default]
+%\setbeameroption{hide notes}
+\setbeameroption{show notes}
+\setbeamerfont{footnote}{size=\tiny}
+
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+\usepackage{multicol}
+\setlength{\columnsep}{1.5cm}
+\usepackage{multirow}
+
+
+\usepackage{animate}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage[font=scriptsize]{caption}
+\usepackage{tikz}
+\usepackage{stackengine}
+\usepackage{array}
+\usetikzlibrary{positioning}
+\usepackage{tabularx}
+\usepackage{tabulary}
+
+\usepackage[math]{cellspace}
+\cellspacetoplimit 2pt
+\cellspacebottomlimit 2pt
+
+
+%\definecolor{set1}{RGB}{228, 26, 28}
+%\definecolor{set2}{RGB}{77, 175, 74}
+%\definecolor{set3}{RGB}{255, 127, 0}
+%\definecolor{set4}{RGB}{166, 86, 40}
+%\definecolor{set5}{RGB}{153, 153, 153}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+\newcommand\Fontvi{\fontsize{8}{9}\selectfont}
+\newcommand\Fontvr{\fontsize{6}{7}\selectfont}
+
+\setbeamerfont{parent A}{size=\small}
+
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}%
+\makeatletter
+\let\oldabs\abs
+\def\abs{\@ifstar{\oldabs}{\oldabs*}}
+\let\oldnorm\norm
+\def\norm{\@ifstar{\oldnorm}{\oldnorm*}}
+\makeatother
+\newcommand*{\Value}{\frac{1}{2}x^2}%
+
+\newcommand{\floatfootnote}[1]{\ifx\[$\else\footnote{#1}\fi}
+\newcommand{\floatfootnotes}[1]{\ifx\[$\else\footnote{#1}\fi}
+
+
+
+\title{Digital Transformation of Healthcare}
+\subtitle{Assessing Data Quality}
+% \date{\today}
+\date{}
+\author{Michoel Snow, MD PhD, Glen Ferguson, PhD}
+\institute{Center for Health Data Innovations}
+% \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
+
+\begin{document}
+
+\maketitle
+
+\section{Data Quality}
+
+%\begin{frame}{Factors Which Affect Data Quality}
+%	\begin{center}
+%		Analysis is only ever as good as the data its built upon.
+%	\end{center}
+%	\begin{itemize}
+%		\item<2-> Data Definition
+%		\item<2-> Data Collection
+%		\item<2-> Data Processing
+%		\item<2-> Data Representation
+%	\end{itemize}
+%\end{frame}
+
+\begin{frame}{Overview}
+	\begin{center}
+		Analysis is only ever as good as the data it's built upon.
+	\end{center}
+	\begin{itemize}[<+(1)->]
+		\item What is data quality? What makes data high quality vs low quality?
+		\item Where along the process can you affect data quality?
+		\item How can you design a study to collect high quality data (Quality assurance)?
+		\item How can you identify and correct errors during and after data collection (Quality control)?
+	\end{itemize}
+\end{frame}
+
+\note{
+\scriptsize
+	\begin{itemize}
+		\item Data quality consists of the objective [accuracy, validity (not outside range of possibilities, all data is for the same pt, formatting requirements, DICOM dates), reliability (dx matches problem list matches coding), legibility (units, shorthand)] and subjective [completeness]
+		\item Steps	
+		\begin{itemize}
+			\scriptsize
+			\item Definition/Design - lack of clear definitions for data items/collection, incompatible units, precision, scope, depth
+			\item Collection - not enough documentation (drug given/dosage altered but no start and end date), non-adherence to data definitions (collecting data outside of protocol time), human variance/error (bp cuff, RR, incorrect units), Orders are placed (procedures, medications) which are not connected to a rationale or sufficient reason 
+			\item Processing - interpretation ('initial' lab, diagnosis date), coding error (mis-entering information such as order of birthdate, or height as 9 cm instead of 90 cm), random (mistyping, illegible handwriting), software errors, Assigning codes to problems treated vs problems tested and ruled out, which complaints do you code/document (doctors as coders)  
+		\end{itemize} 
+	\end{itemize}
+
+}
+
+\note{
+	\scriptsize
+	\begin{itemize}
+		\item quality assurance - training of personnel (mock exams and reporting), site visits, reduce open-ended questions
+		\item quality control - data monitoring (compared to independent source), hand verification, entering data in twice (by different sources), consistency checks
+	\end{itemize}
+}
+
+%\begin{frame}{Data Collection and Ambiguity}
+%	\begin{itemize}
+%		\item Diagnosis Date
+%		\item Medication Instructions
+%		\begin{itemize}
+%			\scriptsize
+%			\item heparin flush (porcine) in NS Kit 100 unit/mL 500 UNITS. IV QDAY \#30 MILLILITERS
+%			\item Heparin Lock Soln 100 unit/mL 500 UNITS. IV BID \#300 MILLILITERS refill x3 flush after each infusion
+%			\item Heparin Sodium (Porcine) Syringe 10,000 unit/mL 18000 UNITs SC Q8HR \#180 MLs refill x5
+%			\item heparin lock flush (porcine) syrg 100 unit/mL 100 UNITS. IV 3/wk 100 HS PRN \#200 MILLILITERS refi...
+%			\item heparin (porcine) in 0.9\% NaCl IV Soln 100 unit/100 mL (1 unit/mL) 1-5 UNITS. IV QDAY \#100 MILLIL...
+%		\end{itemize}
+%	\end{itemize}
+%\end{frame}
+
+
+\begin{frame}{Extract, Transform and Load (ETL)}
+	\begin{itemize}
+		\item Extract
+		\begin{itemize}
+			\item Extract data from source(s)
+		\end{itemize}
+		\item Transform
+		\begin{itemize}
+			\item Modify the data for the purposes of analysis or further querying
+		\end{itemize}
+		\item Load
+		\begin{itemize}
+			\item Load the data into the target database
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Quality Assurance}
+	\begin{center}
+		Temperature
+	\end{center}
+\end{frame}
+
+
+\begin{frame}{Quality Control}
+	\begin{center}
+		Temperature
+	\end{center}
+\end{frame}
+
+%\note{
+%\scriptsize
+%
+%}
+
+
+
+\begin{frame}{Sources}
+	\begin{itemize}
+		\item \href{http://www.globalhealthworkforce.org/resources/who_improving_data_quality.pdf}{WHO data quality}
+		\item \href{https://pdfs.semanticscholar.org/f68b/1f61568a15791dbc6f308ba73d39836fb47e.pdf}{Healthcare Data Warehousing and Quality Assurance}
+		\item (2002). Defining and improving data quality in medical registries JAMIA, 9(6), 600-611.
+	\end{itemize}
+
+\end{frame}
+
+%\begin{frame}{How Can Data Be Wrong}
+%	\begin{itemize}
+%		\item Incomplete
+%		\item Inconsistent
+%		\item Inaccurate
+%	\end{itemize}
+%\end{frame}
+
+%\begin{frame}{Processes to Assure Data Quality}
+%	\begin{itemize}
+%		\item Data Provenance
+%		\item Sanity Checks
+%		\item Exploratory Data Analysis		
+%	\end{itemize}
+%\end{frame}
+
+\end{document}
