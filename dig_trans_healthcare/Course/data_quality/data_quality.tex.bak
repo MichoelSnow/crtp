@@ -17,8 +17,8 @@
 \setlength{\columnsep}{1.5cm}
 \usepackage{multirow}
 
-
-\usepackage{animate}
+\usepackage{hyperref}
+%\usepackage{animate}
 \usepackage{lmodern}
 \usepackage[T1]{fontenc}
 \usepackage{mathtools}
@@ -30,6 +30,12 @@
 \usetikzlibrary{positioning}
 \usepackage{tabularx}
 \usepackage{tabulary}
+%\hypersetup{
+%    colorlinks=true,
+%    linktoc=none,
+%    linkcolor=blue,
+%    urlcolor=blue
+%}
 
 \usepackage[math]{cellspace}
 \cellspacetoplimit 2pt
@@ -160,25 +166,157 @@
 \end{frame}
 
 
-\begin{frame}{Quality Assurance}
+\note{
+\scriptsize
+
+}
+
+\begin{frame}{Quality Assurance - DICOM}
+	\begin{itemize}
+		\item DICOM - Digital Imaging and Communications in Medicine - is the international standard for medical images and related information. It defines the formats for medical images that can be exchanged with the data and quality necessary for clinical use
+		\item DICOM groups information into data sets, e.g., an x-ray would contain the patient ID within the file, so that the image can never be separated from this information by mistake.
+		\item \href{http://dicom.nema.org/medical/dicom/current/output/chtml/part05/sect_6.2.html\#table_6.2-1}{\color{blue}DICOM Value Representations}
+	\end{itemize}
+	
+	\scriptsize{https://www.dicomstandard.org/about/}
+\end{frame}
+
+\begin{frame}{Quality Assurance - DICOM}
+\scriptsize
+\begin{tabular}{lll}
+\toprule
+                        name &  VR &                                              value \\
+\midrule
+                Group Length &  UL &                                                532 \\
+                  Image Type &  CS &                                            DERIVED \\
+               SOP Class UID &  UI &                          1.2.840.10008.5.1.4.1.1.2 \\
+            SOP Instance UID &  UI &          1.2.840.114356.2008.11.30.12.34.2.329.999 \\
+                  Study Date &  DA &                                           20081230 \\
+                Content Date &  DA &                                           20081230 \\
+                  Study Time &  TM &                                             122731 \\
+                Content Time &  TM &                                         12299.0000 \\
+                    Modality &  CS &                                                 CT \\
+            Institution Name &  LO &                       Manhasset Diagnostic Imaging \\
+                Station Name &  SH &                                                    \\
+           Study Description &  LO &                  MOSES CT Outside Reference Images \\
+     Procedure Code Sequence &  SQ &  [\{(0008, 0100): (0008, 0100) Code Value       ... \\
+                  Code Value &  SH &                                      MOSESOUTREFCT \\
+    Coding Scheme Designator &  SH &                                              GEIIS \\
+       Coding Scheme Version &  SH &                                                  0 \\
+                Code Meaning &  LO &                  MOSES CT Outside Reference Images \\
+          Series Description &  LO &                                        Reformatted \\
+    Referenced SOP Class UID &  UI &   1.2.840.113619.2.51762891606.1649.1005918257.250 \\
+ Referenced SOP Instance UID &  UI &         1.2.840.114356.2008.11.30.12.34.2.329.1301 \\
+\bottomrule
+\end{tabular}
+\end{frame}
+
+
+\begin{frame}{Quality Assurance - DICOM}
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+                        name &  VR &                                              value \\
+\midrule
+                  Study Date &  DA &                                           20081230 \\
+                Content Date &  DA &                                           20081230 \\
+                  Study Time &  TM &                                             122731 \\
+                Content Time &  TM &                                         12299.0000 \\
+\bottomrule
+\end{tabular}
+\end{center}
+	\begin{itemize}
+		\item \textbf{DA} - A string of characters of the format YYYYMMDD
+		\item \textbf{TM} - A string of characters of the format HHMMSS.FFFFFF.  
+		\begin{itemize}
+			\item One or more of the components MM, SS, or FFFFFF may be unspecified as long as every component to the right of an unspecified component is also unspecified
+		\end{itemize}		 
+	\end{itemize}
+
 	\begin{center}
-		Temperature
+		\large{Whose fault is this?}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Quality Control - Temperature}
+	\begin{center}
+		\LARGE{How can I find the temperatures recorded from every patient in the hospital}
 	\end{center}
 \end{frame}
 
 
-\begin{frame}{Quality Control}
-	\begin{center}
-		Temperature
-	\end{center}
+\begin{frame}
+	\includegraphics[width=\textwidth]{images/temp_value_counts.pdf}
 \end{frame}
 
-%\note{
-%\scriptsize
-%
-%}
+\note{
+	\begin{itemize}
+		\scriptsize
+		\item How do you interpret the temps around 0 (probably had to enter something), how about around 37F (centigrade), how about 212, how about 95 (MICE)
+		\item Let's take a look at an individual patient's data, who had a temp of 0
+		\item maybe the data is being pulled from 5 different hospitals and it's the ETL which is causing the errors, because it doesn't know Celsius from F
+		\item let's pick a patient whose temperature is zero and see what the rest of their temperature values look like (and then look at her results for that date)
+	\end{itemize}
+}
+
+\begin{frame}
+	\includegraphics[width=\textwidth]{images/pt_temp_values.pdf}
+\end{frame}
 
 
+\begin{frame}{Associated Values}
+\small
+\begin{tabular}{llr}
+\toprule
+FINDINGDATETIME &               FINDINGDESC &  NUMERICFINDING \\
+\midrule
+     2014-12-26 &            PULSE OXIMETRY &           97.00 \\
+     2014-12-26 &     WEIGHT/SCALE (ounces) &         2800.16 \\
+     2014-12-26 &           HEIGHT (inches) &           62.00 \\
+     2014-12-26 &  Diastolic Blood Pressure &           82.00 \\
+     2014-12-26 &   Systolic Blood Pressure &          139.00 \\
+     2014-12-26 &               HEIGHT (CM) &          157.48 \\
+     2014-12-26 &                     PULSE &           75.00 \\
+     2014-12-26 &           BODY MASS INDEX &           32.13 \\
+     2014-12-26 &                   O2 SAT\% &           97.00 \\
+     2014-12-26 &           TEMPERATURE (F) &            0.00 \\
+     2014-12-26 &   Systolic Blood Pressure &          139.00 \\
+     2014-12-26 &               WEIGHT (KG) &           79.38 \\
+     2014-12-26 &  Diastolic Blood Pressure &           82.00 \\
+\bottomrule
+\end{tabular}
+\end{frame}
+
+
+
+\begin{frame}{Imputation and Extrapolation}
+	\begin{center}
+		\Large Can we develop a systematic way to deal with missing data
+	\end{center}
+	\begin{itemize}
+		\item What are the different ways that data could be missing
+	\end{itemize}
+\end{frame}
+
+\note{
+	\scriptsize
+	\begin{itemize}
+		\item data could be MCAR, MAR, MNAR or because we are slicing the data into chunks smaller than the sampling rate
+		\item Missing Data Procedure
+		\begin{itemize}
+			\scriptsize
+			\item \textbf{Variable correctness} -  
+var correctly derived/appropriate to include, e.g., complete or near-complete missingness or same value in all rows.
+			\item \textbf{Time freq} - Ensure that time blocks used in time series data are appropriate to the task
+			\item Determine how frequently every variable is measured
+			\item Use the frequency range from the previous step for each variable to do ffill
+			\item Encounters without data or good data cannot add value and should be dropped.
+			\item Drop beginning blocks if empty, drop end blocks if dead or discharged
+			\item \textbf{Imputation} - MICE, NN.  Cases where imputation should not be done are when the missingness itself is significant or if the imputation cannot be done by adding another class.  An example of the latter is would be if an x-ray is performed. X-rays not being performed are another class that can be added to the column.
+			\item  Anything which is not imputed is masked (-9999, not 0)
+		\end{itemize}
+	\end{itemize}
+}
 
 \begin{frame}{Sources}
 	\begin{itemize}
@@ -188,6 +326,8 @@
 	\end{itemize}
 
 \end{frame}
+
+
 
 %\begin{frame}{How Can Data Be Wrong}
 %	\begin{itemize}
