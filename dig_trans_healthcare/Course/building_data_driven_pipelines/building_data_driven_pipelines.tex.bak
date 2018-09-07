@@ -40,7 +40,7 @@
 
 
 \title{Digital Transformation of Healthcare}
-\subtitle{Course Overview}
+\subtitle{Building a Data Driven Pipeline}
 % \date{\today}
 \date{}
 \author{Michoel Snow, M.D. Ph.D., Glen Ferguson, Ph.D.}
@@ -61,10 +61,17 @@
 		\end{itemize}
 		\item Course Objectives
 		\begin{itemize}
-			\item Design healthcare informatics projects
-			\item Develop questions answerable by current systems
-			\item Estimate the value of a project prior to its implementation
-			\item Evaluate results from research, economic, and institutional stakeholder  perspectives
+			\item Outline the components which form model bioinformatics pipelines
+			\item Investigate possible hypotheses for clinical significance and system compliance
+			\item Characterize hypotheses within the context of healthcare infrastructure 
+			\item Identify stakeholders based on the scope of the project
+			\item Identify sources of patient data and differentiate the various collection mechanisms/tools
+			\item Develop a informatics driven research question
+			\item Assess the quality of the generated data 
+			\item Describe modeling frameworks to analyze the data 
+			\item Contrast methods to evaluate the results of modeling
+			\item Discuss methods of model implementation and care provider communication
+			\item Design new bioinformatics pipeline for application within the healthcare system
 		\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -76,11 +83,11 @@
 		\begin{itemize}
 			\item Each class will focus on a specific part of the pipeline
 			\item Explore theoretical constructs through discussion and small group work
-			\item Compare with practical implementations
+			\item Work through real world cases using theoretical framework
 		\end{itemize}	
 		\item Final Project
 		\begin{itemize}
-			\item Teams of X students will present an informatics project to the class at the last lecture
+			\item Each student will present an informatics project to the class over the last two lectures
 		\end{itemize}
 		\item Grading
 		\begin{itemize}
@@ -99,18 +106,20 @@
 
 \begin{frame}{Lecture Schedule}
 	\begin{enumerate}
-		\item Overview and Introduction to pipeline
-		\item Clinical Decision Support
-		\item Machine Learning Models
-		\item Evaluating Predictions
-		\item Mobile Health/IOT
-		\item Cohort Selection
-		\item Healthcare Economics
-		\item Administrative Healthcare Databases
-		\item Ethics of Healthcare Informatics
-		\item Exploratory Analysis
-		\item (A Gentle) Deeper Dive into Neural Networks
-		\item Presentations
+		\small
+		\item Overview of course and introduction to building data driven bioinformatic pipelines
+		\item Building clinical decision support systems (Implementation)
+		\item Evaluating study results and model predictions (Modeling and Analysis) 
+		\item Overview of machine learning models - part 1 (Modeling and Analysis)
+		\item Overview of machine learning models - part 2 (Modeling and Analysis)
+		\item Assessing data quality and preparing data for modeling and analysis (Data Preparation)
+		\item Identifying data sources and implementing collection protocols (Data Collection)
+		\item Calculating economic feasability and impact (Stakeholder concerns)
+		\item Bioinformatics ethics and stakeholder engagement (Stakeholder Concerns)
+		\item Healthcare administrative databases (Infrastructure)
+		\item Exploratory data analysis (Hypothesis Generation)
+		\item Presentations - part 1
+		\item Presentations - part 2
 	\end{enumerate}
 \end{frame}
 
@@ -127,7 +136,7 @@
 	\begin{itemize}
 		\item Describe the different phases of a healthcare informatics project 
 		\item Diagram an informatics project as a pipeline
-	\end{itemize}%
+	\end{itemize}
 \end{frame}
 
 
@@ -171,34 +180,40 @@
 
 \begin{frame}{Healthcare Informatics Pipeline}
 	\begin{center}
-		\includegraphics[width=0.8\textwidth]{images/informatics_pipeline.pdf}	
+		\includegraphics[width=0.9\textwidth]{images/informatics_pipeline.pdf}	
 	\end{center}
 \end{frame}
 
 
-
-
-
-
-
-
-\begin{frame}{Metastatic Epidural Spinal Cord Compression}
-Initial Steps
-	\begin{itemize} % Draw the 5 stages and 8 boxes of the healthcare informatics pipeline
-		\item Question
-		\begin{itemize}
-			\item Question
-			\item Cord Compression is the first manifestation in about 20\% of patients
-			\item Survival is generally less than 6 months
-			\item Prognosis negatively correlates with severity of presenting symptoms
-		\end{itemize}
-		\item Exploratory Analysis
-		\begin{itemize}
-			\item Clinical Findings
-			\item Imaging (MRI or CT)
-		\end{itemize}
+\begin{frame}{Further Reading}
+	\begin{itemize}
+		\item Weapons of Math Destruction
+		\item Journal of the Americal Medical Informatics Association (JAMIA)
+		\item Hourn
 	\end{itemize}
 \end{frame}
+
+
+
+
+
+%\begin{frame}{Metastatic Epidural Spinal Cord Compression}
+%Initial Steps
+%	\begin{itemize} % Draw the 5 stages and 8 boxes of the healthcare informatics pipeline
+%		\item Question
+%		\begin{itemize}
+%			\item Question
+%			\item Cord Compression is the first manifestation in about 20\% of patients
+%			\item Survival is generally less than 6 months
+%			\item Prognosis negatively correlates with severity of presenting symptoms
+%		\end{itemize}
+%		\item Exploratory Analysis
+%		\begin{itemize}
+%			\item Clinical Findings
+%			\item Imaging (MRI or CT)
+%		\end{itemize}
+%	\end{itemize}
+%\end{frame}
 
 
 \end{document}
