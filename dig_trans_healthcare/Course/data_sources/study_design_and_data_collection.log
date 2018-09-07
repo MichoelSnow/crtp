@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2018.3.6)  6 SEP 2018 13:58
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2018.3.6)  6 SEP 2018 14:01
 entering extended mode
-**./data_quality.tex
-(data_quality.tex
+**./study_design_and_data_collection.tex
+(study_design_and_data_collection.tex
 LaTeX2e <2017-04-15>
 Babel <3.10> and hyphenation patterns for 75 language(s) loaded.
 (C:\Users\msnow1\AppData\Roaming\MiKTeX\2.9\tex\latex\beamer\beamer.cls
@@ -1677,8 +1677,8 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 fplotsthemetol.sty
 Package: pgfplotsthemetol 2017/01/23 PGFplots colors based on Paul Tol's SRON t
 echnical note
-) (data_quality.aux)
-\openout1 = `data_quality.aux'.
+) (study_design_and_data_collection.aux)
+\openout1 = `study_design_and_data_collection.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
 LaTeX Font Info:    ... okay on input line 82.
@@ -1752,9 +1752,9 @@ LaTeX Info: Redefining \ref on input line 82.
 LaTeX Info: Redefining \pageref on input line 82.
 LaTeX Info: Redefining \nameref on input line 82.
 
-(data_quality.out) (data_quality.out)
+(study_design_and_data_collection.out) (study_design_and_data_collection.out)
 \@outlinefile=\write5
-\openout5 = `data_quality.out'.
+\openout5 = `study_design_and_data_collection.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 82.
@@ -1835,36 +1835,37 @@ enefit from \pgfplotsset{compat=1.15} (current compat level: 1.9).
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-(data_quality.nav)
+(study_design_and_data_collection.nav)
 Overfull \vbox (13.79993pt too high) detected at line 84
  []
 
 [1
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+lmss on input line 97.
+LaTeX Font Info:    Try loading font information for OMS+lmss on input line 96.
 
-LaTeX Font Info:    No file OMSlmss.fd. on input line 97.
+LaTeX Font Info:    No file OMSlmss.fd. on input line 96.
 
 
 LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 97.
+(Font)              for symbol `textbullet' on input line 96.
 
 [2
 
 ]
 File: images/informatics_pipeline.pdf Graphic file (type QTm)
  <use  "images/informatics_pipeline.pdf" >
-Overfull \vbox (7.07948pt too high) detected at line 104
+Overfull \vbox (7.07948pt too high) detected at line 103
  []
 
 [3
 
 ]
-File: images/informatics_pipeline_data_quality.pdf Graphic file (type QTm)
- <use  "images/informatics_pipeline_data_quality.pdf" >
-Overfull \vbox (7.07948pt too high) detected at line 111
+File: images/informatics_pipeline_design_collection.pdf Graphic file (type QTm)
+
+ <use  "images/informatics_pipeline_design_collection.pdf" >
+Overfull \vbox (7.07948pt too high) detected at line 110
  []
 
 [4
@@ -1890,140 +1891,33 @@ Overfull \vbox (7.07948pt too high) detected at line 111
 ] [14
 
 ]
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 230; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-*  
-*  The current font is "\T1/lmss/m/n/7 ".
-*   The requested feature is "Numbers={Monospaced}". 
-*************************************************
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 230
-.
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmss.fd"
-File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 230.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 230
-.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 230
-.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 230.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 230.
-LaTeX Font Info:    Try loading font information for U+msa on input line 230.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 230.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 230.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 230.
- [15
-
-]
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 257; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-*  
-*  The current font is "\T1/lmss/m/n/7 ".
-*   The requested feature is "Numbers={Monospaced}". 
-*************************************************
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 257.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 257.
-[16
-
-] [17
-
-]
-File: images/temp_value_counts.pdf Graphic file (type QTm)
- <use  "images/temp_value_counts.pdf" > [18
-
-] [19
-
-]
-File: images/pt_temp_values.pdf Graphic file (type QTm)
-
-<use  "images/pt_temp_values.pdf" > [20
-
-]
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 306; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-*  
-*  The current font is "\T1/lmss/m/n/9 ".
-*   The requested feature is "Numbers={Monospaced}". 
-*************************************************
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 306.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 306.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 306.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 306.
-[21
-
-] [22
-
-] [23
-
-] [24
-
-]
 \tf@nav=\write6
-\openout6 = `data_quality.nav'.
+\openout6 = `study_design_and_data_collection.nav'.
 
 \tf@toc=\write7
-\openout7 = `data_quality.toc'.
+\openout7 = `study_design_and_data_collection.toc'.
 
 \tf@snm=\write8
-\openout8 = `data_quality.snm'.
+\openout8 = `study_design_and_data_collection.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 366.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 366.
- (data_quality.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 366.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 366.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
+
+(study_design_and_data_collection.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 173.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 173.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 45334 strings out of 427834
- 1035787 string characters out of 3152471
- 1228104 words of memory out of 3000000
- 48558 multiletter control sequences out of 15000+200000
- 603840 words of font info for 87 fonts, out of 3000000 for 9000
+ 45188 strings out of 427834
+ 1033900 string characters out of 3152471
+ 1223124 words of memory out of 3000000
+ 48457 multiletter control sequences out of 15000+200000
+ 559266 words of font info for 51 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 71i,13n,98p,10427b,701s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 71i,13n,98p,10447b,701s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on data_quality.pdf (24 pages).
+Output written on study_design_and_data_collection.pdf (14 pages).

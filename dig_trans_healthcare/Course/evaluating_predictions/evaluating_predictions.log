@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2018.3.6)  23 AUG 2018 11:21
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2018.3.6)  6 SEP 2018 13:58
 entering extended mode
 **./evaluating_predictions.tex
 (evaluating_predictions.tex
@@ -1891,211 +1891,214 @@ LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
 [2
 
 ]
-File: ../../informatics_pipeline.pdf Graphic file (type QTm)
- <use  "../../informatics_pipeline.pdf" >
-Overfull \hbox (14.13298pt too wide) in paragraph at lines 98--98
-[][]  
- []
-
-
-Overfull \vbox (1.0pt too high) detected at line 98
+File: images/informatics_pipeline.pdf Graphic file (type QTm)
+ <use  "images/informatics_pipeline.pdf" >
+Overfull \vbox (7.07948pt too high) detected at line 102
  []
 
 [3
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 100
+File: images/informatics_pipeline_modeling.pdf Graphic file (type QTm)
+ <use  "images/informatics_pipeline_modeling.pdf" >
+Overfull \vbox (7.07948pt too high) detected at line 109
+ []
+
+[4
+
+]
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 113
 .
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmss.fd"
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 100.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 113.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 100
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 113
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 100
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 113
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 100.
+(Font)              <10> on input line 113.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 100.
+(Font)              <7> on input line 113.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 100.
-LaTeX Font Info:    Try loading font information for U+msa on input line 100.
+(Font)              <5> on input line 113.
+LaTeX Font Info:    Try loading font information for U+msa on input line 113.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 100.
+LaTeX Font Info:    Try loading font information for U+msb on input line 113.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 100.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 113.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 100.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 113.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 100.
- [4
-
-] [5
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 113.
+ [5
 
 ] [6
 
+] [7
+
 ]
 Missing character: There is no ‐ in font ec-lmss8!
- [7
+ [8
 
 ]
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 194--194
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
  [][][][]\T1/lmss/m/n/10 17,497 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 194--194
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
  [][][][]\T1/lmss/m/n/10 49,792 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 194--194
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
  [][][][]\T1/lmss/m/n/10 25,480 
  []
 
 
-Overfull \hbox (2.8033pt too wide) in paragraph at lines 194--194
-[][] 
- []
-
-[8
-
-]
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 194--194
- [][][][]\T1/lmss/m/n/10 17,497 
- []
-
-
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 194--194
- [][][][]\T1/lmss/m/n/10 49,792 
- []
-
-
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 194--194
- [][][][]\T1/lmss/m/n/10 25,480 
- []
-
-
-Overfull \hbox (2.8033pt too wide) in paragraph at lines 194--194
+Overfull \hbox (2.8033pt too wide) in paragraph at lines 207--207
 [][] 
  []
 
 [9
 
 ]
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 194--194
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
  [][][][]\T1/lmss/m/n/10 17,497 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 194--194
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
  [][][][]\T1/lmss/m/n/10 49,792 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 194--194
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
  [][][][]\T1/lmss/m/n/10 25,480 
  []
 
 
-Overfull \hbox (2.8033pt too wide) in paragraph at lines 194--194
+Overfull \hbox (2.8033pt too wide) in paragraph at lines 207--207
 [][] 
  []
 
 [10
 
 ]
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 194--194
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
  [][][][]\T1/lmss/m/n/10 17,497 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 194--194
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
  [][][][]\T1/lmss/m/n/10 49,792 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 194--194
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
  [][][][]\T1/lmss/m/n/10 25,480 
  []
 
 
-Overfull \hbox (2.8033pt too wide) in paragraph at lines 194--194
+Overfull \hbox (2.8033pt too wide) in paragraph at lines 207--207
 [][] 
  []
 
 [11
 
 ]
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 194--194
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
  [][][][]\T1/lmss/m/n/10 17,497 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 194--194
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
  [][][][]\T1/lmss/m/n/10 49,792 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 194--194
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
  [][][][]\T1/lmss/m/n/10 25,480 
  []
 
 
-Overfull \hbox (2.8033pt too wide) in paragraph at lines 194--194
+Overfull \hbox (2.8033pt too wide) in paragraph at lines 207--207
 [][] 
  []
 
 [12
 
 ]
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 194--194
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
  [][][][]\T1/lmss/m/n/10 17,497 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 194--194
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
  [][][][]\T1/lmss/m/n/10 49,792 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 194--194
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
  [][][][]\T1/lmss/m/n/10 25,480 
  []
 
 
-Overfull \hbox (2.8033pt too wide) in paragraph at lines 194--194
+Overfull \hbox (2.8033pt too wide) in paragraph at lines 207--207
 [][] 
  []
 
 [13
 
 ]
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
+ [][][][]\T1/lmss/m/n/10 17,497 
+ []
+
+
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
+ [][][][]\T1/lmss/m/n/10 49,792 
+ []
+
+
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
+ [][][][]\T1/lmss/m/n/10 25,480 
+ []
+
+
+Overfull \hbox (2.8033pt too wide) in paragraph at lines 207--207
+[][] 
+ []
+
+[14
+
+]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 221; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 234; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 *  
 *  The current font is "\T1/lmss/m/n/7 ".
@@ -2104,123 +2107,123 @@ Overfull \hbox (2.8033pt too wide) in paragraph at lines 194--194
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 221; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 234; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 *  
 *  The current font is "\T1/lmss/m/it/5 ".
 *   The requested feature is "Numbers={Monospaced}". 
 *************************************************
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 221.
+(Font)              <9> on input line 234.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 221.
+(Font)              <6> on input line 234.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 221.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 234.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 221.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 234.
 
-Overfull \hbox (19.02248pt too wide) in paragraph at lines 221--221
+Overfull \hbox (19.02248pt too wide) in paragraph at lines 234--234
  [] 
- []
-
-[14
-
-]
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 276--276
- [][][][]\T1/lmss/m/n/10 17,497 
- []
-
-
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 276--276
- [][][][]\T1/lmss/m/n/10 49,792 
- []
-
-
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 276--276
- [][][][]\T1/lmss/m/n/10 25,480 
- []
-
-
-Overfull \hbox (2.8033pt too wide) in paragraph at lines 276--276
-[][] 
  []
 
 [15
 
 ]
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 276--276
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
  [][][][]\T1/lmss/m/n/10 17,497 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 276--276
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
  [][][][]\T1/lmss/m/n/10 49,792 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 276--276
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
  [][][][]\T1/lmss/m/n/10 25,480 
  []
 
 
-Overfull \hbox (2.8033pt too wide) in paragraph at lines 276--276
+Overfull \hbox (2.8033pt too wide) in paragraph at lines 289--289
 [][] 
  []
 
 [16
 
 ]
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 276--276
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
  [][][][]\T1/lmss/m/n/10 17,497 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 276--276
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
  [][][][]\T1/lmss/m/n/10 49,792 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 276--276
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
  [][][][]\T1/lmss/m/n/10 25,480 
  []
 
 
-Overfull \hbox (2.8033pt too wide) in paragraph at lines 276--276
+Overfull \hbox (2.8033pt too wide) in paragraph at lines 289--289
 [][] 
  []
 
 [17
 
-] [18
+]
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
+ [][][][]\T1/lmss/m/n/10 17,497 
+ []
+
+
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
+ [][][][]\T1/lmss/m/n/10 49,792 
+ []
+
+
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
+ [][][][]\T1/lmss/m/n/10 25,480 
+ []
+
+
+Overfull \hbox (2.8033pt too wide) in paragraph at lines 289--289
+[][] 
+ []
+
+[18
+
+] [19
 
 ]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 321; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 334; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 *  
 *  The current font is "\T1/lmss/m/it/5 ".
 *   The requested feature is "Numbers={Monospaced}". 
 *************************************************
-[19
+[20
 
 ]
 File: images/overlap_distr.pdf Graphic file (type QTm)
- <use  "images/overlap_distr.pdf" > [20
+ <use  "images/overlap_distr.pdf" > [21
 
-] [21
+] [22
 
 ]
 File: images/overlap_distr_points.pdf Graphic file (type QTm)
 
-<use  "images/overlap_distr_points.pdf" > [22
+<use  "images/overlap_distr_points.pdf" > [23
 
 ]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 382; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 395; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 *  
 *  The current font is "\OMS/lmss/m/n/9 ".
@@ -2229,13 +2232,13 @@ File: images/overlap_distr_points.pdf Graphic file (type QTm)
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 382; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 395; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 *  
 *  The current font is "\T1/lmss/bx/n/9 ".
 *   The requested feature is "Numbers={Monospaced}". 
 *************************************************
-[23
+[24
 
 ]
 File: images/overlap_distr_no_thresh.pdf Graphic file (type QTm)
@@ -2253,12 +2256,12 @@ File: images/ROC.pdf Graphic file (type QTm)
 File: images/overlap_distr_no_thresh.pdf Graphic file (type QTm)
 
 <use  "images/overlap_distr_no_thresh.pdf" >
-Overfull \vbox (9.50136pt too high) detected at line 400
+Overfull \vbox (9.50136pt too high) detected at line 413
  []
 
-[24
+[25
 
-] [25
+] [26
 
 ]
 File: images/overlap_distr_no_thresh_diff_sens.pdf Graphic file (type QTm)
@@ -2278,72 +2281,72 @@ File: images/ROC_dist_diff.pdf Graphic file (type QTm)
 File: images/overlap_distr_no_thresh_diff_sens.pdf Graphic file (type QTm)
 
 <use  "images/overlap_distr_no_thresh_diff_sens.pdf" >
-Overfull \vbox (9.50136pt too high) detected at line 408
+Overfull \vbox (9.50136pt too high) detected at line 421
  []
 
-[26
+[27
 
 ]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 453; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 466; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 *  
 *  The current font is "\T1/lmss/m/n/9 ".
 *   The requested feature is "Numbers={Monospaced}". 
 *************************************************
-[27
+[28
 
-] [28
+] [29
 
 ]
 File: images/growth_curves.pdf Graphic file (type QTm)
  <use  "images/growth_curves.pdf" >
-Overfull \vbox (17.0031pt too high) detected at line 467
- []
-
-[29
-
-]
-File: images/growth_curves_measured.pdf Graphic file (type QTm)
- <use  "images/growth_curves_measured.pdf" >
-Overfull \vbox (17.0031pt too high) detected at line 474
+Overfull \vbox (17.0031pt too high) detected at line 480
  []
 
 [30
 
 ]
-File: images/growth_curves_measured_p50.pdf Graphic file (type QTm)
- <use  "images/growth_curves_measured_p50.pdf" >
-Overfull \vbox (4.74695pt too high) detected at line 487
+File: images/growth_curves_measured.pdf Graphic file (type QTm)
+ <use  "images/growth_curves_measured.pdf" >
+Overfull \vbox (17.0031pt too high) detected at line 487
  []
 
 [31
 
-] [32
-
 ]
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 518; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-*  
-*  The current font is "\T1/lmss/m/n/9 ".
-*   The requested feature is "Numbers={Monospaced}". 
-*************************************************
-
-Overfull \vbox (12.64995pt too high) detected at line 518
+File: images/growth_curves_measured_p50.pdf Graphic file (type QTm)
+ <use  "images/growth_curves_measured_p50.pdf" >
+Overfull \vbox (4.74695pt too high) detected at line 500
  []
 
-[33
+[32
+
+] [33
 
 ]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 544; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 531; it cannot be used with a font that
+* wasn't selected by a fontspec command.
+*  
+*  The current font is "\T1/lmss/m/n/9 ".
+*   The requested feature is "Numbers={Monospaced}". 
+*************************************************
+
+Overfull \vbox (12.64995pt too high) detected at line 531
+ []
+
+[34
+
+]
+*************************************************
+* fontspec warning: "addfontfeatures-ignored"
+* 
+* \addfontfeature(s) ignored on line 557; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 *  
 *  The current font is "\T1/lmss/m/n/9 ".
@@ -2352,13 +2355,13 @@ Overfull \vbox (12.64995pt too high) detected at line 518
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
 * 
-* \addfontfeature(s) ignored on line 544; it cannot be used with a font that
+* \addfontfeature(s) ignored on line 557; it cannot be used with a font that
 * wasn't selected by a fontspec command.
 *  
 *  The current font is "\T1/lmss/bx/n/9 ".
 *   The requested feature is "Numbers={Monospaced}". 
 *************************************************
-[34
+[35
 
 ]
 \tf@nav=\write6
@@ -2370,23 +2373,23 @@ Overfull \vbox (12.64995pt too high) detected at line 518
 \tf@snm=\write8
 \openout8 = `evaluating_predictions.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 886.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 886.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 899.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 899.
  (evaluating_predictions.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 886.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 886.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 899.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 899.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 46218 strings out of 427834
- 1053638 string characters out of 3152471
- 1307142 words of memory out of 3000000
- 49422 multiletter control sequences out of 15000+200000
+ 46221 strings out of 427834
+ 1053722 string characters out of 3152471
+ 1307233 words of memory out of 3000000
+ 49425 multiletter control sequences out of 15000+200000
  609355 words of font info for 89 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  71i,18n,98p,10437b,1016s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on evaluating_predictions.pdf (34 pages).
+Output written on evaluating_predictions.pdf (35 pages).
