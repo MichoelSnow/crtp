@@ -1,0 +1,13 @@
+\beamer@sectionintoc {1}{Intro to Machine Learning}{2}{0}{1}
+\beamer@sectionintoc {2}{Supervised Learning}{22}{0}{2}
+\beamer@subsectionintoc {2}{1}{Supervised Prediction Types}{23}{0}{2}
+\beamer@subsectionintoc {2}{2}{Basic Methods}{28}{0}{2}
+\beamer@subsectionintoc {2}{3}{SVM and Tree-Based Methods}{37}{0}{2}
+\beamer@subsectionintoc {2}{4}{Neural Networks}{54}{0}{2}
+\beamer@subsectionintoc {2}{5}{Other}{60}{0}{2}
+\beamer@sectionintoc {3}{Unsupervised Learning}{61}{0}{3}
+\beamer@subsectionintoc {3}{1}{Clustering}{63}{0}{3}
+\beamer@sectionintoc {4}{Reinforcement Learning}{66}{0}{4}
+\beamer@sectionintoc {5}{Special Topics}{70}{0}{5}
+\beamer@subsectionintoc {5}{1}{Natural Language Processing}{71}{0}{5}
+\beamer@subsectionintoc {5}{2}{Computer Vision}{72}{0}{5}
