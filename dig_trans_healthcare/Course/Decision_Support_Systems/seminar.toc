@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Clinical Decision Support Systems}{4}{0}{1}
+\beamer@sectionintoc {2}{Best Practice Advisories}{11}{0}{2}
+\beamer@sectionintoc {3}{Evaluating Best Practice Advisories}{28}{0}{3}
+\beamer@sectionintoc {4}{Improving Best Practice Advisories}{35}{0}{4}
