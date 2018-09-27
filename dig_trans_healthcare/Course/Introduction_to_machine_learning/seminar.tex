@@ -66,6 +66,12 @@
 	\end{center}
 \end{frame}
 
+\begin{frame}{Machine Learning}
+	\begin{center}
+     What is machine learning?
+	\end{center}
+\end{frame}
+
 \begin{frame}{What is Machine Learning?}
 Machine Learning is part of multiple overlapping disciplines and is often associated with both Data Science and Artificial intelligence.
 	\begin{center}
@@ -74,10 +80,29 @@ Machine Learning is part of multiple overlapping disciplines and is often associ
 \end{frame}
 
 \begin{frame}{What is Machine Learning?}
-\pause
+Machine learning is a discipline in AI where algorithms use data to improve a model
 	\begin{itemize}
-		\item Machine learning is a discipline that uses data to improve a mathematical model
 		\pause
+		\item Algorithm is a specification of how to solve a problem
+		\pause
+		\item Data is information about the problem we are trying to solve
+		\pause
+		\item Model
+		\begin{itemize}
+			\pause
+			\item Scientific - a simplified and idealized understanding of physical systems
+			\pause
+			\item Computer Science - a simulation to reproduce the behavior of a system
+		\end{itemize}
+	\end{itemize}
+	\begin{figure}
+		\includegraphics[width=0.5\textwidth, center, trim=0cm 0cm 0 0cm]{images/Linear_regression.pdf}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{What is Machine Learning?}
+	\begin{itemize}
+		\item Machine learning is a discipline that uses data to improve a model
 			\begin{itemize}
 				\item Algorithm Examples
 					\begin{itemize}
@@ -105,22 +130,6 @@ Machine Learning is part of multiple overlapping disciplines and is often associ
 \begin{frame}{Traditional Programming vs. Machine Learning}
 	\begin{figure}
 		\includegraphics[width=1.0\textwidth, center, trim=0cm 0cm 0 0cm]{images/ML_paradigm.pdf}
-	\end{figure}
-\end{frame}
-
-\begin{frame}{What is Machine Learning?}
-Machine learning is a discipline in AI where algorithms use data to improve a model
-	\begin{itemize}
-		\item Algorithm is a specification of how to solve a problem
-		\item Data is information about the problem we are trying to solve
-		\item Model
-		\begin{itemize}
-			\item Scientific - a simplified and idealized understanding of physical systems
-			\item Computer Science - a simulation to reproduce the behavior of a system
-		\end{itemize}
-	\end{itemize}
-	\begin{figure}
-		\includegraphics[width=0.5\textwidth, center, trim=0cm 0cm 0 0cm]{images/Linear_regression.pdf}
 	\end{figure}
 \end{frame}
 
@@ -457,6 +466,14 @@ Random Forest Decision Boundary
 	\end{figure}
 \end{frame}
 
+\begin{frame}{Corrections}
+	\begin{itemize}
+		\item ImageNet is currently fit using Mechanical Turk
+		\item Saturation is when the value of a sigmoid or softmax function too close to 1 or 0, and the gradient value is very small \emph{has not direct connection to number of classes}
+		\item When you have too many classes for a softmax, many thousands, switch to hierarchical softmax
+	\end{itemize}
+\end{frame}
+
 \begin{frame}{Boosted Trees}
 \emph{Combine short decision trees fitting to the error of the previous tree}
 	\begin{itemize}
@@ -477,7 +494,7 @@ GBM Decision Boundary
 
 \subsection{Neural Networks}
 \begin{frame}{Neural Networks}
-\emph{A class of models using collections of linear algebra operations to make predictions, classify data, so called deep learning and perform complex tasks}
+\emph{A class of models using collections of linear algebra operations to make predictions, classify data, deep learning and perform complex tasks}
 	\begin{itemize}
 		\item Wide-range of applications from classification to self-driving cars
 		\item Automatic variable selection and engineering
@@ -520,6 +537,57 @@ Neural Network Decision Boundary
 	\end{figure}
 \end{frame}
 
+\begin{frame}{Types of Neural Networks}
+	\begin{columns}
+	\begin{column}{0.33\textwidth}
+	\begin{figure}	
+		\caption{Full-Connected NN, {\tiny Built using \href{http://alexlenail.me/NN-SVG/index.html}{\beamergotobutton{NN-SVG}}}}
+		\includegraphics[width=0.7 \textwidth, trim=0cm 0cm 0 0cm]{images/fully_connected_nn.pdf}
+	\end{figure}
+	\end{column}
+	\begin{column}{0.33\textwidth}
+		\begin{figure}	
+		\caption{Convolutional NN, {\tiny Built using \href{http://alexlenail.me/NN-SVG/index.html}{\beamergotobutton{NN-SVG}}}}
+		\includegraphics[width=1.0 \textwidth, trim=0cm 0cm 0 0cm]{images/CNN.pdf}
+	\end{figure}
+	\end{column}
+		\begin{column}{0.33 \textwidth}
+		\begin{figure}	
+		\caption{LSTM, {\tiny CC BY-SA 4.0 From \href{https://en.wikipedia.org/wiki/Long_short-term_memory}{\beamergotobutton{Wikipedia LSTM}}}}
+		\includegraphics[width=0.5\textwidth, trim=0cm 0cm 0 0cm]{images/542px-Peephole_Long_Short-Term_Memory.pdf}
+	\end{figure}
+	\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Types of Neural Networks}
+	\begin{figure}	
+		\caption{Full-Connected NN, {\tiny Built using \href{http://alexlenail.me/NN-SVG/index.html}{\beamergotobutton{NN-SVG}}}}
+		\includegraphics[width=0.6 \textwidth, trim=0cm 0cm 0 0cm]{images/fully_connected_nn.pdf}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Types of Neural Networks}
+	\begin{figure}	
+		\caption{Convolutional NN, {\tiny Built using \href{http://alexlenail.me/NN-SVG/index.html}{\beamergotobutton{NN-SVG}}}}
+		\includegraphics[width=1.0 \textwidth, trim=0cm 0cm 0 0cm]{images/CNN.pdf}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Types of Neural Networks}
+	\begin{figure}	
+		\caption{Convolutional NN, {\tiny Built using \href{https://github.com/vdumoulin/conv_arithmetic}{\beamergotobutton{Conv arith}}}}
+		\includegraphics[width=0.6 \textwidth, trim=0cm 0cm 0 0cm]{images/same_padding_no_strides-1.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Types of Neural Networks}
+	\begin{figure}	
+		\caption{LSTM, {\tiny CC BY-SA 4.0 From \href{https://en.wikipedia.org/wiki/Long_short-term_memory}{\beamergotobutton{Wikipedia LSTM}}}}
+		\includegraphics[width=0.5\textwidth, trim=0cm 0cm 0 0cm]{images/542px-Peephole_Long_Short-Term_Memory.pdf}
+	\end{figure}
+\end{frame}
+
 \subsection{Other}
 \begin{frame}{Other Supervised Learning Methods}
 \emph{Many other methods available}
@@ -532,10 +600,11 @@ Neural Network Decision Boundary
 	\end{itemize}
 \end{frame}
 
+\subsection{Time Series Analysis}
+
 \section{Unsupervised Learning}
 
 \begin{frame}{Inferring the structure of unlabeled data}
-\emph{Support Vector Machines and Decision Trees}
 	\begin{itemize}
 		\item Dimensionality Reduction
 		\begin{itemize}
@@ -585,7 +654,6 @@ First two PCA eigenvectors
 		\item Reinforcement learning is a method to learn a policy to arrive at an outcome rather than learning a labeled value
 		\item Successes include self-driving cars, beating the best in the world at the game of Go and playing most Atari games at superhuman levels 
 		\item Must define the actions, the rewards and the states
-		\item Very data intense
 	\end{itemize}
 \end{frame}
 
@@ -607,23 +675,117 @@ First two PCA eigenvectors
 
 \subsection{Natural Language Processing}
 
-\begin{frame}{Teaching a computer to read}
-\emph{Computers can't read! Wait can they?} \\~\\
+\begin{frame}{Natural Language Processing}
+\emph{Computers can't read! Wait can they?}
 London is the capital and most populous city.
-	\begin{figure}
-		\includegraphics[width=0.95\textwidth, center, trim=0cm 0cm 0 0cm]{images/NLP_tree.png}
-	\end{figure}
+	\begin{itemize}
+		\item NLP is the extraction of data from unstructured text
+		\item Example, what city is discussed in the above text?
+		\item Text-to-text translation, Google Translate used a seven layer LSTM
+		\item Information Extraction
+			\begin{itemize}
+				\item POS-tagging
+				\item NER-tagging
+				\item Dependency Parsing
+			\end{itemize}
+	\end{itemize}
+\end{frame}
 
+\begin{frame}{Natural Language Processing}
+How can you turn text into data?
+	\begin{itemize}
+		\item Bag-of-Words
+		\item Word frequency
+		\item What about common words? 
+		\begin{itemize}
+			\item Common words like 'the' will occur many times in a document but are common in most documents
+			\item Term Frequency-Inverse Document Frequency (TF-IDF)
+				\begin{itemize}
+				\item Higher value with more terms
+				\item Weighted by how common across documents in the corpus
+				\end{itemize}
+		\end{itemize}
+		\item \emph{n}-Grams  \href{https://books.google.com/ngrams}{\beamergotobutton{Google \emph{n}-Grams}}
+		\item Word Embedding
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Natural Language Processing}
+Word Vectors
+	\begin{itemize}
+		\item Encode words as vectors that are related over a corpus
+		\item Simple dense encoding that retains meaning
+	\end{itemize}
+			\begin{figure}
+			\includegraphics[width=0.6\textwidth, center, trim=0cm 0cm 0 0cm]{images/NLP.png}
+	\end{figure}
 \end{frame}
 
 \subsection{Computer Vision}
 
-\begin{frame}{How do computers see?}
-\emph{What about images? What would a machine learning algorithm use to add the labels below?}	
+\begin{frame}{Computer Vision}
+\emph{How do computer see?}
+	\begin{itemize}
+	  	\item Use pixels array as input data
+    	\item Pixels are numeric values for a color in a region
+		\item Use CNN to process data
+	\end{itemize}
 	\begin{figure}
-		\includegraphics[width=0.65\textwidth, center, trim=0cm 0cm 0 0cm]{images/CT_scan.jpeg}
+		\includegraphics[width=0.5\textwidth, center, trim=0cm 0cm 0 0cm]{images/CT_scan.jpeg}
 	\end{figure}
-
 \end{frame}
+
+\begin{frame}{Computer Vision}
+\emph{Types of computer Vision}
+    \begin{itemize}
+    	\item Image classification - Labeling dominate feature in an image
+    	\item Object detection - Labeling all instances of single feature in an image
+    	\item Segmentation - Labeling at the level of pixels
+    		\begin{itemize}
+    			\item Semantic segmentation
+    			\item Instance segmentation
+    		\end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Computer Vision}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{figure}
+				\caption{Semantic Segmentation, {From \href{https://heartbeat.fritz.ai/the-5-computer-vision-techniques-that-will-change-how-you-see-the-world-1ee19334354b}{\beamergotobutton{Overview Article}}}}
+				\includegraphics[width=1.0\textwidth, center, trim=0cm 0cm 0 0cm]{images/semantic_seg.jpeg}
+			\end{figure}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{figure}
+				\caption{Semantic Segmentation, {From \href{https://heartbeat.fritz.ai/the-5-computer-vision-techniques-that-will-change-how-you-see-the-world-1ee19334354b}{\beamergotobutton{Overview Article}}}}
+				\includegraphics[width=1.0\textwidth, center, trim=0cm 0cm 0 0cm]{images/int_seg.jpeg}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Generative Models}
+\emph{Generating instances of data by learning a distribution}
+    \begin{itemize}
+    	\item Variational Autoencoders
+    	\item Generative Adversarial Networks
+    \end{itemize}
+    	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{figure}
+				\caption{Principle, {From \href{http://kvfrans.com/variational-autoencoders-explained/}{\beamergotobutton{Article}}}}
+				\includegraphics[width=1.0\textwidth, center, trim=0cm 0cm 0 0cm]{images/autoenc.jpg}
+			\end{figure}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{figure}
+				\caption{GAN generated Images, {From \href{https://blog.heuritech.com/2017/04/11/began-state-of-the-art-generation-of-faces-with-generative-adversarial-networks/}{\beamergotobutton{Overview Article}}}}
+				\includegraphics[width=1.0\textwidth, center, trim=0cm 0cm 0 0cm]{images/GAN_Faces.png}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+
 
 \end{document}

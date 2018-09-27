@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.9)  6 SEP 2018 15:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.9)  27 SEP 2018 10:45
 entering extended mode
 **./seminar.tex
 (seminar.tex
@@ -1528,7 +1528,7 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
  [2
 
 ]
-<images/informatics_pipeline.pdf, id=80, 794.97pt x 614.295pt>
+<images/informatics_pipeline.pdf, id=84, 794.97pt x 614.295pt>
 File: images/informatics_pipeline.pdf Graphic file (type pdf)
 <use images/informatics_pipeline.pdf>
 Package pdftex.def Info: images/informatics_pipeline.pdf  used on input line 60
@@ -1537,7 +1537,7 @@ Package pdftex.def Info: images/informatics_pipeline.pdf  used on input line 60
  [3
 
  <./images/informatics_pipeline.pdf>]
-<images/informatics_pipeline_modeling.pdf, id=145, 794.97pt x 614.295pt>
+<images/informatics_pipeline_modeling.pdf, id=149, 794.97pt x 614.295pt>
 File: images/informatics_pipeline_modeling.pdf Graphic file (type pdf)
 <use images/informatics_pipeline_modeling.pdf>
 Package pdftex.def Info: images/informatics_pipeline_modeling.pdf  used on inpu
@@ -1546,489 +1546,631 @@ t line 67.
  [4
 
  <./images/informatics_pipeline_modeling.pdf>]
-<images/overlapping_dis.pdf, id=325, 1927.2pt x 1084.05pt>
-File: images/overlapping_dis.pdf Graphic file (type pdf)
-<use images/overlapping_dis.pdf>
-Package pdftex.def Info: images/overlapping_dis.pdf  used on input line 74.
-(pdftex.def)             Requested size: 368.7469pt x 224.44235pt.
-
-Overfull \vbox (50.22238pt too high) detected at line 74
- []
-
 [5
 
+]
+<images/overlapping_dis.pdf, id=335, 1927.2pt x 1084.05pt>
+File: images/overlapping_dis.pdf Graphic file (type pdf)
+<use images/overlapping_dis.pdf>
+Package pdftex.def Info: images/overlapping_dis.pdf  used on input line 80.
+(pdftex.def)             Requested size: 368.7469pt x 224.44235pt.
+
+Overfull \vbox (50.22238pt too high) detected at line 80
+ []
+
+[6
+
  <./images/overlapping_dis.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+lmss on input line 103
+LaTeX Font Info:    Try loading font information for OMS+lmss on input line 101
 .
-LaTeX Font Info:    No file OMSlmss.fd. on input line 103.
+LaTeX Font Info:    No file OMSlmss.fd. on input line 101.
 
 
 LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 103.
+(Font)              for symbol `textbullet' on input line 101.
 
-[6
-
-] [7
-
-] [8
-
-] [9
-
-] [10
-
-]
-<images/ML_paradigm.pdf, id=378, 1927.2pt x 1084.05pt>
-File: images/ML_paradigm.pdf Graphic file (type pdf)
-<use images/ML_paradigm.pdf>
-Package pdftex.def Info: images/ML_paradigm.pdf  used on input line 109.
-(pdftex.def)             Requested size: 307.28987pt x 172.83951pt.
- [11
-
- <./images/ML_paradigm.pdf>]
-<images/Linear_regression.pdf, id=403, 351.3125pt x 231.86626pt>
+<images/Linear_regression.pdf, id=358, 351.3125pt x 231.86626pt>
 File: images/Linear_regression.pdf Graphic file (type pdf)
 <use images/Linear_regression.pdf>
-Package pdftex.def Info: images/Linear_regression.pdf  used on input line 125.
+Package pdftex.def Info: images/Linear_regression.pdf  used on input line 101.
 (pdftex.def)             Requested size: 153.64493pt x 101.40938pt.
 
-Overfull \vbox (25.8445pt too high) detected at line 125
+Overfull \vbox (25.8445pt too high) detected at line 101
+ []
+
+[7
+
+ <./images/Linear_regression.pdf>]
+File: images/Linear_regression.pdf Graphic file (type pdf)
+<use images/Linear_regression.pdf>
+Package pdftex.def Info: images/Linear_regression.pdf  used on input line 101.
+(pdftex.def)             Requested size: 153.64493pt x 101.40938pt.
+
+Overfull \vbox (25.8445pt too high) detected at line 101
+ []
+
+[8
+
+]
+File: images/Linear_regression.pdf Graphic file (type pdf)
+<use images/Linear_regression.pdf>
+Package pdftex.def Info: images/Linear_regression.pdf  used on input line 101.
+(pdftex.def)             Requested size: 153.64493pt x 101.40938pt.
+
+Overfull \vbox (25.8445pt too high) detected at line 101
+ []
+
+[9
+
+]
+File: images/Linear_regression.pdf Graphic file (type pdf)
+<use images/Linear_regression.pdf>
+Package pdftex.def Info: images/Linear_regression.pdf  used on input line 101.
+(pdftex.def)             Requested size: 153.64493pt x 101.40938pt.
+
+Overfull \vbox (25.8445pt too high) detected at line 101
+ []
+
+[10
+
+]
+File: images/Linear_regression.pdf Graphic file (type pdf)
+<use images/Linear_regression.pdf>
+Package pdftex.def Info: images/Linear_regression.pdf  used on input line 101.
+(pdftex.def)             Requested size: 153.64493pt x 101.40938pt.
+
+Overfull \vbox (25.8445pt too high) detected at line 101
+ []
+
+[11
+
+]
+File: images/Linear_regression.pdf Graphic file (type pdf)
+<use images/Linear_regression.pdf>
+Package pdftex.def Info: images/Linear_regression.pdf  used on input line 101.
+(pdftex.def)             Requested size: 153.64493pt x 101.40938pt.
+
+Overfull \vbox (25.8445pt too high) detected at line 101
  []
 
 [12
 
- <./images/Linear_regression.pdf>]
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 158.
- [13
+] [13
 
 ] [14
 
 ] [15
 
 ]
-<images/ImageNet_error.pdf, id=436, 650.43pt x 794.97pt>
-File: images/ImageNet_error.pdf Graphic file (type pdf)
-<use images/ImageNet_error.pdf>
-Package pdftex.def Info: images/ImageNet_error.pdf  used on input line 173.
-(pdftex.def)             Requested size: 138.2795pt x 168.99864pt.
+<images/ML_paradigm.pdf, id=419, 1927.2pt x 1084.05pt>
+File: images/ML_paradigm.pdf Graphic file (type pdf)
+<use images/ML_paradigm.pdf>
+Package pdftex.def Info: images/ML_paradigm.pdf  used on input line 134.
+(pdftex.def)             Requested size: 307.28987pt x 172.83951pt.
+ [16
 
-Overfull \vbox (22.43417pt too high) detected at line 173
- []
-
-[16
-
- <./images/ImageNet_error.pdf>] [17
+ <./images/ML_paradigm.pdf>]
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 167.
+ [17
 
 ] [18
 
 ] [19
 
-] [20
+]
+<images/ImageNet_error.pdf, id=461, 650.43pt x 794.97pt>
+File: images/ImageNet_error.pdf Graphic file (type pdf)
+<use images/ImageNet_error.pdf>
+Package pdftex.def Info: images/ImageNet_error.pdf  used on input line 182.
+(pdftex.def)             Requested size: 138.2795pt x 168.99864pt.
 
-] [21
+Overfull \vbox (22.43417pt too high) detected at line 182
+ []
+
+[20
+
+ <./images/ImageNet_error.pdf>] [21
 
 ] [22
 
+] [23
+
+] [24
+
+] [25
+
+] [26
+
 ]
-<images/Isotonic_regression.pdf, id=485, 587.19376pt x 442.65375pt>
+<images/Isotonic_regression.pdf, id=510, 587.19376pt x 442.65375pt>
 File: images/Isotonic_regression.pdf Graphic file (type pdf)
 <use images/Isotonic_regression.pdf>
-Package pdftex.def Info: images/Isotonic_regression.pdf  used on input line 218
+Package pdftex.def Info: images/Isotonic_regression.pdf  used on input line 227
 .
 (pdftex.def)             Requested size: 138.2795pt x 104.23978pt.
-<images/Classification.pdf, id=486, 505.89pt x 361.35pt>
+<images/Classification.pdf, id=511, 505.89pt x 361.35pt>
 File: images/Classification.pdf Graphic file (type pdf)
 <use images/Classification.pdf>
-Package pdftex.def Info: images/Classification.pdf  used on input line 218.
+Package pdftex.def Info: images/Classification.pdf  used on input line 227.
 (pdftex.def)             Requested size: 138.2795pt x 98.77332pt.
- [23
+ [27
 
  <./images/Isotonic_regression.pdf> <./images/Classification.pdf>]
 File: images/Isotonic_regression.pdf Graphic file (type pdf)
 <use images/Isotonic_regression.pdf>
-Package pdftex.def Info: images/Isotonic_regression.pdf  used on input line 218
+Package pdftex.def Info: images/Isotonic_regression.pdf  used on input line 227
 .
 (pdftex.def)             Requested size: 138.2795pt x 104.23978pt.
 File: images/Classification.pdf Graphic file (type pdf)
 <use images/Classification.pdf>
-Package pdftex.def Info: images/Classification.pdf  used on input line 218.
+Package pdftex.def Info: images/Classification.pdf  used on input line 227.
 (pdftex.def)             Requested size: 138.2795pt x 98.77332pt.
- [24
+ [28
 
 ]
 File: images/Isotonic_regression.pdf Graphic file (type pdf)
 <use images/Isotonic_regression.pdf>
-Package pdftex.def Info: images/Isotonic_regression.pdf  used on input line 218
+Package pdftex.def Info: images/Isotonic_regression.pdf  used on input line 227
 .
 (pdftex.def)             Requested size: 138.2795pt x 104.23978pt.
 File: images/Classification.pdf Graphic file (type pdf)
 <use images/Classification.pdf>
-Package pdftex.def Info: images/Classification.pdf  used on input line 218.
+Package pdftex.def Info: images/Classification.pdf  used on input line 227.
 (pdftex.def)             Requested size: 138.2795pt x 98.77332pt.
- [25
-
-] [26
-
-] [27
-
-]
-[28
-
-] [29
+ [29
 
 ] [30
 
+] [31
+
 ]
-<images/Linear_scatter.pdf, id=559, 433.62pt x 289.08pt>
+[32
+
+] [33
+
+] [34
+
+]
+<images/Linear_scatter.pdf, id=584, 433.62pt x 289.08pt>
 File: images/Linear_scatter.pdf Graphic file (type pdf)
 <use images/Linear_scatter.pdf>
-Package pdftex.def Info: images/Linear_scatter.pdf  used on input line 249.
+Package pdftex.def Info: images/Linear_scatter.pdf  used on input line 258.
 (pdftex.def)             Requested size: 276.559pt x 184.37979pt.
- [31
+ [35
 
  <./images/Linear_scatter.pdf>]
-<images/Linear_Reg_scatter.pdf, id=576, 433.62pt x 289.08pt>
+<images/Linear_Reg_scatter.pdf, id=600, 433.62pt x 289.08pt>
 File: images/Linear_Reg_scatter.pdf Graphic file (type pdf)
 <use images/Linear_Reg_scatter.pdf>
-Package pdftex.def Info: images/Linear_Reg_scatter.pdf  used on input line 256.
+Package pdftex.def Info: images/Linear_Reg_scatter.pdf  used on input line 265.
 
 (pdftex.def)             Requested size: 276.559pt x 184.37979pt.
- [32
+ [36
 
  <./images/Linear_Reg_scatter.pdf>]
-<images/logit_data.pdf, id=597, 289.08pt x 216.81pt>
+<images/logit_data.pdf, id=621, 289.08pt x 216.81pt>
 File: images/logit_data.pdf Graphic file (type pdf)
 <use images/logit_data.pdf>
-Package pdftex.def Info: images/logit_data.pdf  used on input line 263.
+Package pdftex.def Info: images/logit_data.pdf  used on input line 272.
 (pdftex.def)             Requested size: 276.559pt x 207.43057pt.
 
-Overfull \vbox (21.41068pt too high) detected at line 263
+Overfull \vbox (21.41068pt too high) detected at line 272
  []
 
-[33
+[37
 
  <./images/logit_data.pdf>]
-<images/logit_line_data.pdf, id=613, 289.08pt x 216.81pt>
+<images/logit_line_data.pdf, id=638, 289.08pt x 216.81pt>
 File: images/logit_line_data.pdf Graphic file (type pdf)
 <use images/logit_line_data.pdf>
-Package pdftex.def Info: images/logit_line_data.pdf  used on input line 270.
+Package pdftex.def Info: images/logit_line_data.pdf  used on input line 279.
 (pdftex.def)             Requested size: 276.559pt x 207.43057pt.
 
-Overfull \vbox (19.46625pt too high) detected at line 270
+Overfull \vbox (19.46625pt too high) detected at line 279
  []
 
-[34
+[38
 
  <./images/logit_line_data.pdf>]
-<images/logit_curve_data.pdf, id=629, 289.08pt x 216.81pt>
+<images/logit_curve_data.pdf, id=654, 289.08pt x 216.81pt>
 File: images/logit_curve_data.pdf Graphic file (type pdf)
 <use images/logit_curve_data.pdf>
-Package pdftex.def Info: images/logit_curve_data.pdf  used on input line 277.
+Package pdftex.def Info: images/logit_curve_data.pdf  used on input line 286.
 (pdftex.def)             Requested size: 276.559pt x 207.43057pt.
 
-Overfull \vbox (21.41068pt too high) detected at line 277
+Overfull \vbox (21.41068pt too high) detected at line 286
  []
 
-[35
+[39
 
  <./images/logit_curve_data.pdf>]
-<images/logit_curve_line_data.pdf, id=645, 289.08pt x 216.81pt>
+<images/logit_curve_line_data.pdf, id=670, 289.08pt x 216.81pt>
 File: images/logit_curve_line_data.pdf Graphic file (type pdf)
 <use images/logit_curve_line_data.pdf>
 Package pdftex.def Info: images/logit_curve_line_data.pdf  used on input line 2
-84.
+93.
 (pdftex.def)             Requested size: 276.559pt x 207.43057pt.
 
-Overfull \vbox (21.41068pt too high) detected at line 284
+Overfull \vbox (21.41068pt too high) detected at line 293
  []
 
-[36
+[40
 
  <./images/logit_curve_line_data.pdf>]
-<images/Iris_versicolor_arrows.jpg, id=661, 995.72pt x 746.79pt>
+<images/Iris_versicolor_arrows.jpg, id=686, 995.72pt x 746.79pt>
 File: images/Iris_versicolor_arrows.jpg Graphic file (type jpg)
 <use images/Iris_versicolor_arrows.jpg>
 Package pdftex.def Info: images/Iris_versicolor_arrows.jpg  used on input line 
-306.
+315.
 (pdftex.def)             Requested size: 153.64493pt x 115.22707pt.
- [37
-
- <./images/Iris_versicolor_arrows.jpg>]
-<images/Iris_Data.pdf, id=668, 433.62pt x 289.08pt>
-File: images/Iris_Data.pdf Graphic file (type pdf)
-<use images/Iris_Data.pdf>
-Package pdftex.def Info: images/Iris_Data.pdf  used on input line 313.
-(pdftex.def)             Requested size: 276.559pt x 184.37979pt.
- [38
-
- <./images/Iris_Data.pdf>] [39
-
-]
-<images/Svm_separating_hyperplanes.pdf, id=690, 1473.505pt x 1275.76625pt>
-File: images/Svm_separating_hyperplanes.pdf Graphic file (type pdf)
-<use images/Svm_separating_hyperplanes.pdf>
-Package pdftex.def Info: images/Svm_separating_hyperplanes.pdf  used on input l
-ine 348.
-(pdftex.def)             Requested size: 153.64493pt x 133.01527pt.
- [40
-
- <./images/Svm_separating_hyperplanes.pdf>]
-<images/Iris_Data_labeled_linear.pdf, id=739, 433.62pt x 289.08pt>
-File: images/Iris_Data_labeled_linear.pdf Graphic file (type pdf)
-<use images/Iris_Data_labeled_linear.pdf>
-Package pdftex.def Info: images/Iris_Data_labeled_linear.pdf  used on input lin
-e 355.
-(pdftex.def)             Requested size: 276.559pt x 184.37979pt.
  [41
 
- <./images/Iris_Data_labeled_linear.pdf>]
-<images/Iris_Data_labeled_poly.pdf, id=756, 433.62pt x 289.08pt>
-File: images/Iris_Data_labeled_poly.pdf Graphic file (type pdf)
-<use images/Iris_Data_labeled_poly.pdf>
-Package pdftex.def Info: images/Iris_Data_labeled_poly.pdf  used on input line 
-361.
+ <./images/Iris_versicolor_arrows.jpg>]
+<images/Iris_Data.pdf, id=692, 433.62pt x 289.08pt>
+File: images/Iris_Data.pdf Graphic file (type pdf)
+<use images/Iris_Data.pdf>
+Package pdftex.def Info: images/Iris_Data.pdf  used on input line 322.
 (pdftex.def)             Requested size: 276.559pt x 184.37979pt.
  [42
 
+ <./images/Iris_Data.pdf>] [43
+
+]
+<images/Svm_separating_hyperplanes.pdf, id=715, 1473.505pt x 1275.76625pt>
+File: images/Svm_separating_hyperplanes.pdf Graphic file (type pdf)
+<use images/Svm_separating_hyperplanes.pdf>
+Package pdftex.def Info: images/Svm_separating_hyperplanes.pdf  used on input l
+ine 357.
+(pdftex.def)             Requested size: 153.64493pt x 133.01527pt.
+ [44
+
+ <./images/Svm_separating_hyperplanes.pdf>]
+<images/Iris_Data_labeled_linear.pdf, id=764, 433.62pt x 289.08pt>
+File: images/Iris_Data_labeled_linear.pdf Graphic file (type pdf)
+<use images/Iris_Data_labeled_linear.pdf>
+Package pdftex.def Info: images/Iris_Data_labeled_linear.pdf  used on input lin
+e 364.
+(pdftex.def)             Requested size: 276.559pt x 184.37979pt.
+ [45
+
+ <./images/Iris_Data_labeled_linear.pdf>]
+<images/Iris_Data_labeled_poly.pdf, id=781, 433.62pt x 289.08pt>
+File: images/Iris_Data_labeled_poly.pdf Graphic file (type pdf)
+<use images/Iris_Data_labeled_poly.pdf>
+Package pdftex.def Info: images/Iris_Data_labeled_poly.pdf  used on input line 
+370.
+(pdftex.def)             Requested size: 276.559pt x 184.37979pt.
+ [46
+
  <./images/Iris_Data_labeled_poly.pdf>]
-<images/DT_3_simple.pdf, id=773, 419.5675pt x 429.605pt>
+<images/DT_3_simple.pdf, id=798, 419.5675pt x 429.605pt>
 File: images/DT_3_simple.pdf Graphic file (type pdf)
 <use images/DT_3_simple.pdf>
-Package pdftex.def Info: images/DT_3_simple.pdf  used on input line 382.
+Package pdftex.def Info: images/DT_3_simple.pdf  used on input line 391.
 (pdftex.def)             Requested size: 153.64493pt x 168.76454pt.
 
-Overfull \vbox (19.19449pt too high) detected at line 382
+Overfull \vbox (19.19449pt too high) detected at line 391
  []
 
-[43
+[47
 
  <./images/DT_3_simple.pdf>]
-<images/DT_2_simple.pdf, id=792, 323.2075pt x 325.215pt>
+<images/DT_2_simple.pdf, id=816, 323.2075pt x 325.215pt>
 File: images/DT_2_simple.pdf Graphic file (type pdf)
 <use images/DT_2_simple.pdf>
-Package pdftex.def Info: images/DT_2_simple.pdf  used on input line 389.
+Package pdftex.def Info: images/DT_2_simple.pdf  used on input line 398.
 (pdftex.def)             Requested size: 169.01036pt x 170.06058pt.
- [44
+ [48
 
  <./images/DT_2_simple.pdf>]
 File: images/DT_3_simple.pdf Graphic file (type pdf)
 <use images/DT_3_simple.pdf>
-Package pdftex.def Info: images/DT_3_simple.pdf  used on input line 395.
+Package pdftex.def Info: images/DT_3_simple.pdf  used on input line 404.
 (pdftex.def)             Requested size: 230.46739pt x 235.98193pt.
 
-Overfull \vbox (29.21768pt too high) detected at line 395
+Overfull \vbox (29.21768pt too high) detected at line 404
  []
 
-[45
+[49
 
 ]
-<images/DT_6_simple.pdf, id=813, 717.68124pt x 655.44875pt>
+<images/DT_6_simple.pdf, id=838, 717.68124pt x 655.44875pt>
 File: images/DT_6_simple.pdf Graphic file (type pdf)
 <use images/DT_6_simple.pdf>
-Package pdftex.def Info: images/DT_6_simple.pdf  used on input line 401.
+Package pdftex.def Info: images/DT_6_simple.pdf  used on input line 410.
 (pdftex.def)             Requested size: 230.46739pt x 210.47798pt.
 
-Overfull \vbox (3.71373pt too high) detected at line 401
+Overfull \vbox (3.71373pt too high) detected at line 410
  []
 
-[46
+[50
 
  <./images/DT_6_simple.pdf>]
-<images/Iris_Data_DT.pdf, id=829, 433.62pt x 289.08pt>
+<images/Iris_Data_DT.pdf, id=854, 433.62pt x 289.08pt>
 File: images/Iris_Data_DT.pdf Graphic file (type pdf)
 <use images/Iris_Data_DT.pdf>
-Package pdftex.def Info: images/Iris_Data_DT.pdf  used on input line 408.
+Package pdftex.def Info: images/Iris_Data_DT.pdf  used on input line 417.
 (pdftex.def)             Requested size: 276.559pt x 184.37979pt.
- [47
+ [51
 
- <./images/Iris_Data_DT.pdf>] [48
+ <./images/Iris_Data_DT.pdf>] [52
 
 ]
 File: images/DT_2_simple.pdf Graphic file (type pdf)
 <use images/DT_2_simple.pdf>
-Package pdftex.def Info: images/DT_2_simple.pdf  used on input line 429.
+Package pdftex.def Info: images/DT_2_simple.pdf  used on input line 438.
 (pdftex.def)             Requested size: 169.01036pt x 170.06058pt.
- [49
+ [53
 
 ]
-<images/Random_forest.pdf, id=857, 717.68124pt x 655.44875pt>
+<images/Random_forest.pdf, id=881, 717.68124pt x 655.44875pt>
 File: images/Random_forest.pdf Graphic file (type pdf)
 <use images/Random_forest.pdf>
-Package pdftex.def Info: images/Random_forest.pdf  used on input line 451.
+Package pdftex.def Info: images/Random_forest.pdf  used on input line 460.
 (pdftex.def)             Requested size: 153.64493pt x 146.10942pt.
 
-[50
+[54
 
  <./images/Random_forest.pdf>]
-<images/Iris_Data_RF.pdf, id=1159, 433.62pt x 289.08pt>
+<images/Iris_Data_RF.pdf, id=1183, 433.62pt x 289.08pt>
 File: images/Iris_Data_RF.pdf Graphic file (type pdf)
 <use images/Iris_Data_RF.pdf>
-Package pdftex.def Info: images/Iris_Data_RF.pdf  used on input line 458.
+Package pdftex.def Info: images/Iris_Data_RF.pdf  used on input line 467.
 (pdftex.def)             Requested size: 307.28987pt x 204.86888pt.
 
-Overfull \vbox (18.84898pt too high) detected at line 458
- []
-
-[51
-
- <./images/Iris_Data_RF.pdf>] [52
-
-]
-<images/Iris_Data_GBM.pdf, id=1181, 433.62pt x 289.08pt>
-File: images/Iris_Data_GBM.pdf Graphic file (type pdf)
-<use images/Iris_Data_GBM.pdf>
-Package pdftex.def Info: images/Iris_Data_GBM.pdf  used on input line 476.
-(pdftex.def)             Requested size: 307.28987pt x 204.86888pt.
-
-Overfull \vbox (18.84898pt too high) detected at line 476
- []
-
-[53
-
- <./images/Iris_Data_GBM.pdf>] [54
-
-]
-<images/No_hidden_NN.pdf, id=1203, 1927.2pt x 1084.05pt>
-File: images/No_hidden_NN.pdf Graphic file (type pdf)
-<use images/No_hidden_NN.pdf>
-Package pdftex.def Info: images/No_hidden_NN.pdf  used on input line 496.
-(pdftex.def)             Requested size: 460.9348pt x 259.26755pt.
-
-Overfull \vbox (52.5033pt too high) detected at line 496
+Overfull \vbox (18.84898pt too high) detected at line 467
  []
 
 [55
 
+ <./images/Iris_Data_RF.pdf>] [56
+
+] [57
+
+]
+<images/Iris_Data_GBM.pdf, id=1211, 433.62pt x 289.08pt>
+File: images/Iris_Data_GBM.pdf Graphic file (type pdf)
+<use images/Iris_Data_GBM.pdf>
+Package pdftex.def Info: images/Iris_Data_GBM.pdf  used on input line 493.
+(pdftex.def)             Requested size: 307.28987pt x 204.86888pt.
+
+Overfull \vbox (18.84898pt too high) detected at line 493
+ []
+
+[58
+
+ <./images/Iris_Data_GBM.pdf>] [59
+
+]
+<images/No_hidden_NN.pdf, id=1233, 1927.2pt x 1084.05pt>
+File: images/No_hidden_NN.pdf Graphic file (type pdf)
+<use images/No_hidden_NN.pdf>
+Package pdftex.def Info: images/No_hidden_NN.pdf  used on input line 513.
+(pdftex.def)             Requested size: 460.9348pt x 259.26755pt.
+
+Overfull \vbox (52.5033pt too high) detected at line 513
+ []
+
+[60
+
  <./images/No_hidden_NN.pdf>]
-<images/No_hidden_8W_NN.pdf, id=1227, 1927.2pt x 1084.05pt>
+<images/No_hidden_8W_NN.pdf, id=1256, 1927.2pt x 1084.05pt>
 File: images/No_hidden_8W_NN.pdf Graphic file (type pdf)
 <use images/No_hidden_8W_NN.pdf>
-Package pdftex.def Info: images/No_hidden_8W_NN.pdf  used on input line 502.
+Package pdftex.def Info: images/No_hidden_8W_NN.pdf  used on input line 519.
 (pdftex.def)             Requested size: 460.9348pt x 259.26755pt.
 
-Overfull \vbox (52.5033pt too high) detected at line 502
+Overfull \vbox (52.5033pt too high) detected at line 519
  []
 
-[56
+[61
 
  <./images/No_hidden_8W_NN.pdf>]
-<images/No_hidden_gen_NN.pdf, id=1250, 1927.2pt x 1084.05pt>
+<images/No_hidden_gen_NN.pdf, id=1280, 1927.2pt x 1084.05pt>
 File: images/No_hidden_gen_NN.pdf Graphic file (type pdf)
 <use images/No_hidden_gen_NN.pdf>
-Package pdftex.def Info: images/No_hidden_gen_NN.pdf  used on input line 508.
+Package pdftex.def Info: images/No_hidden_gen_NN.pdf  used on input line 525.
 (pdftex.def)             Requested size: 460.9348pt x 259.26755pt.
 
-Overfull \vbox (52.5033pt too high) detected at line 508
+Overfull \vbox (52.5033pt too high) detected at line 525
  []
 
-[57
+[62
 
  <./images/No_hidden_gen_NN.pdf>]
-<images/Dense_NN.pdf, id=1273, 1927.2pt x 1084.05pt>
+<images/Dense_NN.pdf, id=1303, 1927.2pt x 1084.05pt>
 File: images/Dense_NN.pdf Graphic file (type pdf)
 <use images/Dense_NN.pdf>
-Package pdftex.def Info: images/Dense_NN.pdf  used on input line 514.
+Package pdftex.def Info: images/Dense_NN.pdf  used on input line 531.
 (pdftex.def)             Requested size: 307.28987pt x 172.83951pt.
- [58
+ [63
 
  <./images/Dense_NN.pdf>]
-<images/Iris_Data_NN.pdf, id=1296, 433.62pt x 289.08pt>
+<images/Iris_Data_NN.pdf, id=1326, 433.62pt x 289.08pt>
 File: images/Iris_Data_NN.pdf Graphic file (type pdf)
 <use images/Iris_Data_NN.pdf>
-Package pdftex.def Info: images/Iris_Data_NN.pdf  used on input line 521.
+Package pdftex.def Info: images/Iris_Data_NN.pdf  used on input line 538.
 (pdftex.def)             Requested size: 276.559pt x 184.37979pt.
- [59
-
- <./images/Iris_Data_NN.pdf>] [60
-
-] [61
-
-] [62
-
-]
-<images/Iris_Data_3comp.pdf, id=1330, 578.16pt x 433.62pt>
-File: images/Iris_Data_3comp.pdf Graphic file (type pdf)
-<use images/Iris_Data_3comp.pdf>
-Package pdftex.def Info: images/Iris_Data_3comp.pdf  used on input line 563.
-(pdftex.def)             Requested size: 230.46739pt x 172.84944pt.
-
-Overfull \vbox (13.47946pt too high) detected at line 563
- []
-
-[63
-
- <./images/Iris_Data_3comp.pdf>]
-<images/Iris_PCA.pdf, id=1370, 578.16pt x 433.62pt>
-File: images/Iris_PCA.pdf Graphic file (type pdf)
-<use images/Iris_PCA.pdf>
-Package pdftex.def Info: images/Iris_PCA.pdf  used on input line 570.
-(pdftex.def)             Requested size: 230.46739pt x 172.84944pt.
  [64
 
- <./images/Iris_PCA.pdf>]
-<images/Iris_3means.pdf, id=1401, 578.16pt x 433.62pt>
-File: images/Iris_3means.pdf Graphic file (type pdf)
-<use images/Iris_3means.pdf>
-Package pdftex.def Info: images/Iris_3means.pdf  used on input line 578.
-(pdftex.def)             Requested size: 230.46739pt x 172.84944pt.
+ <./images/Iris_Data_NN.pdf>]
+<images/fully_connected_nn.pdf, id=1345, 793.5246pt x 746.30821pt>
+File: images/fully_connected_nn.pdf Graphic file (type pdf)
+<use images/fully_connected_nn.pdf>
+Package pdftex.def Info: images/fully_connected_nn.pdf  used on input line 561.
 
-Overfull \vbox (13.47946pt too high) detected at line 578
- []
+(pdftex.def)             Requested size: 70.98404pt x 66.75488pt.
+<images/CNN.pdf, id=1348, 792.56097pt x 228.3732pt>
+File: images/CNN.pdf Graphic file (type pdf)
+<use images/CNN.pdf>
+Package pdftex.def Info: images/CNN.pdf  used on input line 561.
+(pdftex.def)             Requested size: 101.40622pt x 29.21912pt.
+<images/542px-Peephole_Long_Short-Term_Memory.pdf, id=1351, 543.95218pt x 299.1
+9778pt>
+File: images/542px-Peephole_Long_Short-Term_Memory.pdf Graphic file (type pdf)
+<use images/542px-Peephole_Long_Short-Term_Memory.pdf>
+Package pdftex.def Info: images/542px-Peephole_Long_Short-Term_Memory.pdf  used
+ on input line 561.
+(pdftex.def)             Requested size: 50.70311pt x 27.88536pt.
+ [65
 
-[65
+ <./images/fully_connected_nn.pdf> <./images/CNN.pdf> <./images/542px-Peephole_
+Long_Short-Term_Memory.pdf>]
+File: images/fully_connected_nn.pdf Graphic file (type pdf)
+<use images/fully_connected_nn.pdf>
+Package pdftex.def Info: images/fully_connected_nn.pdf  used on input line 568.
 
- <./images/Iris_3means.pdf>] [66
-
-] [67
+(pdftex.def)             Requested size: 184.3758pt x 173.40099pt.
+ [66
 
 ]
-<images/RL_concept.png, id=1455, 838.332pt x 462.0462pt>
-File: images/RL_concept.png Graphic file (type png)
-<use images/RL_concept.png>
-Package pdftex.def Info: images/RL_concept.png  used on input line 597.
-(pdftex.def)             Requested size: 307.28987pt x 169.36105pt.
+File: images/CNN.pdf Graphic file (type pdf)
+<use images/CNN.pdf>
+Package pdftex.def Info: images/CNN.pdf  used on input line 575.
+(pdftex.def)             Requested size: 307.28987pt x 88.54596pt.
+ [67
 
-Overfull \vbox (10.94101pt too high) detected at line 597
+]
+<images/same_padding_no_strides-1.png, id=1410, 396.48125pt x 450.68375pt>
+File: images/same_padding_no_strides-1.png Graphic file (type png)
+<use images/same_padding_no_strides-1.png>
+Package pdftex.def Info: images/same_padding_no_strides-1.png  used on input li
+ne 582.
+(pdftex.def)             Requested size: 184.3758pt x 209.5864pt.
+
+Overfull \vbox (29.47206pt too high) detected at line 582
  []
 
 [68
 
- <./images/RL_concept.png>]
-<images/RL_example.png, id=1463, 851.3406pt x 456.2646pt>
-File: images/RL_example.png Graphic file (type png)
-<use images/RL_example.png>
-Package pdftex.def Info: images/RL_example.png  used on input line 604.
-(pdftex.def)             Requested size: 307.28987pt x 164.68677pt.
+ <./images/same_padding_no_strides-1.png>]
+File: images/542px-Peephole_Long_Short-Term_Memory.pdf Graphic file (type pdf)
+<use images/542px-Peephole_Long_Short-Term_Memory.pdf>
+Package pdftex.def Info: images/542px-Peephole_Long_Short-Term_Memory.pdf  used
+ on input line 589.
+(pdftex.def)             Requested size: 153.64493pt x 84.50983pt.
  [69
 
- <./images/RL_example.png>] [70
+] [70
+
+] [71
+
+] [72
 
 ]
-<images/NLP_tree.png, id=1476, 1291.82625pt x 783.92876pt>
-File: images/NLP_tree.png Graphic file (type png)
-<use images/NLP_tree.png>
-Package pdftex.def Info: images/NLP_tree.png  used on input line 617.
-(pdftex.def)             Requested size: 291.92444pt x 177.1419pt.
+<images/Iris_Data_3comp.pdf, id=1440, 578.16pt x 433.62pt>
+File: images/Iris_Data_3comp.pdf Graphic file (type pdf)
+<use images/Iris_Data_3comp.pdf>
+Package pdftex.def Info: images/Iris_Data_3comp.pdf  used on input line 632.
+(pdftex.def)             Requested size: 230.46739pt x 172.84944pt.
 
-Overfull \vbox (18.72186pt too high) detected at line 617
+Overfull \vbox (13.47946pt too high) detected at line 632
  []
 
-[71
+[73
 
- <./images/NLP_tree.png (PNG copy)>]
-<images/CT_scan.jpeg, id=1482, 459.7175pt x 446.66875pt>
+ <./images/Iris_Data_3comp.pdf>]
+<images/Iris_PCA.pdf, id=1481, 578.16pt x 433.62pt>
+File: images/Iris_PCA.pdf Graphic file (type pdf)
+<use images/Iris_PCA.pdf>
+Package pdftex.def Info: images/Iris_PCA.pdf  used on input line 639.
+(pdftex.def)             Requested size: 230.46739pt x 172.84944pt.
+ [74
+
+ <./images/Iris_PCA.pdf>]
+<images/Iris_3means.pdf, id=1512, 578.16pt x 433.62pt>
+File: images/Iris_3means.pdf Graphic file (type pdf)
+<use images/Iris_3means.pdf>
+Package pdftex.def Info: images/Iris_3means.pdf  used on input line 647.
+(pdftex.def)             Requested size: 230.46739pt x 172.84944pt.
+
+Overfull \vbox (13.47946pt too high) detected at line 647
+ []
+
+[75
+
+ <./images/Iris_3means.pdf>] [76
+
+] [77
+
+]
+<images/RL_concept.png, id=1565, 838.332pt x 462.0462pt>
+File: images/RL_concept.png Graphic file (type png)
+<use images/RL_concept.png>
+Package pdftex.def Info: images/RL_concept.png  used on input line 665.
+(pdftex.def)             Requested size: 307.28987pt x 169.36105pt.
+
+Overfull \vbox (10.94101pt too high) detected at line 665
+ []
+
+[78
+
+ <./images/RL_concept.png>]
+<images/RL_example.png, id=1573, 851.3406pt x 456.2646pt>
+File: images/RL_example.png Graphic file (type png)
+<use images/RL_example.png>
+Package pdftex.def Info: images/RL_example.png  used on input line 672.
+(pdftex.def)             Requested size: 307.28987pt x 164.68677pt.
+ [79
+
+ <./images/RL_example.png>] [80
+
+] [81
+
+]
+[82
+
+]
+<images/NLP.png, id=1598, 234.6366pt x 184.5294pt>
+File: images/NLP.png Graphic file (type png)
+<use images/NLP.png>
+Package pdftex.def Info: images/NLP.png  used on input line 722.
+(pdftex.def)             Requested size: 184.3758pt x 145.00793pt.
+ [83
+
+ <./images/NLP.png>]
+<images/CT_scan.jpeg, id=1605, 459.7175pt x 446.66875pt>
 File: images/CT_scan.jpeg Graphic file (type jpg)
 <use images/CT_scan.jpeg>
-Package pdftex.def Info: images/CT_scan.jpeg  used on input line 627.
-(pdftex.def)             Requested size: 199.73653pt x 194.0676pt.
+Package pdftex.def Info: images/CT_scan.jpeg  used on input line 736.
+(pdftex.def)             Requested size: 153.64493pt x 149.28224pt.
 
-Overfull \vbox (19.9032pt too high) detected at line 627
+Overfull \vbox (10.66212pt too high) detected at line 736
  []
 
-[72
+[84
 
- <./images/CT_scan.jpeg>]
+ <./images/CT_scan.jpeg>] [85
+
+]
+<images/semantic_seg.jpeg, id=1619, 1003.75pt x 564.1075pt>
+File: images/semantic_seg.jpeg Graphic file (type jpg)
+<use images/semantic_seg.jpeg>
+Package pdftex.def Info: images/semantic_seg.jpeg  used on input line 766.
+(pdftex.def)             Requested size: 153.64493pt x 86.34259pt.
+<images/int_seg.jpeg, id=1622, 1003.75pt x 574.145pt>
+File: images/int_seg.jpeg Graphic file (type jpg)
+<use images/int_seg.jpeg>
+Package pdftex.def Info: images/int_seg.jpeg  used on input line 766.
+(pdftex.def)             Requested size: 153.64493pt x 87.87894pt.
+ [86
+
+ <./images/semantic_seg.jpeg> <./images/int_seg.jpeg>]
+<images/autoenc.jpg, id=1630, 1505.625pt x 501.875pt>
+File: images/autoenc.jpg Graphic file (type jpg)
+<use images/autoenc.jpg>
+Package pdftex.def Info: images/autoenc.jpg  used on input line 788.
+(pdftex.def)             Requested size: 153.64493pt x 51.20894pt.
+<images/GAN_Faces.png, id=1633, 331.2375pt x 198.7425pt>
+File: images/GAN_Faces.png Graphic file (type png)
+<use images/GAN_Faces.png>
+Package pdftex.def Info: images/GAN_Faces.png  used on input line 788.
+(pdftex.def)             Requested size: 153.64493pt x 92.18686pt.
+ [87
+
+ <./images/autoenc.jpg> <./images/GAN_Faces.png (PNG copy)>]
 \tf@nav=\write6
 \openout6 = `seminar.nav'.
 
@@ -2038,26 +2180,27 @@ Overfull \vbox (19.9032pt too high) detected at line 627
 \tf@snm=\write8
 \openout8 = `seminar.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 629.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 629.
- (seminar.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 629.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 629.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 791.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 791.
+
+(seminar.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 791.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 791.
 Package rerunfilecheck Info: File `seminar.out' has not changed.
-(rerunfilecheck)             Checksum: 60E5BDC43E4E74717765557428708DA3;831.
+(rerunfilecheck)             Checksum: 051DE40211EC7DB8B1D3467660BE5F7B;903.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 42406 strings out of 493305
- 978889 string characters out of 3138866
+ 42523 strings out of 493305
+ 981239 string characters out of 3138866
  1134472 words of memory out of 3000000
- 45026 multiletter control sequences out of 15000+200000
+ 45104 multiletter control sequences out of 15000+200000
  585175 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,13n,98p,10412b,911s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 71i,13n,113p,10412b,1168s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
@@ -2068,9 +2211,9 @@ MiKTeX 2.9/fonts/type1/public/lm/lmss9.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
 lmsso10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso8.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on seminar.pdf (72 pages, 9046721 bytes).
+Output written on seminar.pdf (87 pages, 36101569 bytes).
 PDF statistics:
- 1559 PDF objects out of 1728 (max. 8388607)
- 158 named destinations out of 1000 (max. 500000)
- 337 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1717 PDF objects out of 1728 (max. 8388607)
+ 189 named destinations out of 1000 (max. 500000)
+ 385 words of extra memory for PDF output out of 10000 (max. 10000000)
 
