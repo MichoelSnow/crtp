@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2018.3.6)  6 SEP 2018 13:58
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2018.3.6)  27 SEP 2018 13:01
 entering extended mode
 **./evaluating_predictions.tex
 (evaluating_predictions.tex
@@ -2095,35 +2095,23 @@ Overfull \hbox (2.8033pt too wide) in paragraph at lines 207--207
 [14
 
 ]
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 234; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-*  
-*  The current font is "\T1/lmss/m/n/7 ".
-*   The requested feature is "Numbers={Monospaced}". 
-*************************************************
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 234; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-*  
-*  The current font is "\T1/lmss/m/it/5 ".
-*   The requested feature is "Numbers={Monospaced}". 
-*************************************************
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 234.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 234.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 234.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 234.
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
+ [][][][]\T1/lmss/m/n/10 17,497 
+ []
 
-Overfull \hbox (19.02248pt too wide) in paragraph at lines 234--234
- [] 
+
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
+ [][][][]\T1/lmss/m/n/10 49,792 
+ []
+
+
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
+ [][][][]\T1/lmss/m/n/10 25,480 
+ []
+
+
+Overfull \hbox (2.8033pt too wide) in paragraph at lines 289--289
+[][] 
  []
 
 [15
@@ -2173,76 +2161,18 @@ Overfull \hbox (2.8033pt too wide) in paragraph at lines 289--289
 [17
 
 ]
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
- [][][][]\T1/lmss/m/n/10 17,497 
- []
-
-
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
- [][][][]\T1/lmss/m/n/10 49,792 
- []
-
-
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
- [][][][]\T1/lmss/m/n/10 25,480 
- []
-
-
-Overfull \hbox (2.8033pt too wide) in paragraph at lines 289--289
-[][] 
- []
-
-[18
-
-] [19
-
-]
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 334; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-*  
-*  The current font is "\T1/lmss/m/it/5 ".
-*   The requested feature is "Numbers={Monospaced}". 
-*************************************************
-[20
-
-]
 File: images/overlap_distr.pdf Graphic file (type QTm)
- <use  "images/overlap_distr.pdf" > [21
-
-] [22
+ <use  "images/overlap_distr.pdf" > [18
 
 ]
 File: images/overlap_distr_points.pdf Graphic file (type QTm)
 
-<use  "images/overlap_distr_points.pdf" > [23
-
-]
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 395; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-*  
-*  The current font is "\OMS/lmss/m/n/9 ".
-*   The requested feature is "Numbers={Monospaced}". 
-*************************************************
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 395; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-*  
-*  The current font is "\T1/lmss/bx/n/9 ".
-*   The requested feature is "Numbers={Monospaced}". 
-*************************************************
-[24
+<use  "images/overlap_distr_points.pdf" > [19
 
 ]
 File: images/overlap_distr_no_thresh.pdf Graphic file (type QTm)
- <use  "images/overlap_distr_no_thresh.pdf" >
+
+<use  "images/overlap_distr_no_thresh.pdf" >
 File: images/overlap_distr_no_thresh.pdf Graphic file (type QTm)
 
 <use  "images/overlap_distr_no_thresh.pdf" >
@@ -2259,9 +2189,7 @@ File: images/overlap_distr_no_thresh.pdf Graphic file (type QTm)
 Overfull \vbox (9.50136pt too high) detected at line 413
  []
 
-[25
-
-] [26
+[20
 
 ]
 File: images/overlap_distr_no_thresh_diff_sens.pdf Graphic file (type QTm)
@@ -2284,21 +2212,9 @@ File: images/overlap_distr_no_thresh_diff_sens.pdf Graphic file (type QTm)
 Overfull \vbox (9.50136pt too high) detected at line 421
  []
 
-[27
+[21
 
-]
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 466; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-*  
-*  The current font is "\T1/lmss/m/n/9 ".
-*   The requested feature is "Numbers={Monospaced}". 
-*************************************************
-[28
-
-] [29
+] [22
 
 ]
 File: images/growth_curves.pdf Graphic file (type QTm)
@@ -2306,7 +2222,7 @@ File: images/growth_curves.pdf Graphic file (type QTm)
 Overfull \vbox (17.0031pt too high) detected at line 480
  []
 
-[30
+[23
 
 ]
 File: images/growth_curves_measured.pdf Graphic file (type QTm)
@@ -2314,7 +2230,7 @@ File: images/growth_curves_measured.pdf Graphic file (type QTm)
 Overfull \vbox (17.0031pt too high) detected at line 487
  []
 
-[31
+[24
 
 ]
 File: images/growth_curves_measured_p50.pdf Graphic file (type QTm)
@@ -2322,46 +2238,7 @@ File: images/growth_curves_measured_p50.pdf Graphic file (type QTm)
 Overfull \vbox (4.74695pt too high) detected at line 500
  []
 
-[32
-
-] [33
-
-]
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 531; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-*  
-*  The current font is "\T1/lmss/m/n/9 ".
-*   The requested feature is "Numbers={Monospaced}". 
-*************************************************
-
-Overfull \vbox (12.64995pt too high) detected at line 531
- []
-
-[34
-
-]
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 557; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-*  
-*  The current font is "\T1/lmss/m/n/9 ".
-*   The requested feature is "Numbers={Monospaced}". 
-*************************************************
-*************************************************
-* fontspec warning: "addfontfeatures-ignored"
-* 
-* \addfontfeature(s) ignored on line 557; it cannot be used with a font that
-* wasn't selected by a fontspec command.
-*  
-*  The current font is "\T1/lmss/bx/n/9 ".
-*   The requested feature is "Numbers={Monospaced}". 
-*************************************************
-[35
+[25
 
 ]
 \tf@nav=\write6
@@ -2375,7 +2252,13 @@ Overfull \vbox (12.64995pt too high) detected at line 531
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 899.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 899.
- (evaluating_predictions.aux)
+ (evaluating_predictions.aux
+*************************************************
+* pdfbase warning: "rerun"
+* 
+* Rerun to get internal references right!
+*************************************************
+)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 899.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 899.
 
@@ -2384,12 +2267,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 46221 strings out of 427834
- 1053722 string characters out of 3152471
+ 46145 strings out of 427834
+ 1052087 string characters out of 3152471
  1307233 words of memory out of 3000000
- 49425 multiletter control sequences out of 15000+200000
- 609355 words of font info for 89 fonts, out of 3000000 for 9000
+ 49355 multiletter control sequences out of 15000+200000
+ 587844 words of font info for 74 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
- 71i,18n,98p,10437b,1016s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 71i,15n,98p,10437b,1016s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on evaluating_predictions.pdf (35 pages).
+Output written on evaluating_predictions.pdf (25 pages).
