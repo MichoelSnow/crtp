@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2018.3.6)  28 SEP 2018 07:32
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2018.3.6)  28 SEP 2018 07:46
 entering extended mode
 **./evaluating_predictions.tex
 (evaluating_predictions.tex
@@ -1879,21 +1879,21 @@ Overfull \vbox (13.79993pt too high) detected at line 78
 [1
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+lmss on input line 93.
+LaTeX Font Info:    Try loading font information for OMS+lmss on input line 90.
 
-LaTeX Font Info:    No file OMSlmss.fd. on input line 93.
+LaTeX Font Info:    No file OMSlmss.fd. on input line 90.
 
 
 LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 93.
+(Font)              for symbol `textbullet' on input line 90.
 
 [2
 
 ]
 File: images/informatics_pipeline.pdf Graphic file (type QTm)
  <use  "images/informatics_pipeline.pdf" >
-Overfull \vbox (7.07948pt too high) detected at line 102
+Overfull \vbox (7.07948pt too high) detected at line 99
  []
 
 [3
@@ -1901,57 +1901,57 @@ Overfull \vbox (7.07948pt too high) detected at line 102
 ]
 File: images/informatics_pipeline_modeling.pdf Graphic file (type QTm)
  <use  "images/informatics_pipeline_modeling.pdf" >
-Overfull \vbox (7.07948pt too high) detected at line 109
+Overfull \vbox (7.07948pt too high) detected at line 106
  []
 
 [4
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 113
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 110
 .
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmss.fd"
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 113.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 110.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 113
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 110
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 113
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 110
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 113.
+(Font)              <10> on input line 110.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 113.
+(Font)              <7> on input line 110.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 113.
-LaTeX Font Info:    Try loading font information for U+msa on input line 113.
+(Font)              <5> on input line 110.
+LaTeX Font Info:    Try loading font information for U+msa on input line 110.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 113.
+LaTeX Font Info:    Try loading font information for U+msb on input line 110.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 113.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 110.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 113.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 110.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 113.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 110.
  [5
 
 ] [6
@@ -1963,198 +1963,198 @@ Missing character: There is no ‐ in font ec-lmss8!
  [8
 
 ]
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 204--204
  [][][][]\T1/lmss/m/n/10 17,497 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 204--204
  [][][][]\T1/lmss/m/n/10 49,792 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 204--204
  [][][][]\T1/lmss/m/n/10 25,480 
  []
 
 
-Overfull \hbox (2.8033pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.8033pt too wide) in paragraph at lines 204--204
 [][] 
  []
 
 [9
 
 ]
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 204--204
  [][][][]\T1/lmss/m/n/10 17,497 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 204--204
  [][][][]\T1/lmss/m/n/10 49,792 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 204--204
  [][][][]\T1/lmss/m/n/10 25,480 
  []
 
 
-Overfull \hbox (2.8033pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.8033pt too wide) in paragraph at lines 204--204
 [][] 
  []
 
 [10
 
 ]
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 204--204
  [][][][]\T1/lmss/m/n/10 17,497 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 204--204
  [][][][]\T1/lmss/m/n/10 49,792 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 204--204
  [][][][]\T1/lmss/m/n/10 25,480 
  []
 
 
-Overfull \hbox (2.8033pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.8033pt too wide) in paragraph at lines 204--204
 [][] 
  []
 
 [11
 
 ]
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 204--204
  [][][][]\T1/lmss/m/n/10 17,497 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 204--204
  [][][][]\T1/lmss/m/n/10 49,792 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 204--204
  [][][][]\T1/lmss/m/n/10 25,480 
  []
 
 
-Overfull \hbox (2.8033pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.8033pt too wide) in paragraph at lines 204--204
 [][] 
  []
 
 [12
 
 ]
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 204--204
  [][][][]\T1/lmss/m/n/10 17,497 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 204--204
  [][][][]\T1/lmss/m/n/10 49,792 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 204--204
  [][][][]\T1/lmss/m/n/10 25,480 
  []
 
 
-Overfull \hbox (2.8033pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.8033pt too wide) in paragraph at lines 204--204
 [][] 
  []
 
 [13
 
 ]
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 204--204
  [][][][]\T1/lmss/m/n/10 17,497 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 204--204
  [][][][]\T1/lmss/m/n/10 49,792 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 204--204
  [][][][]\T1/lmss/m/n/10 25,480 
  []
 
 
-Overfull \hbox (2.8033pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.8033pt too wide) in paragraph at lines 204--204
 [][] 
  []
 
 [14
 
 ]
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 286--286
  [][][][]\T1/lmss/m/n/10 17,497 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 286--286
  [][][][]\T1/lmss/m/n/10 49,792 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 286--286
  [][][][]\T1/lmss/m/n/10 25,480 
  []
 
 
-Overfull \hbox (2.8033pt too wide) in paragraph at lines 289--289
+Overfull \hbox (2.8033pt too wide) in paragraph at lines 286--286
 [][] 
  []
 
 [15
 
 ]
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 286--286
  [][][][]\T1/lmss/m/n/10 17,497 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 286--286
  [][][][]\T1/lmss/m/n/10 49,792 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 286--286
  [][][][]\T1/lmss/m/n/10 25,480 
  []
 
 
-Overfull \hbox (2.8033pt too wide) in paragraph at lines 289--289
+Overfull \hbox (2.8033pt too wide) in paragraph at lines 286--286
 [][] 
  []
 
 [16
 
 ]
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 286--286
  [][][][]\T1/lmss/m/n/10 17,497 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 286--286
  [][][][]\T1/lmss/m/n/10 49,792 
  []
 
 
-Overfull \hbox (2.17046pt too wide) in paragraph at lines 289--289
+Overfull \hbox (2.17046pt too wide) in paragraph at lines 286--286
  [][][][]\T1/lmss/m/n/10 25,480 
  []
 
 
-Overfull \hbox (2.8033pt too wide) in paragraph at lines 289--289
+Overfull \hbox (2.8033pt too wide) in paragraph at lines 286--286
 [][] 
  []
 
@@ -2186,7 +2186,7 @@ File: images/ROC.pdf Graphic file (type QTm)
 File: images/overlap_distr_no_thresh.pdf Graphic file (type QTm)
 
 <use  "images/overlap_distr_no_thresh.pdf" >
-Overfull \vbox (9.50136pt too high) detected at line 413
+Overfull \vbox (9.50136pt too high) detected at line 410
  []
 
 [20
@@ -2209,7 +2209,7 @@ File: images/ROC_dist_diff.pdf Graphic file (type QTm)
 File: images/overlap_distr_no_thresh_diff_sens.pdf Graphic file (type QTm)
 
 <use  "images/overlap_distr_no_thresh_diff_sens.pdf" >
-Overfull \vbox (9.50136pt too high) detected at line 421
+Overfull \vbox (9.50136pt too high) detected at line 418
  []
 
 [21
@@ -2219,7 +2219,7 @@ Overfull \vbox (9.50136pt too high) detected at line 421
 ]
 File: images/growth_curves.pdf Graphic file (type QTm)
  <use  "images/growth_curves.pdf" >
-Overfull \vbox (17.0031pt too high) detected at line 480
+Overfull \vbox (17.0031pt too high) detected at line 477
  []
 
 [23
@@ -2227,7 +2227,7 @@ Overfull \vbox (17.0031pt too high) detected at line 480
 ]
 File: images/growth_curves_measured.pdf Graphic file (type QTm)
  <use  "images/growth_curves_measured.pdf" >
-Overfull \vbox (17.0031pt too high) detected at line 487
+Overfull \vbox (17.0031pt too high) detected at line 484
  []
 
 [24
@@ -2235,7 +2235,7 @@ Overfull \vbox (17.0031pt too high) detected at line 487
 ]
 File: images/growth_curves_measured_p50.pdf Graphic file (type QTm)
  <use  "images/growth_curves_measured_p50.pdf" >
-Overfull \vbox (4.74695pt too high) detected at line 500
+Overfull \vbox (4.74695pt too high) detected at line 497
  []
 
 [25
@@ -2250,17 +2250,11 @@ Overfull \vbox (4.74695pt too high) detected at line 500
 \tf@snm=\write8
 \openout8 = `evaluating_predictions.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 899.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 899.
- (evaluating_predictions.aux
-*************************************************
-* pdfbase warning: "rerun"
-* 
-* Rerun to get internal references right!
-*************************************************
-)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 899.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 899.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 896.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 896.
+ (evaluating_predictions.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 896.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 896.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2269,7 +2263,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  46145 strings out of 427834
  1052087 string characters out of 3152471
- 1307102 words of memory out of 3000000
+ 1307101 words of memory out of 3000000
  49355 multiletter control sequences out of 15000+200000
  587844 words of font info for 74 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
