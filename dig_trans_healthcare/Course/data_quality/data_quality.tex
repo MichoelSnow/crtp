@@ -72,7 +72,7 @@
 
 
 \title{Digital Transformation of Healthcare}
-\subtitle{Assessing Data Quality}
+\subtitle{ETL \& Assessing Data Quality}
 % \date{\today}
 \date{}
 \author{Michoel Snow, M.D. Ph.D., Glen Ferguson, Ph.D.}
@@ -87,12 +87,12 @@
 \begin{frame}{Assessing Data Quality}
 	After this lecture students will be able to 
 	\begin{itemize}
-		\item Assess the quality of data
-		\item Trace the steps where data quality can be affected 
-		\item Define measures to ensure quality assurance and quality control of data 
 		\item Describe the components of an ETL pipeline
+		\item Extract variables from data and incorporate additional information
+		\item Assess the quality of data
+		\item Trace the steps where data quality can be affected 	
 		\item Examine data for problems and discuss possible causes
-		\item Design a process for imputation of missing data 
+		\item Design a process for the imputation of missing data 
 	\end{itemize}
 \end{frame}
 
@@ -104,18 +104,62 @@
 \end{frame}
 
 
-\begin{frame}{Data Quality}
+\begin{frame}{ETL \& Data Quality}
 	\begin{center}
-		\includegraphics[width=0.9\textwidth]{images/informatics_pipeline_data_quality.pdf}	
+		\includegraphics[width=0.9\textwidth]{images/informatics_pipeline_etl_data_quality.pdf}	
 	\end{center}
 \end{frame}
 
 
+\begin{frame}{Extract, Transform and Load (ETL)}
+%	\begin{itemize}
+%		\item Extract
+%		\begin{itemize}
+%			\item Extract data from source(s)
+%		\end{itemize}
+%		\item Transform
+%		\begin{itemize}
+%			\item Modify the data for the purposes of analysis or further querying
+%		\end{itemize}
+%		\item Load
+%		\begin{itemize}
+%			\item Load the data into the target database
+%		\end{itemize}
+%	\end{itemize}
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{images/etl.pdf}
+	\end{center}	
+\end{frame}
 
 
 
+\note{
+	\scriptsize
+	\begin{itemize}
+		\item Variable transformations
+		\begin{itemize}
+			\scriptsize
+			\item Non-numerical to numerical data
+			\item Extracting implied or hidden variables
+			\item Connecting extraneous variables to current variables, e.g., weather to date
+		\end{itemize}
+		\item How can you convert non-numerical data to numerical data
+		\begin{itemize}
+			\scriptsize
+			\item what kinds of non-numerical data are there - categorical (blood group, degree of Ab susceptibility/resistance), semi/unstructured (text, audio, video), boolean (test results), dates 
+		\end{itemize}
+		\item What makes a transformation useful? 
+		\begin{itemize}
+			\scriptsize
+			\item What are all the different possible things you can extract from a date (season, days since equinox, hours since noon, is it happy hour, weekend)
+			\item What other information can you connect to a date (weather, precipitation, barometric pressure, traffic accidents, sunrise, sunset, federal holiday, famous birthdays)			
+		\end{itemize}
+		
+	\end{itemize}
+}
 
-\begin{frame}{Overview}
+
+\begin{frame}{Data Quality}
 	\begin{center}
 		Analysis is only ever as good as the data it's built upon.
 	\end{center}
@@ -166,26 +210,6 @@
 %\end{frame}
 
 
-\begin{frame}{Extract, Transform and Load (ETL)}
-	\begin{itemize}
-		\item Extract
-		\begin{itemize}
-			\item Extract data from source(s)
-		\end{itemize}
-		\item Transform
-		\begin{itemize}
-			\item Modify the data for the purposes of analysis or further querying
-		\end{itemize}
-		\item Load
-		\begin{itemize}
-			\item Load the data into the target database
-		\end{itemize}
-	\end{itemize}
-	\begin{center}
-		\includegraphics[scale=0.15]{images/Extract,_Transform,_Load_Data_Flow_Diagram.png}
-	\end{center}
-	
-\end{frame}
 
 
 %\note{
@@ -266,6 +290,13 @@
 	\end{center}
 \end{frame}
 
+
+\begin{frame}
+	\huge 
+	\begin{center}
+		To the SQL
+	\end{center}
+\end{frame}
 
 \begin{frame}
 	\includegraphics[width=\textwidth]{images/temp_value_counts.pdf}

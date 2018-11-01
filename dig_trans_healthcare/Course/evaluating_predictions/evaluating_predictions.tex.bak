@@ -81,14 +81,11 @@
 \begin{frame}{Evaluating Predictions}
 	After this lecture students will be able to 
 	\begin{itemize}
-		\item Calculate common classification and regression metrics
 		\item Describe the role of simple classification metrics
 		\item Evaluate the implementation of metrics for a study 
 		\item Articulate the information underlying common compound classification metrics 
 		\item Classify regression metrics 
 		\item Connect regression metric outcomes to facets of the associated models
-		\item Identify transition points which can affect data quality
-		\item Discuss methods for measuring and evaluating data quality 
 	\end{itemize}
 \end{frame}
 
