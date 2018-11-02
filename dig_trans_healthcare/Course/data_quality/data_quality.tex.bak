@@ -88,11 +88,11 @@
 	After this lecture students will be able to 
 	\begin{itemize}
 		\item Describe the components of an ETL pipeline
-		\item 
+		\item Extract variables from data and incorporate additional information
 		\item Assess the quality of data
 		\item Trace the steps where data quality can be affected 	
 		\item Examine data for problems and discuss possible causes
-		\item Design a process for imputation of missing data 
+		\item Design a process for the imputation of missing data 
 	\end{itemize}
 \end{frame}
 

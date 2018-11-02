@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2018.3.6)  1 NOV 2018 11:58
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2018.3.6)  2 NOV 2018 07:58
 entering extended mode
 **./data_quality.tex
 (data_quality.tex
@@ -1881,12 +1881,6 @@ Overfull \vbox (14.42435pt too high) detected at line 132
 
 ] [7
 
-] [8
-
-] [9
-
-] [10
-
 ]
 *************************************************
 * fontspec warning: "addfontfeatures-ignored"
@@ -1938,7 +1932,7 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 258.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 258.
- [11
+ [8
 
 ]
 *************************************************
@@ -1954,22 +1948,20 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 285.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 285.
-[12
+[9
 
-] [13
+] [10
 
-] [14
+] [11
 
 ]
 File: images/temp_value_counts.pdf Graphic file (type QTm)
- <use  "images/temp_value_counts.pdf" > [15
-
-] [16
+ <use  "images/temp_value_counts.pdf" > [12
 
 ]
 File: images/pt_temp_values.pdf Graphic file (type QTm)
 
-<use  "images/pt_temp_values.pdf" > [17
+<use  "images/pt_temp_values.pdf" > [13
 
 ]
 *************************************************
@@ -1989,13 +1981,11 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 341.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 341.
-[18
+[14
 
-] [19
+] [15
 
-] [20
-
-] [21
+] [16
 
 ]
 \tf@nav=\write6
@@ -2018,12 +2008,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 45338 strings out of 427834
- 1035834 string characters out of 3152471
- 1228104 words of memory out of 3000000
- 48561 multiletter control sequences out of 15000+200000
- 606629 words of font info for 88 fonts, out of 3000000 for 9000
+ 45296 strings out of 427834
+ 1034745 string characters out of 3152471
+ 1227103 words of memory out of 3000000
+ 48519 multiletter control sequences out of 15000+200000
+ 601090 words of font info for 86 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  71i,13n,98p,10427b,701s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on data_quality.pdf (21 pages).
+Output written on data_quality.pdf (16 pages).
