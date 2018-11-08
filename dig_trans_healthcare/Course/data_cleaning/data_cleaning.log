@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2018.3.6)  8 NOV 2018 13:23
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2018.3.6)  8 NOV 2018 13:52
 entering extended mode
 **./data_cleaning.tex
 (data_cleaning.tex
@@ -1881,27 +1881,31 @@ Overfull \vbox (19.00565pt too high) detected at line 123
 
 ] [7
 
+] [8
+
+] [9
+
 ]
 File: images/paper_mcar.pdf Graphic file (type QTm)
- <use  "images/paper_mcar.pdf" > [8
+ <use  "images/paper_mcar.pdf" > [10
 
 ]
 File: images/paper_mnar.pdf Graphic file (type QTm)
 
-<use  "images/paper_mnar.pdf" > [9
+<use  "images/paper_mnar.pdf" > [11
 
 ]
 File: images/paper_alsfrs.pdf Graphic file (type QTm)
- <use  "images/paper_alsfrs.pdf" > [10
+ <use  "images/paper_alsfrs.pdf" > [12
 
 ]
 File: images/informatics_pipeline.pdf Graphic file (type QTm)
 
 <use  "images/informatics_pipeline.pdf" >
-Overfull \vbox (20.8643pt too high) detected at line 239
+Overfull \vbox (20.8643pt too high) detected at line 244
  []
 
-[11
+[13
 
 ]
 \tf@nav=\write6
@@ -1913,23 +1917,23 @@ Overfull \vbox (20.8643pt too high) detected at line 239
 \tf@snm=\write8
 \openout8 = `data_cleaning.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 245.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 245.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 250.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 250.
  (data_cleaning.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 245.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 245.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 250.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 250.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 45164 strings out of 427834
- 1032709 string characters out of 3152471
- 1224105 words of memory out of 3000000
- 48428 multiletter control sequences out of 15000+200000
- 556750 words of font info for 51 fonts, out of 3000000 for 9000
+ 45206 strings out of 427834
+ 1033798 string characters out of 3152471
+ 1226105 words of memory out of 3000000
+ 48470 multiletter control sequences out of 15000+200000
+ 562289 words of font info for 53 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  71i,13n,98p,10428b,701s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on data_cleaning.pdf (11 pages).
+Output written on data_cleaning.pdf (13 pages).
