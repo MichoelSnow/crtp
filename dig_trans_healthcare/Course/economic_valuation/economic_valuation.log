@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2018.3.6)  15 NOV 2018 11:10
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2018.3.6)  16 NOV 2018 08:05
 entering extended mode
 **./economic_valuation.tex
 (economic_valuation.tex
@@ -1871,8 +1871,6 @@ Overfull \vbox (7.07948pt too high) detected at line 109
 
 ] [5
 
-] [6
-
 ]
 Missing character: There is no – in font ec-lmss9!
 LaTeX Font Info:    Try loading font information for OT1+lmss on input line 152
@@ -1924,7 +1922,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 152.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 152.
- [7
+ [6
 
 ]
 Missing character: There is no – in font ec-lmss8!
@@ -1936,13 +1934,13 @@ Missing character: There is no – in font ec-lmss8!
 Missing character: There is no – in font ec-lmss8!
 Missing character: There is no – in font ec-lmss8!
 Missing character: There is no – in font ec-lmss8!
- [8
+ [7
 
 ]
 Missing character: There is no – in font ec-lmss8!
 Missing character: There is no – in font ec-lmss8!
 Missing character: There is no – in font ec-lmss8!
- [9
+ [8
 
 ]
 *************************************************
@@ -1954,11 +1952,9 @@ Missing character: There is no – in font ec-lmss8!
 *  The current font is "\T1/lmss/m/n/7 ".
 *   The requested feature is "Numbers={Monospaced}". 
 *************************************************
-[10
+[9
 
-] [11
-
-] [12
+] [10
 
 ]
 \tf@nav=\write6
@@ -1979,14 +1975,17 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 233.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 45335 strings out of 427834
- 1036151 string characters out of 3152471
- 1228110 words of memory out of 3000000
- 48564 multiletter control sequences out of 15000+200000
+ 45296 strings out of 427834
+ 1035103 string characters out of 3152471
+ 1228109 words of memory out of 3000000
+ 48525 multiletter control sequences out of 15000+200000
  601057 words of font info for 86 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  71i,13n,98p,10433b,701s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on economic_valuation.pdf (12 pages).
+Output written on economic_valuation.pdf (10 pages).
