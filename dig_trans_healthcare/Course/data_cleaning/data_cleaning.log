@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2018.3.6)  8 NOV 2018 13:52
+This is XeTeX, Version 3.14159265-2.6-0.99998 (MiKTeX 2.9.6350 64-bit) (preloaded format=xelatex 2018.3.6)  15 NOV 2018 07:50
 entering extended mode
 **./data_cleaning.tex
 (data_cleaning.tex
@@ -1879,29 +1879,57 @@ Overfull \vbox (19.00565pt too high) detected at line 123
 
 ] [6
 
-] [7
+]
+Overfull \hbox (91.04883pt too wide) in paragraph at lines 154--154
+[][]  
+ []
+
+[7
 
 ] [8
 
-] [9
+]
+Overfull \hbox (182.09767pt too wide) in paragraph at lines 215--215
+[][]  
+ []
+
+[9
 
 ]
 File: images/paper_mcar.pdf Graphic file (type QTm)
- <use  "images/paper_mcar.pdf" > [10
+ <use  "images/paper_mcar.pdf" >
+Overfull \hbox (273.14651pt too wide) in paragraph at lines 222--222
+[][]  
+ []
+
+[10
 
 ]
 File: images/paper_mnar.pdf Graphic file (type QTm)
+ <use  "images/paper_mnar.pdf" >
+Overfull \hbox (364.19536pt too wide) in paragraph at lines 228--228
+[][]  
+ []
 
-<use  "images/paper_mnar.pdf" > [11
+[11
 
 ]
 File: images/paper_alsfrs.pdf Graphic file (type QTm)
- <use  "images/paper_alsfrs.pdf" > [12
+ <use  "images/paper_alsfrs.pdf" >
+Overfull \hbox (455.24419pt too wide) in paragraph at lines 234--234
+[][]  
+ []
+
+[12
 
 ]
 File: images/informatics_pipeline.pdf Graphic file (type QTm)
+ <use  "images/informatics_pipeline.pdf" >
+Overfull \hbox (546.29303pt too wide) in paragraph at lines 244--244
+[][]  
+ []
 
-<use  "images/informatics_pipeline.pdf" >
+
 Overfull \vbox (20.8643pt too high) detected at line 244
  []
 
@@ -1928,10 +1956,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 45206 strings out of 427834
- 1033798 string characters out of 3152471
- 1226105 words of memory out of 3000000
- 48470 multiletter control sequences out of 15000+200000
+ 45194 strings out of 427834
+ 1033702 string characters out of 3152471
+ 1226104 words of memory out of 3000000
+ 48458 multiletter control sequences out of 15000+200000
  562289 words of font info for 53 fonts, out of 3000000 for 9000
  1328 hyphenation exceptions out of 8191
  71i,13n,98p,10428b,701s stack positions out of 5000i,500n,10000p,200000b,50000s

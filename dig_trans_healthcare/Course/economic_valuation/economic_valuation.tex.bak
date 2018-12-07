@@ -1,8 +1,8 @@
 \documentclass[10pt, xcolor=table]{beamer}
 
 \setbeamertemplate{note page}[default]
-%\setbeameroption{hide notes}
-\setbeameroption{show notes}
+\setbeameroption{hide notes}
+%\setbeameroption{show notes}
 \setbeamerfont{footnote}{size=\tiny}
 
 \usetheme[progressbar=frametitle]{metropolis}
@@ -89,7 +89,8 @@
 	\begin{itemize}
 		\item Define the costs associated with an intervention
 		\item Differentiate between direct and indirect costs 
-		\item Build a bioinformatics pipeline starting from given data
+		\item Locate estimates for direct and indirect costs
+		\item Discuss Markov Chain Monte Carlo for modeling costs
 	\end{itemize}
 \end{frame}
 
@@ -113,6 +114,7 @@
 		\item You have some new radical ideas for the diagnosis and management of stroke.
 		\item Before you begin you are tasked with providing a cost-benefit analysis for the department.
 		\item How can you quantify the costs and benefits of your new protocol as compared to the current standard of care?
+		\item How can you use the costs to determine the benefit of any new intervention.
 %		\begin{itemize}
 %			\item What are the steps to transform raw data into a usable format
 %		\end{itemize}
@@ -127,12 +129,13 @@
 	\begin{itemize}
 		\item Costs
 		\begin{itemize}
-		\scriptsize
-		\item Cost parameters - (cost of any intervention D+, cost of any intervention D-, cost of missed)
-		\item Direct costs - Hospital (Medication, testing, Tx, length of stay, doctors, nurses other support staff, other services, e.g., food, transport, ambulance services, initial hospitalization, inpatient and outpatient rehabilitation services including durable medical equipment, nursing home costs, and outpatient neurology clinic visits)
-		\item Indirect costs - Loss or work, Quality of life (QALY)
-		\item Other - Litigation
+			\scriptsize
+			\item Cost parameters - (cost of any intervention D+, cost of any intervention D-, cost of missed)
+			\item Direct costs - Hospital (Medication, testing, Tx, length of stay, doctors, nurses other support staff, other services, e.g., food, transport, ambulance services, initial hospitalization, inpatient and outpatient rehabilitation services including durable medical equipment, nursing home costs, and outpatient neurology clinic visits)
+			\item Indirect costs - Loss or work, Quality of life (QALY)
+			\item Other - Litigation
 		\end{itemize}
+		\item  (intervention1 - intervention2)/(Increase in QOL1 - Increase in QOL2)
 	\end{itemize}
 
 }

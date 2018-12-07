@@ -1,8 +1,8 @@
 \documentclass[10pt, xcolor=table]{beamer}
 
 \setbeamertemplate{note page}[default]
-%\setbeameroption{hide notes}
-\setbeameroption{show notes}
+\setbeameroption{hide notes}
+%\setbeameroption{show notes}
 \setbeamerfont{footnote}{size=\tiny}
 
 \usetheme[progressbar=frametitle]{metropolis}

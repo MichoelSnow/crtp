@@ -1,8 +1,8 @@
 \documentclass[10pt, xcolor=table]{beamer}
 
 \setbeamertemplate{note page}[default]
-%\setbeameroption{hide notes}
-\setbeameroption{show notes}
+\setbeameroption{hide notes}
+%\setbeameroption{show notes}
 \setbeamerfont{footnote}{size=\tiny}
 
 \usetheme[progressbar=frametitle]{metropolis}
@@ -87,10 +87,10 @@
 \begin{frame}{Ethics in Modeling}
 	After this lecture students will be able to 
 	\begin{itemize}
-		\item Define the costs associated with an intervention
-		\item Differentiate between direct and indirect costs 
-		\item Locate estimates for direct and indirect costs
-		\item Discuss Markov Chain Monte Carlo for modeling costs
+		\item Identify possibly unethical models
+		\item Describe tests used to determine model fairness
+		\item Ethically evaluate model design goals
+		\item Discuss the challenges patient privacy and data anonymization poses for machine learning models
 	\end{itemize}
 \end{frame}
 
@@ -102,7 +102,7 @@
 \end{frame}
 
 
-\begin{frame}{Economic Valuation}
+\begin{frame}{Modeling Ethics}
 	\begin{center}
 		\includegraphics[width=0.9\textwidth]{images/informatics_pipeline_model_ethics.pdf}	
 	\end{center}
@@ -124,7 +124,7 @@
 		\item You are tasked with developing a protocol for all patients diagnosed with and begin treated for pneumonia.
 		\item You decide to use all previous cases where patients where treated for pneumonia to build your neural network, with the inputs being the state of the patients at the beginning of the day and the outputs being the state of the patients at the end of the day?
 		\item Are there any ethical concerns with this method of model building?
-		\item How can you mitigate ethical issues before they arise?
+		\item How can you mitigate ethical issues before they arise?  
 	\end{itemize}
 \end{frame}
 
@@ -135,12 +135,24 @@
 		\begin{itemize}
 			\scriptsize
 			\item Bias - are people being treated differently due to race, ability to pay without any evidence that there are improved outcomes 
-			\item Negative outcomes - this model does not weight any outcome better or worse than any other, just uses what has been done before, e.g., if there is a novel treatment that does better than the standard protocol but has only been used in the past year, then it would be suppressed in this model			
+			\item Negative outcomes - this model does not weight any outcome better or worse than any other, just uses what has been done before, e.g., if there is a novel treatment that does better than the standard protocol but has only been used in the past year, then it would be suppressed in this model	
 		\end{itemize}
 		\item Does a model need to be explainable to be ethical
+		\item Is context essential in medicine and do machine learning models need to account for that
 	\end{itemize}
 
 }
+
+\begin{frame}{Currently Implemented Pipelines}
+	\begin{itemize}
+		\item Are some types of CDS more or less ethical?
+		\begin{itemize}
+			\item Respiratory failure
+			\item Spinal cord compression detection and prediction
+			\item Patient scheduling
+		\end{itemize}
+	\end{itemize}
+\end{frame}
 
 \begin{frame}{Patient Privacy and Data Anonymization}
 	\begin{itemize}

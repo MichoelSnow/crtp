@@ -1,8 +1,8 @@
 \documentclass[10pt, xcolor=table]{beamer}
 
 \setbeamertemplate{note page}[default]
-\setbeameroption{hide notes}
-%\setbeameroption{show notes}
+%\setbeameroption{hide notes}
+\setbeameroption{show notes}
 \setbeamerfont{footnote}{size=\tiny}
 
 \usetheme[progressbar=frametitle]{metropolis}
@@ -87,10 +87,10 @@
 \begin{frame}{Ethics in Modeling}
 	After this lecture students will be able to 
 	\begin{itemize}
-		\item Define the costs associated with an intervention
-		\item Differentiate between direct and indirect costs 
-		\item Locate estimates for direct and indirect costs
-		\item Discuss Markov Chain Monte Carlo for modeling costs
+		\item Identify possibly unethical models
+		\item Describe tests used to determine model fairness
+		\item Ethically evaluate model design goals
+		\item Discuss the challenges patient privacy and data anonymization poses for machine learning models
 	\end{itemize}
 \end{frame}
 
@@ -102,7 +102,7 @@
 \end{frame}
 
 
-\begin{frame}{Economic Valuation}
+\begin{frame}{Modeling Ethics}
 	\begin{center}
 		\includegraphics[width=0.9\textwidth]{images/informatics_pipeline_model_ethics.pdf}	
 	\end{center}
@@ -111,11 +111,11 @@
 
 \begin{frame}{Case 1\footnote{https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing}}
 	\begin{itemize}
-		\item Risk assessments are used to inform decisions about who can be set free at every stage of the criminal justice system, from assigning bond amounts to even more fundamental decisions about defendants’ freedom. 
+		\item Risk assessments are used to inform decisions about who can be set free at every stage of the criminal justice system, from assigning bond amounts to even more fundamental decisions about defendants' freedom. 
 		\item ProPublica obtained the risk scores assigned to more than 7,000 people arrested in Broward County, Florida, in 2013 and 2014 
 		\item The formula was particularly likely to falsely flag black defendants as future criminals, wrongly labeling them this way at almost twice the rate as white defendants.
 		\item White defendants were mislabeled as low risk more often than black defendants.
-		\item Is this an model ethical?
+		\item Is this an ethical model?
 	\end{itemize}
 \end{frame}
 
@@ -135,102 +135,24 @@
 		\begin{itemize}
 			\scriptsize
 			\item Bias - are people being treated differently due to race, ability to pay without any evidence that there are improved outcomes 
-			\item Negative outcomes - this model does not weight any outcome better or worse than any other, just uses what has been done before, e.g., if there is a novel treatment that does better than the standard protocol but has only been used in the past year, then it would be suppressed in this model
+			\item Negative outcomes - this model does not weight any outcome better or worse than any other, just uses what has been done before, e.g., if there is a novel treatment that does better than the standard protocol but has only been used in the past year, then it would be suppressed in this model			
 		\end{itemize}
+		\item Does a model need to be explainable to be ethical
 	\end{itemize}
 
 }
 
-
-\begin{frame}{Projected costs of ischemic stroke in the United States \footnote{D. L. Brown, B. Boden-Albala, K. M. Langa, L. D. Lisabeth, M. Fair, M. A. Smith, R. L. Sacco, L. B. Morgenstern
-Neurology Oct 2006, 67 (8) 1390-1395; DOI: 10.1212/01.wnl.0000237024.16438.20}}
+\begin{frame}{Patient Privacy and Data Anonymization}
 	\begin{itemize}
-		\small
-		\item \textbf{Objective} - To estimate the future economic burden of stroke in non-Hispanic whites, Hispanics, and African Americans in the United States from 2005 to 2050.
-		\item \textbf{Methods} -  We used U.S. Census estimates of the race–ethnic group populations age 45 years and older. We obtained stroke epidemiology and service utilization data from the Northern Manhattan Stroke Study and the Brain Attack Surveillance in Corpus Christi project and other published data. We estimated costs directly from Medicare reimbursement or from studies that used Medicare reimbursement. Direct and indirect costs considered included ambulance services, initial hospitalization, rehabilitation, nursing home costs, outpatient clinic visits, drugs, informal caregiving, and potential lost earnings.
-	\end{itemize}
-	
-\end{frame}
-
-\begin{frame}{Model Design Philosophy}
-	\scriptsize
-	\begin{itemize}
-		\item What are the goals driving your models?
-		\begin{itemize}
-			\item cost
-			\item outcomes
-			\item length of stay
-			\item ability to pay
-		\end{itemize}
+		\item How Privacy is a fundamental right of patients, but how does that appear when dealing with models.
+		\item Does all patient data need to be anonymized before feeding it into the model?
+		\item Are there any negatives of feeding in anonymized data into a model?
+		\item Where does patient consent fit in the era of big data?
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Estimate of Other Costs}
-	\begin{itemize}
-		\item Indirect Costs
-		\begin{itemize}
-			\scriptsize
-			\item Indirect medical costs included potential lost earnings.  
-			\item Lost earnings were only considered for those younger than 65, as those 65 and older were assumed to be retired. An estimate of the proportion of those in the labor force was calculated based on the race–ethnic-specific employment rate\footnote{http://www.cms.hhs.gov}. 
-			\item The proportion assumed to return to work following stroke (53\%) was obtained from the literature\footnote{Wozniak MA, Kittner SJ, Price TR, et al. Stroke 1999;30:2568–2573}.
-			\item Individuals were assumed to earn the median salary for each race–ethnic group\footnote{ftp://ftp.bls.gov/pub/special.requests/lf/aat37.txt}.
-		\end{itemize}
-		\item Costs Not Considered
-		\begin{itemize}
-			\scriptsize
-			\item Loss of leisure activities or other activities not related to compensated employment were not included. 
-			\item The effects of lost productivity in the work force incurred by others ("friction costs") were also not taken into account in the model.
-			\item  Stroke in those less than 45 was also excluded, as estimates of ethnic-specific stroke incidence and prevalence in this age group have not been well studied.
-		\end{itemize}
-	\end{itemize}
-\end{frame}
 
-\begin{frame}{Estimated Costs}
-	\begin{center}
-		\scriptsize
-		\begin{tabular}{lr}
-			\toprule
-    	\textbf{Service} &  \textbf{Cost per stroke} \\
-			\midrule
-    	Ambulance &  \$164 \\
-    	Hospitalization/emergency dept. & \$12,423 \\
-			Rehabilitation inpatient & \$25,968 \\
-			Neurologist & \$83 \\
-			All therapies, assistive devices, and home health & \$3,218 \\               
-			\midrule
-			& \textbf{Cost per year} \\
-			\midrule
-			Aspirin/sustained-release dipyridamole & \$1,543 \\
-			Aspirin & \$8 \\
-			Clopidogrel & \$1,518 \\
-			Warfarin & \$303 \\
-			ACE inhibitor & \$384 \\
-			Statin & \$437 \\
-			PCP & \$53 \\
-			Informal care & \$4,038 \\
-			Earnings lost & \$22,880 \\
-			Nursing home care & \$33,636 \\
-			\bottomrule
-		\end{tabular}
-	\end{center}
-\end{frame}
 
-\begin{frame}{Markov Chain Monte Carlo}
-	\begin{itemize}
-		\item You were able to determine the cost of every single path a patient in the system can take using your new protocol. However, now you have to determine the probability of each patient to follow a specific path
-		\item How can you determine what percentage of patients will end up at each of your different end states?
-	\end{itemize}
-\end{frame}
-
-\note{
-	\scriptsize
-	\begin{itemize}
-		\item Starting from a healthy patient what are the different initial states for your patients - (HTN, diabetes, previous stroke, ...)
-		\item What are the different end states for your protocol - (death, persistent vegetative state, Healthy ...)
-		\item what are the intermediate stages between the initial and final stage
-		\item what are the probabilities of going to each state
-	\end{itemize}
-}
 
 
 \end{document}
