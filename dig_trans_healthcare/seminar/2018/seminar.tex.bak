@@ -107,6 +107,16 @@
 \end{frame}
 
 
+\begin{frame}{Case Study}
+You have developed a new method of detecting sepsis in patients, which you think is better than the current sepsis criteria.
+	\begin{itemize}
+		\item How can you determine if your claim is true, using retrospective data?
+		
+	\end{itemize}
+\end{frame}
+
+
+
 \begin{frame}{Bioinformatics Pipeline}
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{images/informatics_pipeline.pdf}	
